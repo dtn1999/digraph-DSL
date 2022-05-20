@@ -1,8 +1,0 @@
-digraph Example {
-    A [label="Aachen"]
-    B [label="Paris"]
-    L [label="Cologne"]
-    A -> B
-    A -> L
-    B - [weight= 12.0] -> L
-}
