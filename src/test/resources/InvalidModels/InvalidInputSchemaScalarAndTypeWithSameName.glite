@@ -1,0 +1,13 @@
+schema InvalidSchema2 {
+    scalar A
+
+    scalar B
+
+    type A {
+       field: A
+    }
+
+    type B {
+       field: B
+    }
+}

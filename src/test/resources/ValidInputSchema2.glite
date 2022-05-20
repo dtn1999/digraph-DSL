@@ -1,0 +1,11 @@
+schema Schema2 {
+
+     type A {
+        field0: ID!
+        field2: String
+        field3: Boolean
+        field4: [Int]
+        field5: [Float!]
+        field6: [String!]!
+     }
+}

@@ -1,0 +1,15 @@
+schema Schema3 {
+     type A {
+        field0: ID!
+        field2: String
+        field3: Boolean
+     }
+
+     // type can reference other type
+     type B {
+        field0: A
+        field1: A!
+        field2: [A]
+        field3: [A!]!
+     }
+}

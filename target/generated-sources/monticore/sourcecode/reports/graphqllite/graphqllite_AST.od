@@ -1,0 +1,386 @@
+/*
+ * ========================================================== Object diagram
+ */
+objectdiagram graphqllite_AST {
+  @GraphQLLite!MCGrammar(3,0):ASTMCGrammar {
+    symbol = @GraphQLLite!Symbol(3,0);
+    enclosingScope = @GraphQLLite!ArtifactScope;
+    spanningScope = @GraphQLLite!Scope;
+    startRule = @!StartRule(4,4):ASTStartRule {
+      enclosingScope = @GraphQLLite!Scope;
+      name = Schema;
+    };
+    r__package = [];
+    name = GraphQLLite;
+    supergrammar = [// *size: 1
+      @MCCommonLiterals!GrammarReference(3,28):ASTGrammarReference {
+        enclosingScope = @GraphQLLite!Scope;
+        names = [de, monticore, literals, MCCommonLiterals];
+      }];
+    classProds = [// *size: 6
+      @Schema!ClassProd(6,4):ASTClassProd {
+        enclosingScope = @GraphQLLite!Scope;
+        symbolDefinitions = [// *size: 2
+          @!SymbolDefinition(6,4):ASTSymbolDefinition {
+            enclosingScope = @Schema!Scope;
+            genSymbol = false;
+            genScope = true;
+            shadowing = false;
+            non_exporting = false;
+            ordered = false;
+          },
+          @!SymbolDefinition(6,10):ASTSymbolDefinition {
+            enclosingScope = @Schema!Scope;
+            genSymbol = true;
+            genScope = false;
+            shadowing = false;
+            non_exporting = false;
+            ordered = false;
+          }];
+        alts = [// *size: 1
+          @!Alt(7,4):ASTAlt {
+            enclosingScope = @Schema!Scope;
+            component = [// *size: 5
+              @schema!Terminal(7,4):ASTTerminal {
+                enclosingScope = @Schema!Scope;
+                iteration = 0;
+                name = schema;
+              },
+              @Name!NonTerminal(7,13):ASTNonTerminal {
+                enclosingScope = @Schema!Scope;
+                name = Name;
+                genSymbol = false;
+                plusKeywords = false;
+                iteration = 0;
+              },
+              @LCURLY!Terminal(7,18):ASTTerminal {
+                enclosingScope = @Schema!Scope;
+                iteration = 0;
+                name = {;
+              },
+              @!Block(8,8):ASTBlock {
+                enclosingScope = @Schema!Scope;
+                alt = [// *size: 1
+                  @!Alt(8,10):ASTAlt {
+                    enclosingScope = @Schema!Scope;
+                    component = [// *size: 1
+                      @GQLType!NonTerminal(8,10):ASTNonTerminal {
+                        enclosingScope = @Schema!Scope;
+                        name = GQLType;
+                        genSymbol = false;
+                        plusKeywords = false;
+                        iteration = 0;
+                      }];
+                    rightAssoc = false;
+                  }];
+                iteration = 21;
+              },
+              @RCURLY!Terminal(9,4):ASTTerminal {
+                enclosingScope = @Schema!Scope;
+                iteration = 0;
+                name = };
+              }];
+            rightAssoc = false;
+          }];
+        name = Schema;
+      },
+      @Scalar!ClassProd(13,4):ASTClassProd {
+        enclosingScope = @GraphQLLite!Scope;
+        superInterfaceRule = [// *size: 1
+          @GQLType!RuleReference(13,22):ASTRuleReference {
+            enclosingScope = @Scalar!Scope;
+            name = GQLType;
+          }];
+        alts = [// *size: 1
+          @!Alt(13,32):ASTAlt {
+            enclosingScope = @Scalar!Scope;
+            component = [// *size: 2
+              @scalar!Terminal(13,32):ASTTerminal {
+                enclosingScope = @Scalar!Scope;
+                iteration = 0;
+                name = scalar;
+              },
+              @Name!NonTerminal(13,41):ASTNonTerminal {
+                enclosingScope = @Scalar!Scope;
+                name = Name;
+                genSymbol = false;
+                plusKeywords = false;
+                iteration = 0;
+              }];
+            rightAssoc = false;
+          }];
+        name = Scalar;
+      },
+      @Type!ClassProd(17,4):ASTClassProd {
+        enclosingScope = @GraphQLLite!Scope;
+        symbolDefinitions = [// *size: 2
+          @!SymbolDefinition(17,4):ASTSymbolDefinition {
+            enclosingScope = @Type!Scope;
+            genSymbol = true;
+            genScope = false;
+            shadowing = false;
+            non_exporting = false;
+            ordered = false;
+          },
+          @!SymbolDefinition(17,11):ASTSymbolDefinition {
+            enclosingScope = @Type!Scope;
+            genSymbol = false;
+            genScope = true;
+            shadowing = false;
+            non_exporting = false;
+            ordered = false;
+          }];
+        superInterfaceRule = [// *size: 1
+          @GQLType!RuleReference(17,33):ASTRuleReference {
+            enclosingScope = @Type!Scope;
+            name = GQLType;
+          }];
+        alts = [// *size: 1
+          @!Alt(18,4):ASTAlt {
+            enclosingScope = @Type!Scope;
+            component = [// *size: 5
+              @type!Terminal(18,4):ASTTerminal {
+                enclosingScope = @Type!Scope;
+                iteration = 0;
+                name = type;
+              },
+              @Name!NonTerminal(18,11):ASTNonTerminal {
+                enclosingScope = @Type!Scope;
+                name = Name;
+                genSymbol = false;
+                plusKeywords = false;
+                iteration = 0;
+              },
+              @LCURLY!Terminal(18,16):ASTTerminal {
+                enclosingScope = @Type!Scope;
+                iteration = 0;
+                name = {;
+              },
+              @!Block(19,8):ASTBlock {
+                enclosingScope = @Type!Scope;
+                alt = [// *size: 1
+                  @!Alt(19,10):ASTAlt {
+                    enclosingScope = @Type!Scope;
+                    component = [// *size: 1
+                      @GQLTypeAttribute!NonTerminal(19,10):ASTNonTerminal {
+                        enclosingScope = @Type!Scope;
+                        usageName = "attributes";
+                        name = GQLTypeAttribute;
+                        genSymbol = false;
+                        plusKeywords = false;
+                        iteration = 0;
+                      }];
+                    rightAssoc = false;
+                  }];
+                iteration = 13;
+              },
+              @RCURLY!Terminal(20,4):ASTTerminal {
+                enclosingScope = @Type!Scope;
+                iteration = 0;
+                name = };
+              }];
+            rightAssoc = false;
+          }];
+        name = Type;
+      },
+      @GQLTypeAttribute!ClassProd(25,4):ASTClassProd {
+        enclosingScope = @GraphQLLite!Scope;
+        alts = [// *size: 1
+          @!Alt(25,23):ASTAlt {
+            enclosingScope = @GQLTypeAttribute!Scope;
+            component = [// *size: 3
+              @Name!NonTerminal(25,23):ASTNonTerminal {
+                enclosingScope = @GQLTypeAttribute!Scope;
+                usageName = "attributeName";
+                name = Name;
+                genSymbol = false;
+                plusKeywords = false;
+                iteration = 0;
+              },
+              @COLON!Terminal(25,42):ASTTerminal {
+                enclosingScope = @GQLTypeAttribute!Scope;
+                iteration = 0;
+                name = :;
+              },
+              @AttributeType!NonTerminal(25,46):ASTNonTerminal {
+                enclosingScope = @GQLTypeAttribute!Scope;
+                usageName = "type";
+                name = AttributeType;
+                genSymbol = false;
+                plusKeywords = false;
+                iteration = 0;
+              }];
+            rightAssoc = false;
+          }];
+        name = GQLTypeAttribute;
+      },
+      @SimpleAttributeType!ClassProd(27,4):ASTClassProd {
+        enclosingScope = @GraphQLLite!Scope;
+        superInterfaceRule = [// *size: 1
+          @AttributeType!RuleReference(27,35):ASTRuleReference {
+            enclosingScope = @SimpleAttributeType!Scope;
+            name = AttributeType;
+          }];
+        alts = [// *size: 1
+          @!Alt(27,51):ASTAlt {
+            enclosingScope = @SimpleAttributeType!Scope;
+            component = [// *size: 2
+              @!Block(27,51):ASTBlock {
+                enclosingScope = @SimpleAttributeType!Scope;
+                alt = [// *size: 2
+                  @!Alt(27,52):ASTAlt {
+                    enclosingScope = @SimpleAttributeType!Scope;
+                    component = [// *size: 1
+                      @Name!NonTerminal(27,52):ASTNonTerminal {
+                        enclosingScope = @SimpleAttributeType!Scope;
+                        usageName = "type";
+                        name = Name;
+                        referencedSymbol = "GQLType";
+                        genSymbol = false;
+                        plusKeywords = false;
+                        iteration = 0;
+                      }];
+                    rightAssoc = false;
+                  },
+                  @!Alt(27,72):ASTAlt {
+                    enclosingScope = @SimpleAttributeType!Scope;
+                    component = [// *size: 1
+                      @BUILDINSCALAR!NonTerminal(27,72):ASTNonTerminal {
+                        enclosingScope = @SimpleAttributeType!Scope;
+                        usageName = "buildInScalar";
+                        name = BUILDINSCALAR;
+                        genSymbol = false;
+                        plusKeywords = false;
+                        iteration = 0;
+                      }];
+                    rightAssoc = false;
+                  }];
+                iteration = 0;
+              },
+              @!ConstantGroup(27,101):ASTConstantGroup {
+                enclosingScope = @SimpleAttributeType!Scope;
+                constants = [// *size: 1
+                  @EXCLAMATIONMARK!Constant(27,102):ASTConstant {
+                    enclosingScope = @SimpleAttributeType!Scope;
+                    string = "!";
+                    usageName = "required";
+                    name = !;
+                  }];
+                iteration = 17;
+              }];
+            rightAssoc = false;
+          }];
+        name = SimpleAttributeType;
+      },
+      @CollectionAttributeType!ClassProd(29,4):ASTClassProd {
+        enclosingScope = @GraphQLLite!Scope;
+        superInterfaceRule = [// *size: 1
+          @AttributeType!RuleReference(29,39):ASTRuleReference {
+            enclosingScope = @CollectionAttributeType!Scope;
+            name = AttributeType;
+          }];
+        alts = [// *size: 1
+          @!Alt(29,55):ASTAlt {
+            enclosingScope = @CollectionAttributeType!Scope;
+            component = [// *size: 4
+              @LBRACK!Terminal(29,55):ASTTerminal {
+                enclosingScope = @CollectionAttributeType!Scope;
+                iteration = 0;
+                name = [;
+              },
+              @SimpleAttributeType!NonTerminal(29,59):ASTNonTerminal {
+                enclosingScope = @CollectionAttributeType!Scope;
+                name = SimpleAttributeType;
+                genSymbol = false;
+                plusKeywords = false;
+                iteration = 0;
+              },
+              @RBRACK!Terminal(29,79):ASTTerminal {
+                enclosingScope = @CollectionAttributeType!Scope;
+                iteration = 0;
+                name = ];
+              },
+              @!ConstantGroup(29,83):ASTConstantGroup {
+                enclosingScope = @CollectionAttributeType!Scope;
+                constants = [// *size: 1
+                  @EXCLAMATIONMARK!Constant(29,84):ASTConstant {
+                    enclosingScope = @CollectionAttributeType!Scope;
+                    string = "!";
+                    usageName = "required";
+                    name = !;
+                  }];
+                iteration = 17;
+              }];
+            rightAssoc = false;
+          }];
+        name = CollectionAttributeType;
+      }];
+    enumProds = [// *size: 1
+      @BUILDINSCALAR!EnumProd(31,4):ASTEnumProd {
+        enclosingScope = @GraphQLLite!Scope;
+        constants = [// *size: 5
+          @ID!Constant(32,8):ASTConstant {
+            enclosingScope = @BUILDINSCALAR!Scope;
+            string = "ID";
+            name = ID;
+          },
+          @String!Constant(33,8):ASTConstant {
+            enclosingScope = @BUILDINSCALAR!Scope;
+            string = "String";
+            name = String;
+          },
+          @Boolean!Constant(34,8):ASTConstant {
+            enclosingScope = @BUILDINSCALAR!Scope;
+            string = "Boolean";
+            name = Boolean;
+          },
+          @Int!Constant(35,8):ASTConstant {
+            enclosingScope = @BUILDINSCALAR!Scope;
+            string = "Int";
+            name = Int;
+          },
+          @Float!Constant(36,8):ASTConstant {
+            enclosingScope = @BUILDINSCALAR!Scope;
+            string = "Float";
+            name = Float;
+          }];
+        name = BUILDINSCALAR;
+      }];
+    interfaceProds = [// *size: 2
+      @GQLType!InterfaceProd(11,4):ASTInterfaceProd {
+        enclosingScope = @GraphQLLite!Scope;
+        symbolDefinitions = [// *size: 1
+          @!SymbolDefinition(11,14):ASTSymbolDefinition {
+            enclosingScope = @GQLType!Scope;
+            genSymbol = true;
+            genScope = false;
+            shadowing = false;
+            non_exporting = false;
+            ordered = false;
+          }];
+        alt = [// *size: 1
+          @!Alt(11,31):ASTAlt {
+            enclosingScope = @GQLType!Scope;
+            component = [// *size: 1
+              @Name!NonTerminal(11,31):ASTNonTerminal {
+                enclosingScope = @GQLType!Scope;
+                name = Name;
+                genSymbol = false;
+                plusKeywords = false;
+                iteration = 0;
+              }];
+            rightAssoc = false;
+          }];
+        name = GQLType;
+      },
+      @AttributeType!InterfaceProd(23,4):ASTInterfaceProd {
+        enclosingScope = @GraphQLLite!Scope;
+        name = AttributeType;
+      }];
+    component = false;
+};}
+
+/*
+ * ========================================================== Explanation
+ * Shows the AST with all attributes as object diagram
+ */

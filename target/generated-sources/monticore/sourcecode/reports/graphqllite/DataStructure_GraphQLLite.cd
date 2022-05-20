@@ -1,0 +1,169 @@
+package graphqllite._ast;
+
+classdiagram DataStructure_GraphQLLite {
+  <<symbol, scope, startProd>> public abstract class ASTSchemaTOP extends ASTCNode implements graphqllite._ast.ASTGraphQLLiteNode {
+    <<derived_attribute_name="">> protected String name;
+    <<derived_attribute_name="", astType="">> protected java.util.List<graphqllite._ast.ASTGQLType> gQLTypes;
+    protected Optional<graphqllite._symboltable.SchemaSymbol> symbol;
+    protected graphqllite._symboltable.IGraphQLLiteScope spannedScope;
+    protected graphqllite._symboltable.IGraphQLLiteScope enclosingScope;
+  }
+
+  <<inheritedSymbol="graphqllite._symboltable.GQLTypeSymbol">> public class ASTScalar extends ASTCNode implements graphqllite._ast.ASTGQLType, graphqllite._ast.ASTGraphQLLiteNode {
+    <<derived_attribute_name="">> protected String name;
+    protected Optional<graphqllite._symboltable.GQLTypeSymbol> symbol;
+    protected graphqllite._symboltable.IGraphQLLiteScope enclosingScope;
+  }
+
+  <<symbol, scope, inheritedSymbol="graphqllite._symboltable.GQLTypeSymbol">> public class ASTType extends ASTCNode implements graphqllite._ast.ASTGQLType, graphqllite._ast.ASTGraphQLLiteNode {
+    <<astType="">> protected java.util.List<graphqllite._ast.ASTGQLTypeAttribute> attributes;
+    <<derived_attribute_name="">> protected String name;
+    protected Optional<graphqllite._symboltable.TypeSymbol> symbol;
+    protected graphqllite._symboltable.IGraphQLLiteScope spannedScope;
+    protected graphqllite._symboltable.IGraphQLLiteScope enclosingScope;
+  }
+
+  public abstract class ASTGQLTypeAttributeTOP extends ASTCNode implements graphqllite._ast.ASTGraphQLLiteNode {
+    protected String attributeName;
+    <<astType="">> protected graphqllite._ast.ASTAttributeType type;
+    protected graphqllite._symboltable.IGraphQLLiteScope enclosingScope;
+  }
+
+  public class ASTSimpleAttributeType extends ASTCNode implements graphqllite._ast.ASTAttributeType, graphqllite._ast.ASTGraphQLLiteNode {
+    <<referencedSymbol="graphqllite._symboltable.GQLTypeSymbol">> protected Optional<String> type;
+    protected Optional<graphqllite._ast.ASTBUILDINSCALAR> buildInScalar;
+    <<derived_attribute_name="">> protected boolean required;
+    protected graphqllite._symboltable.IGraphQLLiteScope enclosingScope;
+    <<referencedSymbolAttribute>> protected graphqllite._symboltable.GQLTypeSymbol typeSymbol;
+  }
+
+  public class ASTCollectionAttributeType extends ASTCNode implements graphqllite._ast.ASTAttributeType, graphqllite._ast.ASTGraphQLLiteNode {
+    <<derived_attribute_name="", astType="">> protected graphqllite._ast.ASTSimpleAttributeType simpleAttributeType;
+    <<derived_attribute_name="">> protected boolean required;
+    protected graphqllite._symboltable.IGraphQLLiteScope enclosingScope;
+  }
+
+  public class ASTConstantsGraphQLLite {
+    public final static String LANGUAGE;
+    public final static int DEFAULT;
+    public final static int BOOLEAN;
+    public final static int FLOAT;
+    public final static int ID;
+    public final static int INT;
+    public final static int REQUIRED;
+    public final static int STRING;
+    public static String[] superGrammars;
+  }
+
+  <<symbol>> public interface ASTGQLTypeTOP extends de.monticore.ast.ASTNode, graphqllite._ast.ASTGraphQLLiteNode;
+
+  public interface ASTAttributeType extends de.monticore.ast.ASTNode, graphqllite._ast.ASTGraphQLLiteNode;
+
+  public interface ASTGraphQLLiteNode extends ASTNode;
+
+  public enum ASTBUILDINSCALAR {
+    ID,
+    STRING,
+    BOOLEAN,
+    INT,
+    FLOAT;
+    protected int intValue;
+  }
+
+  <<deprecated>> public enum GraphQLLiteLiterals {
+    BOOLEAN,
+    FLOAT,
+    ID,
+    INT,
+    REQUIRED,
+    STRING;
+    protected int intValue;
+  }
+
+  package  {
+    public class SchemaSymbol implements graphqllite._symboltable.ICommonGraphQLLiteSymbol, de.monticore.symboltable.IScopeSpanningSymbol {
+      protected String name;
+      protected graphqllite._symboltable.IGraphQLLiteScope enclosingScope;
+      protected Optional<graphqllite._ast.ASTSchema> astNode;
+      protected de.monticore.symboltable.modifiers.AccessModifier accessModifier;
+      protected String fullName;
+      protected String packageName;
+      protected graphqllite._symboltable.IGraphQLLiteScope spannedScope;
+    }
+    public class TypeSymbol extends graphqllite._symboltable.GQLTypeSymbol implements graphqllite._symboltable.ICommonGraphQLLiteSymbol, de.monticore.symboltable.IScopeSpanningSymbol {
+      protected graphqllite._symboltable.IGraphQLLiteScope spannedScope;
+    }
+    public class GQLTypeSymbol implements graphqllite._symboltable.ICommonGraphQLLiteSymbol {
+      protected String name;
+      protected graphqllite._symboltable.IGraphQLLiteScope enclosingScope;
+      protected Optional<graphqllite._ast.ASTGQLType> astNode;
+      protected de.monticore.symboltable.modifiers.AccessModifier accessModifier;
+      protected String fullName;
+      protected String packageName;
+    }
+    public class GraphQLLiteScope implements graphqllite._symboltable.IGraphQLLiteScope {
+      protected com.google.common.collect.LinkedListMultimap<String,graphqllite._symboltable.GQLTypeSymbol> gQLTypeSymbols;
+      protected com.google.common.collect.LinkedListMultimap<String,graphqllite._symboltable.TypeSymbol> typeSymbols;
+      protected com.google.common.collect.LinkedListMultimap<String,graphqllite._symboltable.SchemaSymbol> schemaSymbols;
+      protected boolean gQLTypeSymbolsAlreadyResolved;
+      protected boolean typeSymbolsAlreadyResolved;
+      protected boolean schemaSymbolsAlreadyResolved;
+      protected graphqllite._symboltable.IGraphQLLiteScope enclosingScope;
+      protected Optional<de.monticore.symboltable.IScopeSpanningSymbol> spanningSymbol;
+      protected boolean shadowing;
+      protected boolean exportingSymbols;
+      protected boolean ordered;
+      protected Optional<String> name;
+      protected Optional<de.monticore.ast.ASTNode> astNode;
+      protected List<graphqllite._symboltable.IGraphQLLiteScope> subScopes;
+    }
+    public class SchemaSymbolSurrogate extends graphqllite._symboltable.SchemaSymbol {
+      protected Optional<graphqllite._symboltable.SchemaSymbol> delegate;
+    }
+    public class TypeSymbolSurrogate extends graphqllite._symboltable.TypeSymbol {
+      protected Optional<graphqllite._symboltable.TypeSymbol> delegate;
+    }
+    public class GQLTypeSymbolSurrogate extends graphqllite._symboltable.GQLTypeSymbol {
+      protected Optional<graphqllite._symboltable.GQLTypeSymbol> delegate;
+    }
+    public class SchemaSymbolDeSer implements de.monticore.symboltable.serialization.ISymbolDeSer<graphqllite._symboltable.SchemaSymbol, graphqllite._symboltable.GraphQLLiteSymbols2Json>;
+    public class TypeSymbolDeSer implements de.monticore.symboltable.serialization.ISymbolDeSer<graphqllite._symboltable.TypeSymbol, graphqllite._symboltable.GraphQLLiteSymbols2Json>;
+    public class GQLTypeSymbolDeSer implements de.monticore.symboltable.serialization.ISymbolDeSer<graphqllite._symboltable.GQLTypeSymbol, graphqllite._symboltable.GraphQLLiteSymbols2Json>;
+    public class GraphQLLiteSymbols2Json implements graphqllite._visitor.GraphQLLiteVisitor2 {
+      protected de.monticore.symboltable.serialization.IDeSer scopeDeSer;
+      protected graphqllite._symboltable.SchemaSymbolDeSer schemaSymbolDeSer;
+      protected graphqllite._symboltable.TypeSymbolDeSer typeSymbolDeSer;
+      protected graphqllite._symboltable.GQLTypeSymbolDeSer gQLTypeSymbolDeSer;
+      protected de.monticore.symboltable.serialization.JsonPrinter printer;
+      protected graphqllite._visitor.GraphQLLiteTraverser traverser;
+    }
+    public class GraphQLLiteScopesGenitorDelegator {
+      protected Deque<graphqllite._symboltable.IGraphQLLiteScope> scopeStack;
+      protected final GraphQLLiteScopesGenitor symbolTable;
+      protected graphqllite._symboltable.IGraphQLLiteGlobalScope globalScope;
+      protected graphqllite._visitor.GraphQLLiteTraverser traverser;
+    }
+    public class GraphQLLiteArtifactScope extends graphqllite._symboltable.GraphQLLiteScope implements graphqllite._symboltable.IGraphQLLiteArtifactScope {
+      protected String packageName;
+      protected List<de.monticore.symboltable.ImportStatement> imports;
+    }
+    public class GraphQLLiteDeSer implements de.monticore.symboltable.serialization.IDeSer<graphqllite._symboltable.IGraphQLLiteScope, graphqllite._symboltable.IGraphQLLiteArtifactScope, graphqllite._symboltable.GraphQLLiteSymbols2Json>;
+    public class GraphQLLiteGlobalScope extends graphqllite._symboltable.GraphQLLiteScope implements graphqllite._symboltable.IGraphQLLiteGlobalScope {
+      protected de.monticore.io.paths.MCPath symbolPath;
+      protected String fileExt;
+      public de.monticore.symboltable.serialization.IDeSer deSer;
+      protected Map<String,de.monticore.symboltable.serialization.ISymbolDeSer> symbolDeSers;
+      protected GraphQLLiteSymbols2Json symbols2Json;
+      protected Set<String> cache;
+      protected List<graphqllite._symboltable.IGQLTypeSymbolResolver> adaptedGQLTypeSymbolResolver;
+      protected List<graphqllite._symboltable.ISchemaSymbolResolver> adaptedSchemaSymbolResolver;
+      protected List<graphqllite._symboltable.ITypeSymbolResolver> adaptedTypeSymbolResolver;
+    }
+    public class GraphQLLiteScopesGenitor implements graphqllite._visitor.GraphQLLiteVisitor2, graphqllite._visitor.GraphQLLiteHandler {
+      protected Deque<graphqllite._symboltable.IGraphQLLiteScope> scopeStack;
+      protected graphqllite._visitor.GraphQLLiteTraverser traverser;
+      protected graphqllite._symboltable.IGraphQLLiteScope firstCreatedScope;
+    }
+  }
+
+}

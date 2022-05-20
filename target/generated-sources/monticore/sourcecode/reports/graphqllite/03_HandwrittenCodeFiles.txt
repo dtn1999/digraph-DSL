@@ -1,0 +1,10 @@
+========================================================== Used Handwritten Code Files
+#Counts   File Name
+1x        /Users/esentri/bitbucket/dsl-demo/digraph/src/main/java/graphqllite/_ast/ASTSchema.java
+1x        /Users/esentri/bitbucket/dsl-demo/digraph/src/main/java/graphqllite/GraphQLLiteTool.java
+1x        /Users/esentri/bitbucket/dsl-demo/digraph/src/main/java/graphqllite/_ast/ASTGQLType.java
+1x        /Users/esentri/bitbucket/dsl-demo/digraph/src/main/java/graphqllite/_ast/ASTGQLTypeAttribute.java
+========================================================== Unused Handwritten Code Files
+========================================================== Explanation
+   - Shows used and unused HWC files
+(EOF)

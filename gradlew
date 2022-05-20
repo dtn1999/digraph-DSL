@@ -1,5 +1,9 @@
 #!/usr/bin/env sh
+<<<<<<< HEAD
 
+=======
+# (c) https://github.com/MontiCore/monticore
+>>>>>>> a6445e8 (first commit)
 #
 # Copyright 2015 the original author or authors.
 #
@@ -72,7 +76,11 @@ case "`uname`" in
   Darwin* )
     darwin=true
     ;;
+<<<<<<< HEAD
   MSYS* | MINGW* )
+=======
+  MINGW* )
+>>>>>>> a6445e8 (first commit)
     msys=true
     ;;
   NONSTOP* )
@@ -130,7 +138,11 @@ fi
 if [ "$cygwin" = "true" -o "$msys" = "true" ] ; then
     APP_HOME=`cygpath --path --mixed "$APP_HOME"`
     CLASSPATH=`cygpath --path --mixed "$CLASSPATH"`
+<<<<<<< HEAD
 
+=======
+    
+>>>>>>> a6445e8 (first commit)
     JAVACMD=`cygpath --unix "$JAVACMD"`
 
     # We build the pattern for arguments to be converted via cygpath

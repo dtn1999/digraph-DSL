@@ -1,0 +1,37 @@
+// (c) https://github.com/MontiCore/monticore
+
+grammar GraphQLLite extends de.monticore.literals.MCCommonLiterals {
+    start Schema;
+
+    scope symbol Schema =
+    "schema" Name "{"
+        ( GQLType )*
+    "}";
+
+    interface symbol GQLType = Name;
+
+    Scalar implements GQLType = "scalar" Name;
+
+    // interface scope symbol GQLScopedType extends GQLType= Name;
+
+    symbol scope Type implements GQLType =
+    "type" Name "{"
+        ( attributes:GQLTypeAttribute )+
+    "}";
+
+
+    interface AttributeType;
+
+    GQLTypeAttribute = attributeName:Name ":" type:AttributeType ;
+
+    SimpleAttributeType implements AttributeType = (type:Name@GQLType | buildInScalar:BUILDINSCALAR) [required:"!"]?;
+
+    CollectionAttributeType implements AttributeType = "[" SimpleAttributeType "]" [required:"!"]?;
+
+    enum BUILDINSCALAR =
+        "ID" |
+        "String" |
+        "Boolean" |
+        "Int" |
+        "Float";
+}

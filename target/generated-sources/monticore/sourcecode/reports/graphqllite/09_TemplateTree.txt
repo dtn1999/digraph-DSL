@@ -1,0 +1,5046 @@
+========================================================== Protocol
+OP set value (key, value): 
+OP set value (key, value): 
++--Parser.ftl
+|  +--ParserHeader.ftl
++--Lexer.ftl
+|  +--LexerMember.ftl
+OP set value (key, value): 
+OP set value (key, value): 
+OP set value (key, value): 
++--Class.ftl
+|  +--ASHP: "package graphqllite._parser;"
+|  +--Imports.ftl
+|  +--ASHP: ""
+|  +--Method.ftl
+|  |  +--ATHP: Create.ftl
+|  |  +--Create.ftl
+|  +--Method.ftl
+|  |  +--ATHP: CreateReader.ftl
+|  |  +--CreateReader.ftl
+|  +--Method.ftl
+|  |  +--ATHP: Parse.ftl
+|  |  +--Parse.ftl
+|  +--Method.ftl
+|  |  +--ATHP: ParseReader.ftl
+|  |  +--ParseReader.ftl
+|  +--Method.ftl
+|  |  +--ATHP: ParseString.ftl
+|  |  +--ParseString.ftl
+|  +--Method.ftl
+|  |  +--ATHP: ParseRule.ftl
+|  |  +--ParseRule.ftl
+|  +--Method.ftl
+|  |  +--ATHP: ParseRuleReader.ftl
+|  |  +--ParseRuleReader.ftl
+|  +--Method.ftl
+|  |  +--ATHP: ParseRuleString.ftl
+|  |  +--ParseRuleString.ftl
+|  +--Method.ftl
+|  |  +--ATHP: ParseRule.ftl
+|  |  +--ParseRule.ftl
+|  +--Method.ftl
+|  |  +--ATHP: ParseRuleReader.ftl
+|  |  +--ParseRuleReader.ftl
+|  +--Method.ftl
+|  |  +--ATHP: ParseRuleString.ftl
+|  |  +--ParseRuleString.ftl
+|  +--Method.ftl
+|  |  +--ATHP: ParseRule.ftl
+|  |  +--ParseRule.ftl
+|  +--Method.ftl
+|  |  +--ATHP: ParseRuleReader.ftl
+|  |  +--ParseRuleReader.ftl
+|  +--Method.ftl
+|  |  +--ATHP: ParseRuleString.ftl
+|  |  +--ParseRuleString.ftl
+|  +--Method.ftl
+|  |  +--ATHP: ParseRule.ftl
+|  |  +--ParseRule.ftl
+|  +--Method.ftl
+|  |  +--ATHP: ParseRuleReader.ftl
+|  |  +--ParseRuleReader.ftl
+|  +--Method.ftl
+|  |  +--ATHP: ParseRuleString.ftl
+|  |  +--ParseRuleString.ftl
+|  +--Method.ftl
+|  |  +--ATHP: ParseRule.ftl
+|  |  +--ParseRule.ftl
+|  +--Method.ftl
+|  |  +--ATHP: ParseRuleReader.ftl
+|  |  +--ParseRuleReader.ftl
+|  +--Method.ftl
+|  |  +--ATHP: ParseRuleString.ftl
+|  |  +--ParseRuleString.ftl
+|  +--Method.ftl
+|  |  +--ATHP: ParseRule.ftl
+|  |  +--ParseRule.ftl
+|  +--Method.ftl
+|  |  +--ATHP: ParseRuleReader.ftl
+|  |  +--ParseRuleReader.ftl
+|  +--Method.ftl
+|  |  +--ATHP: ParseRuleString.ftl
+|  |  +--ParseRuleString.ftl
+|  +--Method.ftl
+|  |  +--ATHP: ParseRule.ftl
+|  |  +--ParseRule.ftl
+|  +--Method.ftl
+|  |  +--ATHP: ParseRuleReader.ftl
+|  |  +--ParseRuleReader.ftl
+|  +--Method.ftl
+|  |  +--ATHP: ParseRuleString.ftl
+|  |  +--ParseRuleString.ftl
+|  +--Method.ftl
+|  |  +--ATHP: ParseRule.ftl
+|  |  +--ParseRule.ftl
+|  +--Method.ftl
+|  |  +--ATHP: ParseRuleReader.ftl
+|  |  +--ParseRuleReader.ftl
+|  +--Method.ftl
+|  |  +--ATHP: ParseRuleString.ftl
+|  |  +--ParseRuleString.ftl
+|  +--Method.ftl
+|  |  +--ATHP: ParseRule.ftl
+|  |  +--ParseRule.ftl
+|  +--Method.ftl
+|  |  +--ATHP: ParseRuleReader.ftl
+|  |  +--ParseRuleReader.ftl
+|  +--Method.ftl
+|  |  +--ATHP: ParseRuleString.ftl
+|  |  +--ParseRuleString.ftl
+|  +--Method.ftl
+|  |  +--ATHP: ParseRule.ftl
+|  |  +--ParseRule.ftl
+|  +--Method.ftl
+|  |  +--ATHP: ParseRuleReader.ftl
+|  |  +--ParseRuleReader.ftl
+|  +--Method.ftl
+|  |  +--ATHP: ParseRuleString.ftl
+|  |  +--ParseRuleString.ftl
+|  +--Method.ftl
+|  |  +--ATHP: ParseRule.ftl
+|  |  +--ParseRule.ftl
+|  +--Method.ftl
+|  |  +--ATHP: ParseRuleReader.ftl
+|  |  +--ParseRuleReader.ftl
+|  +--Method.ftl
+|  |  +--ATHP: ParseRuleString.ftl
+|  |  +--ParseRuleString.ftl
+|  +--Method.ftl
+|  |  +--ATHP: ParseRule.ftl
+|  |  +--ParseRule.ftl
+|  +--Method.ftl
+|  |  +--ATHP: ParseRuleReader.ftl
+|  |  +--ParseRuleReader.ftl
+|  +--Method.ftl
+|  |  +--ATHP: ParseRuleString.ftl
+|  |  +--ParseRuleString.ftl
+|  +--Method.ftl
+|  |  +--ATHP: ParseRule.ftl
+|  |  +--ParseRule.ftl
+|  +--Method.ftl
+|  |  +--ATHP: ParseRuleReader.ftl
+|  |  +--ParseRuleReader.ftl
+|  +--Method.ftl
+|  |  +--ATHP: ParseRuleString.ftl
+|  |  +--ParseRuleString.ftl
+|  +--Method.ftl
+|  |  +--ATHP: ParseRule.ftl
+|  |  +--ParseRule.ftl
+|  +--Method.ftl
+|  |  +--ATHP: ParseRuleReader.ftl
+|  |  +--ParseRuleReader.ftl
+|  +--Method.ftl
+|  |  +--ATHP: ParseRuleString.ftl
+|  |  +--ParseRuleString.ftl
+|  +--Method.ftl
+|  |  +--ATHP: ParseRule.ftl
+|  |  +--ParseRule.ftl
+|  +--Method.ftl
+|  |  +--ATHP: ParseRuleReader.ftl
+|  |  +--ParseRuleReader.ftl
+|  +--Method.ftl
+|  |  +--ATHP: ParseRuleString.ftl
+|  |  +--ParseRuleString.ftl
+|  +--Method.ftl
+|  |  +--ATHP: ParseRule.ftl
+|  |  +--ParseRule.ftl
+|  +--Method.ftl
+|  |  +--ATHP: ParseRuleReader.ftl
+|  |  +--ParseRuleReader.ftl
+|  +--Method.ftl
+|  |  +--ATHP: ParseRuleString.ftl
+|  |  +--ParseRuleString.ftl
+|  +--Method.ftl
+|  |  +--ATHP: ParseRule.ftl
+|  |  +--ParseRule.ftl
+|  +--Method.ftl
+|  |  +--ATHP: ParseRuleReader.ftl
+|  |  +--ParseRuleReader.ftl
+|  +--Method.ftl
+|  |  +--ATHP: ParseRuleString.ftl
+|  |  +--ParseRuleString.ftl
+|  +--Method.ftl
+|  |  +--ATHP: ParseRule.ftl
+|  |  +--ParseRule.ftl
+|  +--Method.ftl
+|  |  +--ATHP: ParseRuleReader.ftl
+|  |  +--ParseRuleReader.ftl
+|  +--Method.ftl
+|  |  +--ATHP: ParseRuleString.ftl
+|  |  +--ParseRuleString.ftl
+|  +--Method.ftl
+|  |  +--ATHP: ParseRule.ftl
+|  |  +--ParseRule.ftl
+|  +--Method.ftl
+|  |  +--ATHP: ParseRuleReader.ftl
+|  |  +--ParseRuleReader.ftl
+|  +--Method.ftl
+|  |  +--ATHP: ParseRuleString.ftl
+|  |  +--ParseRuleString.ftl
+|  +--Method.ftl
+|  |  +--ATHP: ParseRule.ftl
+|  |  +--ParseRule.ftl
+|  +--Method.ftl
+|  |  +--ATHP: ParseRuleReader.ftl
+|  |  +--ParseRuleReader.ftl
+|  +--Method.ftl
+|  |  +--ATHP: ParseRuleString.ftl
+|  |  +--ParseRuleString.ftl
+|  +--Method.ftl
+|  |  +--ATHP: ParseRule.ftl
+|  |  +--ParseRule.ftl
+|  +--Method.ftl
+|  |  +--ATHP: ParseRuleReader.ftl
+|  |  +--ParseRuleReader.ftl
+|  +--Method.ftl
+|  |  +--ATHP: ParseRuleString.ftl
+|  |  +--ParseRuleString.ftl
+|  +--Method.ftl
+|  |  +--ATHP: ParseRule.ftl
+|  |  +--ParseRule.ftl
+|  +--Method.ftl
+|  |  +--ATHP: ParseRuleReader.ftl
+|  |  +--ParseRuleReader.ftl
+|  +--Method.ftl
+|  |  +--ATHP: ParseRuleString.ftl
+|  |  +--ParseRuleString.ftl
+|  +--Method.ftl
+|  |  +--ATHP: ParseRule.ftl
+|  |  +--ParseRule.ftl
+|  +--Method.ftl
+|  |  +--ATHP: ParseRuleReader.ftl
+|  |  +--ParseRuleReader.ftl
+|  +--Method.ftl
+|  |  +--ATHP: ParseRuleString.ftl
+|  |  +--ParseRuleString.ftl
+|  +--Method.ftl
+|  |  +--ATHP: ParseRule.ftl
+|  |  +--ParseRule.ftl
+|  +--Method.ftl
+|  |  +--ATHP: ParseRuleReader.ftl
+|  |  +--ParseRuleReader.ftl
+|  +--Method.ftl
+|  |  +--ATHP: ParseRuleString.ftl
+|  |  +--ParseRuleString.ftl
+OP set value (key, value): 
+OP set value (key, value): 
+OP set value (key, value): 
++--Class.ftl
+|  +--ASHP: "package graphqllite._ast;"
+|  +--Imports.ftl
+|  +--ASHP: ""
+|  +--Attribute.ftl
+|  |  +--Value.ftl
+|  +--Attribute.ftl
+|  |  +--ASHP: "= new java.util.ArrayList<>()"
+|  +--Attribute.ftl
+|  |  +--ASHP: "= Optional.empty()"
+|  +--Attribute.ftl
+|  |  +--Value.ftl
+|  +--Attribute.ftl
+|  |  +--Value.ftl
+|  +--Constructor.ftl
+|  |  +--EmptyBody.ftl
+|  +--Method.ftl
+|  |  +--ASHP: " return deepEquals(o, true);"
+|  +--Method.ftl
+|  |  +--ATHP: DeepEqualsWithOrder.ftl
+|  |  +--DeepEqualsWithOrder.ftl
+|  +--Method.ftl
+|  |  +--ASHP: " return deepEqualsWithComments(o, true);"
+|  +--Method.ftl
+|  |  +--ATHP: DeepEqualsWithComments.ftl
+|  |  +--DeepEqualsWithComments.ftl
+|  +--Method.ftl
+|  |  +--ATHP: EqualAttributes.ftl
+|  |  +--EqualAttributes.ftl
+|  +--Method.ftl
+|  |  +--ATHP: EqualsWithComments.ftl
+|  |  +--EqualsWithComments.ftl
+|  +--Method.ftl
+|  |  +--ASHP: " return deepClone(_construct());"
+|  +--Method.ftl
+|  |  +--ATHP: DeepCloneWithParameters.ftl
+|  |  +--DeepCloneWithParameters.ftl
+|  +--Method.ftl
+|  |  +--ATHP: Get.ftl
+|  |  +--Get.ftl
+|  +--Method.ftl
+|  |  +--ATHP: MethodDelegate.ftl
+|  |  +--MethodDelegate.ftl
+|  +--Method.ftl
+|  |  +--ATHP: MethodDelegate.ftl
+|  |  +--MethodDelegate.ftl
+|  +--Method.ftl
+|  |  +--ATHP: MethodDelegate.ftl
+|  |  +--MethodDelegate.ftl
+|  +--Method.ftl
+|  |  +--ATHP: MethodDelegate.ftl
+|  |  +--MethodDelegate.ftl
+|  +--Method.ftl
+|  |  +--ATHP: MethodDelegate.ftl
+|  |  +--MethodDelegate.ftl
+|  +--Method.ftl
+|  |  +--ATHP: MethodDelegate.ftl
+|  |  +--MethodDelegate.ftl
+|  +--Method.ftl
+|  |  +--ATHP: MethodDelegate.ftl
+|  |  +--MethodDelegate.ftl
+|  +--Method.ftl
+|  |  +--ATHP: MethodDelegate.ftl
+|  |  +--MethodDelegate.ftl
+|  +--Method.ftl
+|  |  +--ATHP: MethodDelegate.ftl
+|  |  +--MethodDelegate.ftl
+|  +--Method.ftl
+|  |  +--ATHP: MethodDelegate.ftl
+|  |  +--MethodDelegate.ftl
+|  +--Method.ftl
+|  |  +--ATHP: MethodDelegate.ftl
+|  |  +--MethodDelegate.ftl
+|  +--Method.ftl
+|  |  +--ATHP: MethodDelegate.ftl
+|  |  +--MethodDelegate.ftl
+|  +--Method.ftl
+|  |  +--ATHP: MethodDelegate.ftl
+|  |  +--MethodDelegate.ftl
+|  +--Method.ftl
+|  |  +--ATHP: MethodDelegate.ftl
+|  |  +--MethodDelegate.ftl
+|  +--Method.ftl
+|  |  +--ATHP: MethodDelegate.ftl
+|  |  +--MethodDelegate.ftl
+|  +--Method.ftl
+|  |  +--ATHP: MethodDelegate.ftl
+|  |  +--MethodDelegate.ftl
+|  +--Method.ftl
+|  |  +--ATHP: MethodDelegate.ftl
+|  |  +--MethodDelegate.ftl
+|  +--Method.ftl
+|  |  +--ATHP: MethodDelegate.ftl
+|  |  +--MethodDelegate.ftl
+|  +--Method.ftl
+|  |  +--ATHP: Get.ftl
+|  |  +--Get.ftl
+|  +--Method.ftl
+|  |  +--ATHP: Set.ftl
+|  |  +--Set.ftl
+|  +--Method.ftl
+|  |  +--ATHP: MethodDelegate.ftl
+|  |  +--MethodDelegate.ftl
+|  +--Method.ftl
+|  |  +--ATHP: MethodDelegate.ftl
+|  |  +--MethodDelegate.ftl
+|  +--Method.ftl
+|  |  +--ATHP: MethodDelegate.ftl
+|  |  +--MethodDelegate.ftl
+|  +--Method.ftl
+|  |  +--ATHP: MethodDelegate.ftl
+|  |  +--MethodDelegate.ftl
+|  +--Method.ftl
+|  |  +--ATHP: MethodDelegate.ftl
+|  |  +--MethodDelegate.ftl
+|  +--Method.ftl
+|  |  +--ATHP: MethodDelegate.ftl
+|  |  +--MethodDelegate.ftl
+|  +--Method.ftl
+|  |  +--ATHP: MethodDelegate.ftl
+|  |  +--MethodDelegate.ftl
+|  +--Method.ftl
+|  |  +--ATHP: MethodDelegate.ftl
+|  |  +--MethodDelegate.ftl
+|  +--Method.ftl
+|  |  +--ATHP: MethodDelegate.ftl
+|  |  +--MethodDelegate.ftl
+|  +--Method.ftl
+|  |  +--ATHP: MethodDelegate.ftl
+|  |  +--MethodDelegate.ftl
+|  +--Method.ftl
+|  |  +--ATHP: MethodDelegate.ftl
+|  |  +--MethodDelegate.ftl
+|  +--Method.ftl
+|  |  +--ATHP: MethodDelegate.ftl
+|  |  +--MethodDelegate.ftl
+|  +--Method.ftl
+|  |  +--ATHP: MethodDelegate.ftl
+|  |  +--MethodDelegate.ftl
+|  +--Method.ftl
+|  |  +--ATHP: MethodDelegate.ftl
+|  |  +--MethodDelegate.ftl
+|  +--Method.ftl
+|  |  +--ATHP: Set.ftl
+|  |  +--Set.ftl
+|  +--Method.ftl
+|  |  +--ATHP: Accept.ftl
+|  |  +--Accept.ftl
+|  +--Method.ftl
+|  |  +--ATHP: AcceptSuper.ftl
+|  |  +--AcceptSuper.ftl
+|  +--Method.ftl
+|  |  +--ATHP: AcceptSuper.ftl
+|  |  +--AcceptSuper.ftl
+|  +--Method.ftl
+|  |  +--ATHP: AcceptSuper.ftl
+|  |  +--AcceptSuper.ftl
+|  +--Method.ftl
+|  |  +--ATHP: AcceptSuper.ftl
+|  |  +--AcceptSuper.ftl
+|  +--Method.ftl
+|  |  +--ASHP: "return graphqllite.GraphQLLiteMill.schemaBuilder().uncheckedBuild();"
+|  +--Method.ftl
+|  |  +--ATHP: Get4Opt.ftl
+|  |  +--Get4Opt.ftl
+|  +--Method.ftl
+|  |  +--ATHP: IsPresent4Opt.ftl
+|  |  +--IsPresent4Opt.ftl
+|  +--Method.ftl
+|  |  +--ATHP: Set4Opt.ftl
+|  |  +--Set4Opt.ftl
+|  +--Method.ftl
+|  |  +--ATHP: SetAbsent.ftl
+|  |  +--SetAbsent.ftl
+|  +--Method.ftl
+|  |  +--ATHP: Get.ftl
+|  |  +--Get.ftl
+|  +--Method.ftl
+|  |  +--ATHP: Set.ftl
+|  |  +--Set.ftl
+|  +--Method.ftl
+|  |  +--ATHP: Get.ftl
+|  |  +--Get.ftl
+|  +--Method.ftl
+|  |  +--ATHP: Set.ftl
+|  |  +--Set.ftl
+|  +--Method.ftl
+|  |  +--ATHP: InheritedSetEnclosingScope.ftl
+|  |  +--InheritedSetEnclosingScope.ftl
+|  +--Method.ftl
+|  |  +--ATHP: InheritedSetEnclosingScope.ftl
+|  |  +--InheritedSetEnclosingScope.ftl
+|  +--Method.ftl
+|  |  +--ATHP: InheritedSetEnclosingScope.ftl
+|  |  +--InheritedSetEnclosingScope.ftl
++--Class.ftl
+|  +--ASHP: "package graphqllite._ast;"
+|  +--Imports.ftl
+|  +--ASHP: ""
+|  +--Attribute.ftl
+|  |  +--Value.ftl
+|  +--Attribute.ftl
+|  |  +--ASHP: "= Optional.empty()"
+|  +--Attribute.ftl
+|  |  +--Value.ftl
+|  +--Constructor.ftl
+|  |  +--EmptyBody.ftl
+|  +--Method.ftl
+|  |  +--ASHP: " return deepEquals(o, true);"
+|  +--Method.ftl
+|  |  +--ATHP: DeepEqualsWithOrder.ftl
+|  |  +--DeepEqualsWithOrder.ftl
+|  +--Method.ftl
+|  |  +--ASHP: " return deepEqualsWithComments(o, true);"
+|  +--Method.ftl
+|  |  +--ATHP: DeepEqualsWithComments.ftl
+|  |  +--DeepEqualsWithComments.ftl
+|  +--Method.ftl
+|  |  +--ATHP: EqualAttributes.ftl
+|  |  +--EqualAttributes.ftl
+|  +--Method.ftl
+|  |  +--ATHP: EqualsWithComments.ftl
+|  |  +--EqualsWithComments.ftl
+|  +--Method.ftl
+|  |  +--ASHP: " return deepClone(_construct());"
+|  +--Method.ftl
+|  |  +--ATHP: DeepCloneWithParameters.ftl
+|  |  +--DeepCloneWithParameters.ftl
+|  +--Method.ftl
+|  |  +--ATHP: Get.ftl
+|  |  +--Get.ftl
+|  +--Method.ftl
+|  |  +--ATHP: Set.ftl
+|  |  +--Set.ftl
+|  +--Method.ftl
+|  |  +--ATHP: Accept.ftl
+|  |  +--Accept.ftl
+|  +--Method.ftl
+|  |  +--ATHP: AcceptSuper.ftl
+|  |  +--AcceptSuper.ftl
+|  +--Method.ftl
+|  |  +--ATHP: AcceptSuper.ftl
+|  |  +--AcceptSuper.ftl
+|  +--Method.ftl
+|  |  +--ATHP: AcceptSuper.ftl
+|  |  +--AcceptSuper.ftl
+|  +--Method.ftl
+|  |  +--ATHP: AcceptSuper.ftl
+|  |  +--AcceptSuper.ftl
+|  +--Method.ftl
+|  |  +--ASHP: "return graphqllite.GraphQLLiteMill.scalarBuilder().uncheckedBuild();"
+|  +--Method.ftl
+|  |  +--ATHP: Get4Opt.ftl
+|  |  +--Get4Opt.ftl
+|  +--Method.ftl
+|  |  +--ATHP: IsPresent4Opt.ftl
+|  |  +--IsPresent4Opt.ftl
+|  +--Method.ftl
+|  |  +--ATHP: Set4Opt.ftl
+|  |  +--Set4Opt.ftl
+|  +--Method.ftl
+|  |  +--ATHP: SetAbsent.ftl
+|  |  +--SetAbsent.ftl
+|  +--Method.ftl
+|  |  +--ATHP: Get.ftl
+|  |  +--Get.ftl
+|  +--Method.ftl
+|  |  +--ATHP: Set.ftl
+|  |  +--Set.ftl
+|  +--Method.ftl
+|  |  +--ATHP: InheritedSetEnclosingScope.ftl
+|  |  +--InheritedSetEnclosingScope.ftl
+|  +--Method.ftl
+|  |  +--ATHP: InheritedSetEnclosingScope.ftl
+|  |  +--InheritedSetEnclosingScope.ftl
+|  +--Method.ftl
+|  |  +--ATHP: InheritedSetEnclosingScope.ftl
+|  |  +--InheritedSetEnclosingScope.ftl
++--Class.ftl
+|  +--ASHP: "package graphqllite._ast;"
+|  +--Imports.ftl
+|  +--ASHP: ""
+|  +--Attribute.ftl
+|  |  +--ASHP: "= new java.util.ArrayList<>()"
+|  +--Attribute.ftl
+|  |  +--Value.ftl
+|  +--Attribute.ftl
+|  |  +--ASHP: "= Optional.empty()"
+|  +--Attribute.ftl
+|  |  +--Value.ftl
+|  +--Attribute.ftl
+|  |  +--Value.ftl
+|  +--Constructor.ftl
+|  |  +--EmptyBody.ftl
+|  +--Method.ftl
+|  |  +--ASHP: " return deepEquals(o, true);"
+|  +--Method.ftl
+|  |  +--ATHP: DeepEqualsWithOrder.ftl
+|  |  +--DeepEqualsWithOrder.ftl
+|  +--Method.ftl
+|  |  +--ASHP: " return deepEqualsWithComments(o, true);"
+|  +--Method.ftl
+|  |  +--ATHP: DeepEqualsWithComments.ftl
+|  |  +--DeepEqualsWithComments.ftl
+|  +--Method.ftl
+|  |  +--ATHP: EqualAttributes.ftl
+|  |  +--EqualAttributes.ftl
+|  +--Method.ftl
+|  |  +--ATHP: EqualsWithComments.ftl
+|  |  +--EqualsWithComments.ftl
+|  +--Method.ftl
+|  |  +--ASHP: " return deepClone(_construct());"
+|  +--Method.ftl
+|  |  +--ATHP: DeepCloneWithParameters.ftl
+|  |  +--DeepCloneWithParameters.ftl
+|  +--Method.ftl
+|  |  +--ATHP: MethodDelegate.ftl
+|  |  +--MethodDelegate.ftl
+|  +--Method.ftl
+|  |  +--ATHP: MethodDelegate.ftl
+|  |  +--MethodDelegate.ftl
+|  +--Method.ftl
+|  |  +--ATHP: MethodDelegate.ftl
+|  |  +--MethodDelegate.ftl
+|  +--Method.ftl
+|  |  +--ATHP: MethodDelegate.ftl
+|  |  +--MethodDelegate.ftl
+|  +--Method.ftl
+|  |  +--ATHP: MethodDelegate.ftl
+|  |  +--MethodDelegate.ftl
+|  +--Method.ftl
+|  |  +--ATHP: MethodDelegate.ftl
+|  |  +--MethodDelegate.ftl
+|  +--Method.ftl
+|  |  +--ATHP: MethodDelegate.ftl
+|  |  +--MethodDelegate.ftl
+|  +--Method.ftl
+|  |  +--ATHP: MethodDelegate.ftl
+|  |  +--MethodDelegate.ftl
+|  +--Method.ftl
+|  |  +--ATHP: MethodDelegate.ftl
+|  |  +--MethodDelegate.ftl
+|  +--Method.ftl
+|  |  +--ATHP: MethodDelegate.ftl
+|  |  +--MethodDelegate.ftl
+|  +--Method.ftl
+|  |  +--ATHP: MethodDelegate.ftl
+|  |  +--MethodDelegate.ftl
+|  +--Method.ftl
+|  |  +--ATHP: MethodDelegate.ftl
+|  |  +--MethodDelegate.ftl
+|  +--Method.ftl
+|  |  +--ATHP: MethodDelegate.ftl
+|  |  +--MethodDelegate.ftl
+|  +--Method.ftl
+|  |  +--ATHP: MethodDelegate.ftl
+|  |  +--MethodDelegate.ftl
+|  +--Method.ftl
+|  |  +--ATHP: MethodDelegate.ftl
+|  |  +--MethodDelegate.ftl
+|  +--Method.ftl
+|  |  +--ATHP: MethodDelegate.ftl
+|  |  +--MethodDelegate.ftl
+|  +--Method.ftl
+|  |  +--ATHP: MethodDelegate.ftl
+|  |  +--MethodDelegate.ftl
+|  +--Method.ftl
+|  |  +--ATHP: MethodDelegate.ftl
+|  |  +--MethodDelegate.ftl
+|  +--Method.ftl
+|  |  +--ATHP: Get.ftl
+|  |  +--Get.ftl
+|  +--Method.ftl
+|  |  +--ATHP: Get.ftl
+|  |  +--Get.ftl
+|  +--Method.ftl
+|  |  +--ATHP: MethodDelegate.ftl
+|  |  +--MethodDelegate.ftl
+|  +--Method.ftl
+|  |  +--ATHP: MethodDelegate.ftl
+|  |  +--MethodDelegate.ftl
+|  +--Method.ftl
+|  |  +--ATHP: MethodDelegate.ftl
+|  |  +--MethodDelegate.ftl
+|  +--Method.ftl
+|  |  +--ATHP: MethodDelegate.ftl
+|  |  +--MethodDelegate.ftl
+|  +--Method.ftl
+|  |  +--ATHP: MethodDelegate.ftl
+|  |  +--MethodDelegate.ftl
+|  +--Method.ftl
+|  |  +--ATHP: MethodDelegate.ftl
+|  |  +--MethodDelegate.ftl
+|  +--Method.ftl
+|  |  +--ATHP: MethodDelegate.ftl
+|  |  +--MethodDelegate.ftl
+|  +--Method.ftl
+|  |  +--ATHP: MethodDelegate.ftl
+|  |  +--MethodDelegate.ftl
+|  +--Method.ftl
+|  |  +--ATHP: MethodDelegate.ftl
+|  |  +--MethodDelegate.ftl
+|  +--Method.ftl
+|  |  +--ATHP: MethodDelegate.ftl
+|  |  +--MethodDelegate.ftl
+|  +--Method.ftl
+|  |  +--ATHP: MethodDelegate.ftl
+|  |  +--MethodDelegate.ftl
+|  +--Method.ftl
+|  |  +--ATHP: MethodDelegate.ftl
+|  |  +--MethodDelegate.ftl
+|  +--Method.ftl
+|  |  +--ATHP: MethodDelegate.ftl
+|  |  +--MethodDelegate.ftl
+|  +--Method.ftl
+|  |  +--ATHP: MethodDelegate.ftl
+|  |  +--MethodDelegate.ftl
+|  +--Method.ftl
+|  |  +--ATHP: Set.ftl
+|  |  +--Set.ftl
+|  +--Method.ftl
+|  |  +--ATHP: Set.ftl
+|  |  +--Set.ftl
+|  +--Method.ftl
+|  |  +--ATHP: Accept.ftl
+|  |  +--Accept.ftl
+|  +--Method.ftl
+|  |  +--ATHP: AcceptSuper.ftl
+|  |  +--AcceptSuper.ftl
+|  +--Method.ftl
+|  |  +--ATHP: AcceptSuper.ftl
+|  |  +--AcceptSuper.ftl
+|  +--Method.ftl
+|  |  +--ATHP: AcceptSuper.ftl
+|  |  +--AcceptSuper.ftl
+|  +--Method.ftl
+|  |  +--ATHP: AcceptSuper.ftl
+|  |  +--AcceptSuper.ftl
+|  +--Method.ftl
+|  |  +--ASHP: "return graphqllite.GraphQLLiteMill.typeBuilder().uncheckedBuild();"
+|  +--Method.ftl
+|  |  +--ATHP: Get4Opt.ftl
+|  |  +--Get4Opt.ftl
+|  +--Method.ftl
+|  |  +--ATHP: IsPresent4Opt.ftl
+|  |  +--IsPresent4Opt.ftl
+|  +--Method.ftl
+|  |  +--ATHP: Set4Opt.ftl
+|  |  +--Set4Opt.ftl
+|  +--Method.ftl
+|  |  +--ATHP: SetAbsent.ftl
+|  |  +--SetAbsent.ftl
+|  +--Method.ftl
+|  |  +--ATHP: Get.ftl
+|  |  +--Get.ftl
+|  +--Method.ftl
+|  |  +--ATHP: Set.ftl
+|  |  +--Set.ftl
+|  +--Method.ftl
+|  |  +--ATHP: Get.ftl
+|  |  +--Get.ftl
+|  +--Method.ftl
+|  |  +--ATHP: Set.ftl
+|  |  +--Set.ftl
+|  +--Method.ftl
+|  |  +--ATHP: InheritedSetEnclosingScope.ftl
+|  |  +--InheritedSetEnclosingScope.ftl
+|  +--Method.ftl
+|  |  +--ATHP: InheritedSetEnclosingScope.ftl
+|  |  +--InheritedSetEnclosingScope.ftl
+|  +--Method.ftl
+|  |  +--ATHP: InheritedSetEnclosingScope.ftl
+|  |  +--InheritedSetEnclosingScope.ftl
++--Class.ftl
+|  +--ASHP: "package graphqllite._ast;"
+|  +--Imports.ftl
+|  +--ASHP: ""
+|  +--Attribute.ftl
+|  |  +--Value.ftl
+|  +--Attribute.ftl
+|  |  +--Value.ftl
+|  +--Attribute.ftl
+|  |  +--Value.ftl
+|  +--Constructor.ftl
+|  |  +--EmptyBody.ftl
+|  +--Method.ftl
+|  |  +--ASHP: " return deepEquals(o, true);"
+|  +--Method.ftl
+|  |  +--ATHP: DeepEqualsWithOrder.ftl
+|  |  +--DeepEqualsWithOrder.ftl
+|  +--Method.ftl
+|  |  +--ASHP: " return deepEqualsWithComments(o, true);"
+|  +--Method.ftl
+|  |  +--ATHP: DeepEqualsWithComments.ftl
+|  |  +--DeepEqualsWithComments.ftl
+|  +--Method.ftl
+|  |  +--ATHP: EqualAttributes.ftl
+|  |  +--EqualAttributes.ftl
+|  +--Method.ftl
+|  |  +--ATHP: EqualsWithComments.ftl
+|  |  +--EqualsWithComments.ftl
+|  +--Method.ftl
+|  |  +--ASHP: " return deepClone(_construct());"
+|  +--Method.ftl
+|  |  +--ATHP: DeepCloneWithParameters.ftl
+|  |  +--DeepCloneWithParameters.ftl
+|  +--Method.ftl
+|  |  +--ATHP: Get.ftl
+|  |  +--Get.ftl
+|  +--Method.ftl
+|  |  +--ATHP: Get.ftl
+|  |  +--Get.ftl
+|  +--Method.ftl
+|  |  +--ATHP: Set.ftl
+|  |  +--Set.ftl
+|  +--Method.ftl
+|  |  +--ATHP: Set.ftl
+|  |  +--Set.ftl
+|  +--Method.ftl
+|  |  +--ATHP: Accept.ftl
+|  |  +--Accept.ftl
+|  +--Method.ftl
+|  |  +--ATHP: AcceptSuper.ftl
+|  |  +--AcceptSuper.ftl
+|  +--Method.ftl
+|  |  +--ATHP: AcceptSuper.ftl
+|  |  +--AcceptSuper.ftl
+|  +--Method.ftl
+|  |  +--ATHP: AcceptSuper.ftl
+|  |  +--AcceptSuper.ftl
+|  +--Method.ftl
+|  |  +--ATHP: AcceptSuper.ftl
+|  |  +--AcceptSuper.ftl
+|  +--Method.ftl
+|  |  +--ASHP: "return graphqllite.GraphQLLiteMill.gQLTypeAttributeBuilder().unc[...]"
+|  +--Method.ftl
+|  |  +--ATHP: Get.ftl
+|  |  +--Get.ftl
+|  +--Method.ftl
+|  |  +--ATHP: Set.ftl
+|  |  +--Set.ftl
+|  +--Method.ftl
+|  |  +--ATHP: InheritedSetEnclosingScope.ftl
+|  |  +--InheritedSetEnclosingScope.ftl
+|  +--Method.ftl
+|  |  +--ATHP: InheritedSetEnclosingScope.ftl
+|  |  +--InheritedSetEnclosingScope.ftl
+|  +--Method.ftl
+|  |  +--ATHP: InheritedSetEnclosingScope.ftl
+|  |  +--InheritedSetEnclosingScope.ftl
++--Class.ftl
+|  +--ASHP: "package graphqllite._ast;"
+|  +--Imports.ftl
+|  +--ASHP: ""
+|  +--Attribute.ftl
+|  |  +--ASHP: "= Optional.empty()"
+|  +--Attribute.ftl
+|  |  +--ASHP: "= Optional.empty()"
+|  +--Attribute.ftl
+|  |  +--Value.ftl
+|  +--Attribute.ftl
+|  |  +--Value.ftl
+|  +--Attribute.ftl
+|  |  +--Value.ftl
+|  +--Constructor.ftl
+|  |  +--EmptyBody.ftl
+|  +--Method.ftl
+|  |  +--ASHP: " return deepEquals(o, true);"
+|  +--Method.ftl
+|  |  +--ATHP: DeepEqualsWithOrder.ftl
+|  |  +--DeepEqualsWithOrder.ftl
+|  +--Method.ftl
+|  |  +--ASHP: " return deepEqualsWithComments(o, true);"
+|  +--Method.ftl
+|  |  +--ATHP: DeepEqualsWithComments.ftl
+|  |  +--DeepEqualsWithComments.ftl
+|  +--Method.ftl
+|  |  +--ATHP: EqualAttributes.ftl
+|  |  +--EqualAttributes.ftl
+|  +--Method.ftl
+|  |  +--ATHP: EqualsWithComments.ftl
+|  |  +--EqualsWithComments.ftl
+|  +--Method.ftl
+|  |  +--ASHP: " return deepClone(_construct());"
+|  +--Method.ftl
+|  |  +--ATHP: DeepCloneWithParameters.ftl
+|  |  +--DeepCloneWithParameters.ftl
+|  +--Method.ftl
+|  |  +--ATHP: Get4Opt.ftl
+|  |  +--Get4Opt.ftl
+|  +--Method.ftl
+|  |  +--ATHP: IsPresent4Opt.ftl
+|  |  +--IsPresent4Opt.ftl
+|  +--Method.ftl
+|  |  +--ATHP: Get4Opt.ftl
+|  |  +--Get4Opt.ftl
+|  +--Method.ftl
+|  |  +--ATHP: IsPresent4Opt.ftl
+|  |  +--IsPresent4Opt.ftl
+|  +--Method.ftl
+|  |  +--ATHP: Get.ftl
+|  |  +--Get.ftl
+|  +--Method.ftl
+|  |  +--ATHP: Set4Opt.ftl
+|  |  +--Set4Opt.ftl
+|  +--Method.ftl
+|  |  +--ATHP: SetAbsent.ftl
+|  |  +--SetAbsent.ftl
+|  +--Method.ftl
+|  |  +--ATHP: Set4Opt.ftl
+|  |  +--Set4Opt.ftl
+|  +--Method.ftl
+|  |  +--ATHP: SetAbsent.ftl
+|  |  +--SetAbsent.ftl
+|  +--Method.ftl
+|  |  +--ATHP: Set.ftl
+|  |  +--Set.ftl
+|  +--Method.ftl
+|  |  +--ATHP: Accept.ftl
+|  |  +--Accept.ftl
+|  +--Method.ftl
+|  |  +--ATHP: AcceptSuper.ftl
+|  |  +--AcceptSuper.ftl
+|  +--Method.ftl
+|  |  +--ATHP: AcceptSuper.ftl
+|  |  +--AcceptSuper.ftl
+|  +--Method.ftl
+|  |  +--ATHP: AcceptSuper.ftl
+|  |  +--AcceptSuper.ftl
+|  +--Method.ftl
+|  |  +--ATHP: AcceptSuper.ftl
+|  |  +--AcceptSuper.ftl
+|  +--Method.ftl
+|  |  +--ASHP: "return graphqllite.GraphQLLiteMill.simpleAttributeTypeBuilder().[...]"
+|  +--Method.ftl
+|  |  +--ATHP: Get.ftl
+|  |  +--Get.ftl
+|  +--Method.ftl
+|  |  +--ATHP: Set.ftl
+|  |  +--Set.ftl
+|  +--Method.ftl
+|  |  +--ATHP: InheritedSetEnclosingScope.ftl
+|  |  +--InheritedSetEnclosingScope.ftl
+|  +--Method.ftl
+|  |  +--ATHP: InheritedSetEnclosingScope.ftl
+|  |  +--InheritedSetEnclosingScope.ftl
+|  +--Method.ftl
+|  |  +--ATHP: InheritedSetEnclosingScope.ftl
+|  |  +--InheritedSetEnclosingScope.ftl
+|  +--Method.ftl
+|  |  +--ATHP: GetSymbol.ftl
+|  |  +--GetSymbol.ftl
+|  +--Method.ftl
+|  |  +--ATHP: IsPresentSymbol.ftl
+|  |  +--IsPresentSymbol.ftl
+|  +--Method.ftl
+|  |  +--ATHP: UpdateLoader.ftl
+|  |  +--UpdateLoader.ftl
+|  +--Method.ftl
+|  |  +--ATHP: GetDefinition.ftl
+|  |  +--GetDefinition.ftl
+|  +--Method.ftl
+|  |  +--ATHP: IsPresentDefinition.ftl
+|  |  +--IsPresentDefinition.ftl
++--Class.ftl
+|  +--ASHP: "package graphqllite._ast;"
+|  +--Imports.ftl
+|  +--ASHP: ""
+|  +--Attribute.ftl
+|  |  +--Value.ftl
+|  +--Attribute.ftl
+|  |  +--Value.ftl
+|  +--Attribute.ftl
+|  |  +--Value.ftl
+|  +--Constructor.ftl
+|  |  +--EmptyBody.ftl
+|  +--Method.ftl
+|  |  +--ASHP: " return deepEquals(o, true);"
+|  +--Method.ftl
+|  |  +--ATHP: DeepEqualsWithOrder.ftl
+|  |  +--DeepEqualsWithOrder.ftl
+|  +--Method.ftl
+|  |  +--ASHP: " return deepEqualsWithComments(o, true);"
+|  +--Method.ftl
+|  |  +--ATHP: DeepEqualsWithComments.ftl
+|  |  +--DeepEqualsWithComments.ftl
+|  +--Method.ftl
+|  |  +--ATHP: EqualAttributes.ftl
+|  |  +--EqualAttributes.ftl
+|  +--Method.ftl
+|  |  +--ATHP: EqualsWithComments.ftl
+|  |  +--EqualsWithComments.ftl
+|  +--Method.ftl
+|  |  +--ASHP: " return deepClone(_construct());"
+|  +--Method.ftl
+|  |  +--ATHP: DeepCloneWithParameters.ftl
+|  |  +--DeepCloneWithParameters.ftl
+|  +--Method.ftl
+|  |  +--ATHP: Get.ftl
+|  |  +--Get.ftl
+|  +--Method.ftl
+|  |  +--ATHP: Get.ftl
+|  |  +--Get.ftl
+|  +--Method.ftl
+|  |  +--ATHP: Set.ftl
+|  |  +--Set.ftl
+|  +--Method.ftl
+|  |  +--ATHP: Set.ftl
+|  |  +--Set.ftl
+|  +--Method.ftl
+|  |  +--ATHP: Accept.ftl
+|  |  +--Accept.ftl
+|  +--Method.ftl
+|  |  +--ATHP: AcceptSuper.ftl
+|  |  +--AcceptSuper.ftl
+|  +--Method.ftl
+|  |  +--ATHP: AcceptSuper.ftl
+|  |  +--AcceptSuper.ftl
+|  +--Method.ftl
+|  |  +--ATHP: AcceptSuper.ftl
+|  |  +--AcceptSuper.ftl
+|  +--Method.ftl
+|  |  +--ATHP: AcceptSuper.ftl
+|  |  +--AcceptSuper.ftl
+|  +--Method.ftl
+|  |  +--ASHP: "return graphqllite.GraphQLLiteMill.collectionAttributeTypeBuilde[...]"
+|  +--Method.ftl
+|  |  +--ATHP: Get.ftl
+|  |  +--Get.ftl
+|  +--Method.ftl
+|  |  +--ATHP: Set.ftl
+|  |  +--Set.ftl
+|  +--Method.ftl
+|  |  +--ATHP: InheritedSetEnclosingScope.ftl
+|  |  +--InheritedSetEnclosingScope.ftl
+|  +--Method.ftl
+|  |  +--ATHP: InheritedSetEnclosingScope.ftl
+|  |  +--InheritedSetEnclosingScope.ftl
+|  +--Method.ftl
+|  |  +--ATHP: InheritedSetEnclosingScope.ftl
+|  |  +--InheritedSetEnclosingScope.ftl
++--Class.ftl
+|  +--ASHP: "package graphqllite._ast;"
+|  +--Imports.ftl
+|  +--ASHP: ""
+|  +--Attribute.ftl
+|  |  +--Value.ftl
+|  +--Attribute.ftl
+|  |  +--Value.ftl
+|  +--Attribute.ftl
+|  |  +--ASHP: "= new java.util.ArrayList<>()"
+|  +--Constructor.ftl
+|  |  +--ASHP: "this.realBuilder = (ASTSchemaBuilder) this;"
+|  +--Method.ftl
+|  |  +--ATHP: BuildMethod.ftl
+|  |  +--BuildMethod.ftl
+|  |  |  +--ATHP: ASTCNodeInit.ftl
+|  |  |  +--ASTCNodeInit.ftl
+|  +--Method.ftl
+|  |  +--ATHP: IsValidMethod.ftl
+|  |  +--IsValidMethod.ftl
+|  +--Method.ftl
+|  |  +--ATHP: Get.ftl
+|  |  +--Get.ftl
+|  +--Method.ftl
+|  |  +--ATHP: MethodDelegate.ftl
+|  |  +--MethodDelegate.ftl
+|  +--Method.ftl
+|  |  +--ATHP: MethodDelegate.ftl
+|  |  +--MethodDelegate.ftl
+|  +--Method.ftl
+|  |  +--ATHP: MethodDelegate.ftl
+|  |  +--MethodDelegate.ftl
+|  +--Method.ftl
+|  |  +--ATHP: MethodDelegate.ftl
+|  |  +--MethodDelegate.ftl
+|  +--Method.ftl
+|  |  +--ATHP: MethodDelegate.ftl
+|  |  +--MethodDelegate.ftl
+|  +--Method.ftl
+|  |  +--ATHP: MethodDelegate.ftl
+|  |  +--MethodDelegate.ftl
+|  +--Method.ftl
+|  |  +--ATHP: MethodDelegate.ftl
+|  |  +--MethodDelegate.ftl
+|  +--Method.ftl
+|  |  +--ATHP: MethodDelegate.ftl
+|  |  +--MethodDelegate.ftl
+|  +--Method.ftl
+|  |  +--ATHP: MethodDelegate.ftl
+|  |  +--MethodDelegate.ftl
+|  +--Method.ftl
+|  |  +--ATHP: MethodDelegate.ftl
+|  |  +--MethodDelegate.ftl
+|  +--Method.ftl
+|  |  +--ATHP: MethodDelegate.ftl
+|  |  +--MethodDelegate.ftl
+|  +--Method.ftl
+|  |  +--ATHP: MethodDelegate.ftl
+|  |  +--MethodDelegate.ftl
+|  +--Method.ftl
+|  |  +--ATHP: MethodDelegate.ftl
+|  |  +--MethodDelegate.ftl
+|  +--Method.ftl
+|  |  +--ATHP: MethodDelegate.ftl
+|  |  +--MethodDelegate.ftl
+|  +--Method.ftl
+|  |  +--ATHP: MethodDelegate.ftl
+|  |  +--MethodDelegate.ftl
+|  +--Method.ftl
+|  |  +--ATHP: MethodDelegate.ftl
+|  |  +--MethodDelegate.ftl
+|  +--Method.ftl
+|  |  +--ATHP: MethodDelegate.ftl
+|  |  +--MethodDelegate.ftl
+|  +--Method.ftl
+|  |  +--ATHP: MethodDelegate.ftl
+|  |  +--MethodDelegate.ftl
+|  +--Method.ftl
+|  |  +--ATHP: Get.ftl
+|  |  +--Get.ftl
+|  +--Method.ftl
+|  |  +--ATHP: Set4ASTBuilder.ftl
+|  |  +--Set4ASTBuilder.ftl
+|  +--Method.ftl
+|  |  +--ATHP: MethodDelegate4ASTBuilder.ftl
+|  |  +--MethodDelegate4ASTBuilder.ftl
+|  +--Method.ftl
+|  |  +--ATHP: MethodDelegate4ASTBuilder.ftl
+|  |  +--MethodDelegate4ASTBuilder.ftl
+|  +--Method.ftl
+|  |  +--ATHP: MethodDelegate4ASTBuilder.ftl
+|  |  +--MethodDelegate4ASTBuilder.ftl
+|  +--Method.ftl
+|  |  +--ATHP: MethodDelegate4ASTBuilder.ftl
+|  |  +--MethodDelegate4ASTBuilder.ftl
+|  +--Method.ftl
+|  |  +--ATHP: MethodDelegate4ASTBuilder.ftl
+|  |  +--MethodDelegate4ASTBuilder.ftl
+|  +--Method.ftl
+|  |  +--ATHP: MethodDelegate4ASTBuilder.ftl
+|  |  +--MethodDelegate4ASTBuilder.ftl
+|  +--Method.ftl
+|  |  +--ATHP: MethodDelegate4ASTBuilder.ftl
+|  |  +--MethodDelegate4ASTBuilder.ftl
+|  +--Method.ftl
+|  |  +--ATHP: MethodDelegate4ASTBuilder.ftl
+|  |  +--MethodDelegate4ASTBuilder.ftl
+|  +--Method.ftl
+|  |  +--ATHP: MethodDelegate4ASTBuilder.ftl
+|  |  +--MethodDelegate4ASTBuilder.ftl
+|  +--Method.ftl
+|  |  +--ATHP: MethodDelegate4ASTBuilder.ftl
+|  |  +--MethodDelegate4ASTBuilder.ftl
+|  +--Method.ftl
+|  |  +--ATHP: MethodDelegate4ASTBuilder.ftl
+|  |  +--MethodDelegate4ASTBuilder.ftl
+|  +--Method.ftl
+|  |  +--ATHP: MethodDelegate4ASTBuilder.ftl
+|  |  +--MethodDelegate4ASTBuilder.ftl
+|  +--Method.ftl
+|  |  +--ATHP: MethodDelegate4ASTBuilder.ftl
+|  |  +--MethodDelegate4ASTBuilder.ftl
+|  +--Method.ftl
+|  |  +--ATHP: MethodDelegate4ASTBuilder.ftl
+|  |  +--MethodDelegate4ASTBuilder.ftl
+|  +--Method.ftl
+|  |  +--ATHP: Set4ASTBuilder.ftl
+|  |  +--Set4ASTBuilder.ftl
+|  +--Method.ftl
+|  |  +--ATHP: ASTCNodeMethodDelegate.ftl
+|  |  +--ASTCNodeMethodDelegate.ftl
+|  +--Method.ftl
+|  |  +--ATHP: ASTCNodeMethodDelegate.ftl
+|  |  +--ASTCNodeMethodDelegate.ftl
+|  +--Method.ftl
+|  |  +--ATHP: ASTCNodeMethodDelegate.ftl
+|  |  +--ASTCNodeMethodDelegate.ftl
+|  +--Method.ftl
+|  |  +--ATHP: ASTCNodeMethodDelegate.ftl
+|  |  +--ASTCNodeMethodDelegate.ftl
+|  +--Method.ftl
+|  |  +--ATHP: ASTCNodeMethodDelegate.ftl
+|  |  +--ASTCNodeMethodDelegate.ftl
+|  +--Method.ftl
+|  |  +--ATHP: ASTCNodeMethodDelegate.ftl
+|  |  +--ASTCNodeMethodDelegate.ftl
+|  +--Method.ftl
+|  |  +--ATHP: ASTCNodeMethodDelegate.ftl
+|  |  +--ASTCNodeMethodDelegate.ftl
+|  +--Method.ftl
+|  |  +--ATHP: ASTCNodeMethodDelegate.ftl
+|  |  +--ASTCNodeMethodDelegate.ftl
+|  +--Method.ftl
+|  |  +--ATHP: ASTCNodeMethodDelegate.ftl
+|  |  +--ASTCNodeMethodDelegate.ftl
+|  +--Method.ftl
+|  |  +--ATHP: ASTCNodeMethodDelegate.ftl
+|  |  +--ASTCNodeMethodDelegate.ftl
+|  +--Method.ftl
+|  |  +--ATHP: ASTCNodeMethodDelegate.ftl
+|  |  +--ASTCNodeMethodDelegate.ftl
+|  +--Method.ftl
+|  |  +--ATHP: ASTCNodeMethodDelegate.ftl
+|  |  +--ASTCNodeMethodDelegate.ftl
+|  +--Method.ftl
+|  |  +--ATHP: ASTCNodeMethodDelegate.ftl
+|  |  +--ASTCNodeMethodDelegate.ftl
+|  +--Method.ftl
+|  |  +--ATHP: ASTCNodeMethodDelegate.ftl
+|  |  +--ASTCNodeMethodDelegate.ftl
+|  +--Method.ftl
+|  |  +--ATHP: ASTCNodeMethodDelegate.ftl
+|  |  +--ASTCNodeMethodDelegate.ftl
+|  +--Method.ftl
+|  |  +--ATHP: ASTCNodeMethodDelegate.ftl
+|  |  +--ASTCNodeMethodDelegate.ftl
+|  +--Method.ftl
+|  |  +--ATHP: ASTCNodeMethodDelegate.ftl
+|  |  +--ASTCNodeMethodDelegate.ftl
+|  +--Method.ftl
+|  |  +--ATHP: ASTCNodeMethodDelegate.ftl
+|  |  +--ASTCNodeMethodDelegate.ftl
+|  +--Method.ftl
+|  |  +--ATHP: ASTCNodeMethodDelegate.ftl
+|  |  +--ASTCNodeMethodDelegate.ftl
+|  +--Method.ftl
+|  |  +--ATHP: ASTCNodeMethodDelegate.ftl
+|  |  +--ASTCNodeMethodDelegate.ftl
+|  +--Method.ftl
+|  |  +--ATHP: ASTCNodeMethodDelegate.ftl
+|  |  +--ASTCNodeMethodDelegate.ftl
+|  +--Method.ftl
+|  |  +--ATHP: ASTCNodeMethodDelegate.ftl
+|  |  +--ASTCNodeMethodDelegate.ftl
+|  +--Method.ftl
+|  |  +--ATHP: ASTCNodeMethodDelegate.ftl
+|  |  +--ASTCNodeMethodDelegate.ftl
+|  +--Method.ftl
+|  |  +--ATHP: ASTCNodeMethodDelegate.ftl
+|  |  +--ASTCNodeMethodDelegate.ftl
+|  +--Method.ftl
+|  |  +--ATHP: ASTCNodeMethodDelegate.ftl
+|  |  +--ASTCNodeMethodDelegate.ftl
+|  +--Method.ftl
+|  |  +--ATHP: ASTCNodeMethodDelegate.ftl
+|  |  +--ASTCNodeMethodDelegate.ftl
+|  +--Method.ftl
+|  |  +--ATHP: ASTCNodeMethodDelegate.ftl
+|  |  +--ASTCNodeMethodDelegate.ftl
+|  +--Method.ftl
+|  |  +--ATHP: ASTCNodeMethodDelegate.ftl
+|  |  +--ASTCNodeMethodDelegate.ftl
+|  +--Method.ftl
+|  |  +--ATHP: ASTCNodeMethodDelegate.ftl
+|  |  +--ASTCNodeMethodDelegate.ftl
+|  +--Method.ftl
+|  |  +--ATHP: ASTCNodeMethodDelegate.ftl
+|  |  +--ASTCNodeMethodDelegate.ftl
+|  +--Method.ftl
+|  |  +--ATHP: ASTCNodeMethodDelegate.ftl
+|  |  +--ASTCNodeMethodDelegate.ftl
+|  +--Method.ftl
+|  |  +--ATHP: ASTCNodeMethodDelegate.ftl
+|  |  +--ASTCNodeMethodDelegate.ftl
+|  +--Method.ftl
+|  |  +--ATHP: ASTCNodeMethodDelegate.ftl
+|  |  +--ASTCNodeMethodDelegate.ftl
+|  +--Method.ftl
+|  |  +--ATHP: ASTCNodeMethodDelegate.ftl
+|  |  +--ASTCNodeMethodDelegate.ftl
+|  +--Method.ftl
+|  |  +--ATHP: BuildMethod.ftl
+|  |  +--BuildMethod.ftl
+|  |  |  +--ATHP: ASTCNodeInit.ftl
+|  |  |  +--ASTCNodeInit.ftl
++--Class.ftl
+|  +--ASHP: "package graphqllite._ast;"
+|  +--Imports.ftl
+|  +--ASHP: ""
+|  +--Attribute.ftl
+|  |  +--Value.ftl
+|  +--Attribute.ftl
+|  |  +--Value.ftl
+|  +--Constructor.ftl
+|  |  +--ASHP: "this.realBuilder = (ASTScalarBuilder) this;"
+|  +--Method.ftl
+|  |  +--ATHP: BuildMethod.ftl
+|  |  +--BuildMethod.ftl
+|  |  |  +--ATHP: ASTCNodeInit.ftl
+|  |  |  +--ASTCNodeInit.ftl
+|  +--Method.ftl
+|  |  +--ATHP: IsValidMethod.ftl
+|  |  +--IsValidMethod.ftl
+|  +--Method.ftl
+|  |  +--ATHP: Get.ftl
+|  |  +--Get.ftl
+|  +--Method.ftl
+|  |  +--ATHP: Set4ASTBuilder.ftl
+|  |  +--Set4ASTBuilder.ftl
+|  +--Method.ftl
+|  |  +--ATHP: ASTCNodeMethodDelegate.ftl
+|  |  +--ASTCNodeMethodDelegate.ftl
+|  +--Method.ftl
+|  |  +--ATHP: ASTCNodeMethodDelegate.ftl
+|  |  +--ASTCNodeMethodDelegate.ftl
+|  +--Method.ftl
+|  |  +--ATHP: ASTCNodeMethodDelegate.ftl
+|  |  +--ASTCNodeMethodDelegate.ftl
+|  +--Method.ftl
+|  |  +--ATHP: ASTCNodeMethodDelegate.ftl
+|  |  +--ASTCNodeMethodDelegate.ftl
+|  +--Method.ftl
+|  |  +--ATHP: ASTCNodeMethodDelegate.ftl
+|  |  +--ASTCNodeMethodDelegate.ftl
+|  +--Method.ftl
+|  |  +--ATHP: ASTCNodeMethodDelegate.ftl
+|  |  +--ASTCNodeMethodDelegate.ftl
+|  +--Method.ftl
+|  |  +--ATHP: ASTCNodeMethodDelegate.ftl
+|  |  +--ASTCNodeMethodDelegate.ftl
+|  +--Method.ftl
+|  |  +--ATHP: ASTCNodeMethodDelegate.ftl
+|  |  +--ASTCNodeMethodDelegate.ftl
+|  +--Method.ftl
+|  |  +--ATHP: ASTCNodeMethodDelegate.ftl
+|  |  +--ASTCNodeMethodDelegate.ftl
+|  +--Method.ftl
+|  |  +--ATHP: ASTCNodeMethodDelegate.ftl
+|  |  +--ASTCNodeMethodDelegate.ftl
+|  +--Method.ftl
+|  |  +--ATHP: ASTCNodeMethodDelegate.ftl
+|  |  +--ASTCNodeMethodDelegate.ftl
+|  +--Method.ftl
+|  |  +--ATHP: ASTCNodeMethodDelegate.ftl
+|  |  +--ASTCNodeMethodDelegate.ftl
+|  +--Method.ftl
+|  |  +--ATHP: ASTCNodeMethodDelegate.ftl
+|  |  +--ASTCNodeMethodDelegate.ftl
+|  +--Method.ftl
+|  |  +--ATHP: ASTCNodeMethodDelegate.ftl
+|  |  +--ASTCNodeMethodDelegate.ftl
+|  +--Method.ftl
+|  |  +--ATHP: ASTCNodeMethodDelegate.ftl
+|  |  +--ASTCNodeMethodDelegate.ftl
+|  +--Method.ftl
+|  |  +--ATHP: ASTCNodeMethodDelegate.ftl
+|  |  +--ASTCNodeMethodDelegate.ftl
+|  +--Method.ftl
+|  |  +--ATHP: ASTCNodeMethodDelegate.ftl
+|  |  +--ASTCNodeMethodDelegate.ftl
+|  +--Method.ftl
+|  |  +--ATHP: ASTCNodeMethodDelegate.ftl
+|  |  +--ASTCNodeMethodDelegate.ftl
+|  +--Method.ftl
+|  |  +--ATHP: ASTCNodeMethodDelegate.ftl
+|  |  +--ASTCNodeMethodDelegate.ftl
+|  +--Method.ftl
+|  |  +--ATHP: ASTCNodeMethodDelegate.ftl
+|  |  +--ASTCNodeMethodDelegate.ftl
+|  +--Method.ftl
+|  |  +--ATHP: ASTCNodeMethodDelegate.ftl
+|  |  +--ASTCNodeMethodDelegate.ftl
+|  +--Method.ftl
+|  |  +--ATHP: ASTCNodeMethodDelegate.ftl
+|  |  +--ASTCNodeMethodDelegate.ftl
+|  +--Method.ftl
+|  |  +--ATHP: ASTCNodeMethodDelegate.ftl
+|  |  +--ASTCNodeMethodDelegate.ftl
+|  +--Method.ftl
+|  |  +--ATHP: ASTCNodeMethodDelegate.ftl
+|  |  +--ASTCNodeMethodDelegate.ftl
+|  +--Method.ftl
+|  |  +--ATHP: ASTCNodeMethodDelegate.ftl
+|  |  +--ASTCNodeMethodDelegate.ftl
+|  +--Method.ftl
+|  |  +--ATHP: ASTCNodeMethodDelegate.ftl
+|  |  +--ASTCNodeMethodDelegate.ftl
+|  +--Method.ftl
+|  |  +--ATHP: ASTCNodeMethodDelegate.ftl
+|  |  +--ASTCNodeMethodDelegate.ftl
+|  +--Method.ftl
+|  |  +--ATHP: ASTCNodeMethodDelegate.ftl
+|  |  +--ASTCNodeMethodDelegate.ftl
+|  +--Method.ftl
+|  |  +--ATHP: ASTCNodeMethodDelegate.ftl
+|  |  +--ASTCNodeMethodDelegate.ftl
+|  +--Method.ftl
+|  |  +--ATHP: ASTCNodeMethodDelegate.ftl
+|  |  +--ASTCNodeMethodDelegate.ftl
+|  +--Method.ftl
+|  |  +--ATHP: ASTCNodeMethodDelegate.ftl
+|  |  +--ASTCNodeMethodDelegate.ftl
+|  +--Method.ftl
+|  |  +--ATHP: ASTCNodeMethodDelegate.ftl
+|  |  +--ASTCNodeMethodDelegate.ftl
+|  +--Method.ftl
+|  |  +--ATHP: ASTCNodeMethodDelegate.ftl
+|  |  +--ASTCNodeMethodDelegate.ftl
+|  +--Method.ftl
+|  |  +--ATHP: ASTCNodeMethodDelegate.ftl
+|  |  +--ASTCNodeMethodDelegate.ftl
+|  +--Method.ftl
+|  |  +--ATHP: BuildMethod.ftl
+|  |  +--BuildMethod.ftl
+|  |  |  +--ATHP: ASTCNodeInit.ftl
+|  |  |  +--ASTCNodeInit.ftl
++--Class.ftl
+|  +--ASHP: "package graphqllite._ast;"
+|  +--Imports.ftl
+|  +--ASHP: ""
+|  +--Attribute.ftl
+|  |  +--Value.ftl
+|  +--Attribute.ftl
+|  |  +--ASHP: "= new java.util.ArrayList<>()"
+|  +--Attribute.ftl
+|  |  +--Value.ftl
+|  +--Constructor.ftl
+|  |  +--ASHP: "this.realBuilder = (ASTTypeBuilder) this;"
+|  +--Method.ftl
+|  |  +--ATHP: BuildMethod.ftl
+|  |  +--BuildMethod.ftl
+|  |  |  +--ATHP: ASTCNodeInit.ftl
+|  |  |  +--ASTCNodeInit.ftl
+|  +--Method.ftl
+|  |  +--ATHP: IsValidMethod.ftl
+|  |  +--IsValidMethod.ftl
+|  +--Method.ftl
+|  |  +--ATHP: MethodDelegate.ftl
+|  |  +--MethodDelegate.ftl
+|  +--Method.ftl
+|  |  +--ATHP: MethodDelegate.ftl
+|  |  +--MethodDelegate.ftl
+|  +--Method.ftl
+|  |  +--ATHP: MethodDelegate.ftl
+|  |  +--MethodDelegate.ftl
+|  +--Method.ftl
+|  |  +--ATHP: MethodDelegate.ftl
+|  |  +--MethodDelegate.ftl
+|  +--Method.ftl
+|  |  +--ATHP: MethodDelegate.ftl
+|  |  +--MethodDelegate.ftl
+|  +--Method.ftl
+|  |  +--ATHP: MethodDelegate.ftl
+|  |  +--MethodDelegate.ftl
+|  +--Method.ftl
+|  |  +--ATHP: MethodDelegate.ftl
+|  |  +--MethodDelegate.ftl
+|  +--Method.ftl
+|  |  +--ATHP: MethodDelegate.ftl
+|  |  +--MethodDelegate.ftl
+|  +--Method.ftl
+|  |  +--ATHP: MethodDelegate.ftl
+|  |  +--MethodDelegate.ftl
+|  +--Method.ftl
+|  |  +--ATHP: MethodDelegate.ftl
+|  |  +--MethodDelegate.ftl
+|  +--Method.ftl
+|  |  +--ATHP: MethodDelegate.ftl
+|  |  +--MethodDelegate.ftl
+|  +--Method.ftl
+|  |  +--ATHP: MethodDelegate.ftl
+|  |  +--MethodDelegate.ftl
+|  +--Method.ftl
+|  |  +--ATHP: MethodDelegate.ftl
+|  |  +--MethodDelegate.ftl
+|  +--Method.ftl
+|  |  +--ATHP: MethodDelegate.ftl
+|  |  +--MethodDelegate.ftl
+|  +--Method.ftl
+|  |  +--ATHP: MethodDelegate.ftl
+|  |  +--MethodDelegate.ftl
+|  +--Method.ftl
+|  |  +--ATHP: MethodDelegate.ftl
+|  |  +--MethodDelegate.ftl
+|  +--Method.ftl
+|  |  +--ATHP: MethodDelegate.ftl
+|  |  +--MethodDelegate.ftl
+|  +--Method.ftl
+|  |  +--ATHP: MethodDelegate.ftl
+|  |  +--MethodDelegate.ftl
+|  +--Method.ftl
+|  |  +--ATHP: Get.ftl
+|  |  +--Get.ftl
+|  +--Method.ftl
+|  |  +--ATHP: Get.ftl
+|  |  +--Get.ftl
+|  +--Method.ftl
+|  |  +--ATHP: MethodDelegate4ASTBuilder.ftl
+|  |  +--MethodDelegate4ASTBuilder.ftl
+|  +--Method.ftl
+|  |  +--ATHP: MethodDelegate4ASTBuilder.ftl
+|  |  +--MethodDelegate4ASTBuilder.ftl
+|  +--Method.ftl
+|  |  +--ATHP: MethodDelegate4ASTBuilder.ftl
+|  |  +--MethodDelegate4ASTBuilder.ftl
+|  +--Method.ftl
+|  |  +--ATHP: MethodDelegate4ASTBuilder.ftl
+|  |  +--MethodDelegate4ASTBuilder.ftl
+|  +--Method.ftl
+|  |  +--ATHP: MethodDelegate4ASTBuilder.ftl
+|  |  +--MethodDelegate4ASTBuilder.ftl
+|  +--Method.ftl
+|  |  +--ATHP: MethodDelegate4ASTBuilder.ftl
+|  |  +--MethodDelegate4ASTBuilder.ftl
+|  +--Method.ftl
+|  |  +--ATHP: MethodDelegate4ASTBuilder.ftl
+|  |  +--MethodDelegate4ASTBuilder.ftl
+|  +--Method.ftl
+|  |  +--ATHP: MethodDelegate4ASTBuilder.ftl
+|  |  +--MethodDelegate4ASTBuilder.ftl
+|  +--Method.ftl
+|  |  +--ATHP: MethodDelegate4ASTBuilder.ftl
+|  |  +--MethodDelegate4ASTBuilder.ftl
+|  +--Method.ftl
+|  |  +--ATHP: MethodDelegate4ASTBuilder.ftl
+|  |  +--MethodDelegate4ASTBuilder.ftl
+|  +--Method.ftl
+|  |  +--ATHP: MethodDelegate4ASTBuilder.ftl
+|  |  +--MethodDelegate4ASTBuilder.ftl
+|  +--Method.ftl
+|  |  +--ATHP: MethodDelegate4ASTBuilder.ftl
+|  |  +--MethodDelegate4ASTBuilder.ftl
+|  +--Method.ftl
+|  |  +--ATHP: MethodDelegate4ASTBuilder.ftl
+|  |  +--MethodDelegate4ASTBuilder.ftl
+|  +--Method.ftl
+|  |  +--ATHP: MethodDelegate4ASTBuilder.ftl
+|  |  +--MethodDelegate4ASTBuilder.ftl
+|  +--Method.ftl
+|  |  +--ATHP: Set4ASTBuilder.ftl
+|  |  +--Set4ASTBuilder.ftl
+|  +--Method.ftl
+|  |  +--ATHP: Set4ASTBuilder.ftl
+|  |  +--Set4ASTBuilder.ftl
+|  +--Method.ftl
+|  |  +--ATHP: ASTCNodeMethodDelegate.ftl
+|  |  +--ASTCNodeMethodDelegate.ftl
+|  +--Method.ftl
+|  |  +--ATHP: ASTCNodeMethodDelegate.ftl
+|  |  +--ASTCNodeMethodDelegate.ftl
+|  +--Method.ftl
+|  |  +--ATHP: ASTCNodeMethodDelegate.ftl
+|  |  +--ASTCNodeMethodDelegate.ftl
+|  +--Method.ftl
+|  |  +--ATHP: ASTCNodeMethodDelegate.ftl
+|  |  +--ASTCNodeMethodDelegate.ftl
+|  +--Method.ftl
+|  |  +--ATHP: ASTCNodeMethodDelegate.ftl
+|  |  +--ASTCNodeMethodDelegate.ftl
+|  +--Method.ftl
+|  |  +--ATHP: ASTCNodeMethodDelegate.ftl
+|  |  +--ASTCNodeMethodDelegate.ftl
+|  +--Method.ftl
+|  |  +--ATHP: ASTCNodeMethodDelegate.ftl
+|  |  +--ASTCNodeMethodDelegate.ftl
+|  +--Method.ftl
+|  |  +--ATHP: ASTCNodeMethodDelegate.ftl
+|  |  +--ASTCNodeMethodDelegate.ftl
+|  +--Method.ftl
+|  |  +--ATHP: ASTCNodeMethodDelegate.ftl
+|  |  +--ASTCNodeMethodDelegate.ftl
+|  +--Method.ftl
+|  |  +--ATHP: ASTCNodeMethodDelegate.ftl
+|  |  +--ASTCNodeMethodDelegate.ftl
+|  +--Method.ftl
+|  |  +--ATHP: ASTCNodeMethodDelegate.ftl
+|  |  +--ASTCNodeMethodDelegate.ftl
+|  +--Method.ftl
+|  |  +--ATHP: ASTCNodeMethodDelegate.ftl
+|  |  +--ASTCNodeMethodDelegate.ftl
+|  +--Method.ftl
+|  |  +--ATHP: ASTCNodeMethodDelegate.ftl
+|  |  +--ASTCNodeMethodDelegate.ftl
+|  +--Method.ftl
+|  |  +--ATHP: ASTCNodeMethodDelegate.ftl
+|  |  +--ASTCNodeMethodDelegate.ftl
+|  +--Method.ftl
+|  |  +--ATHP: ASTCNodeMethodDelegate.ftl
+|  |  +--ASTCNodeMethodDelegate.ftl
+|  +--Method.ftl
+|  |  +--ATHP: ASTCNodeMethodDelegate.ftl
+|  |  +--ASTCNodeMethodDelegate.ftl
+|  +--Method.ftl
+|  |  +--ATHP: ASTCNodeMethodDelegate.ftl
+|  |  +--ASTCNodeMethodDelegate.ftl
+|  +--Method.ftl
+|  |  +--ATHP: ASTCNodeMethodDelegate.ftl
+|  |  +--ASTCNodeMethodDelegate.ftl
+|  +--Method.ftl
+|  |  +--ATHP: ASTCNodeMethodDelegate.ftl
+|  |  +--ASTCNodeMethodDelegate.ftl
+|  +--Method.ftl
+|  |  +--ATHP: ASTCNodeMethodDelegate.ftl
+|  |  +--ASTCNodeMethodDelegate.ftl
+|  +--Method.ftl
+|  |  +--ATHP: ASTCNodeMethodDelegate.ftl
+|  |  +--ASTCNodeMethodDelegate.ftl
+|  +--Method.ftl
+|  |  +--ATHP: ASTCNodeMethodDelegate.ftl
+|  |  +--ASTCNodeMethodDelegate.ftl
+|  +--Method.ftl
+|  |  +--ATHP: ASTCNodeMethodDelegate.ftl
+|  |  +--ASTCNodeMethodDelegate.ftl
+|  +--Method.ftl
+|  |  +--ATHP: ASTCNodeMethodDelegate.ftl
+|  |  +--ASTCNodeMethodDelegate.ftl
+|  +--Method.ftl
+|  |  +--ATHP: ASTCNodeMethodDelegate.ftl
+|  |  +--ASTCNodeMethodDelegate.ftl
+|  +--Method.ftl
+|  |  +--ATHP: ASTCNodeMethodDelegate.ftl
+|  |  +--ASTCNodeMethodDelegate.ftl
+|  +--Method.ftl
+|  |  +--ATHP: ASTCNodeMethodDelegate.ftl
+|  |  +--ASTCNodeMethodDelegate.ftl
+|  +--Method.ftl
+|  |  +--ATHP: ASTCNodeMethodDelegate.ftl
+|  |  +--ASTCNodeMethodDelegate.ftl
+|  +--Method.ftl
+|  |  +--ATHP: ASTCNodeMethodDelegate.ftl
+|  |  +--ASTCNodeMethodDelegate.ftl
+|  +--Method.ftl
+|  |  +--ATHP: ASTCNodeMethodDelegate.ftl
+|  |  +--ASTCNodeMethodDelegate.ftl
+|  +--Method.ftl
+|  |  +--ATHP: ASTCNodeMethodDelegate.ftl
+|  |  +--ASTCNodeMethodDelegate.ftl
+|  +--Method.ftl
+|  |  +--ATHP: ASTCNodeMethodDelegate.ftl
+|  |  +--ASTCNodeMethodDelegate.ftl
+|  +--Method.ftl
+|  |  +--ATHP: ASTCNodeMethodDelegate.ftl
+|  |  +--ASTCNodeMethodDelegate.ftl
+|  +--Method.ftl
+|  |  +--ATHP: ASTCNodeMethodDelegate.ftl
+|  |  +--ASTCNodeMethodDelegate.ftl
+|  +--Method.ftl
+|  |  +--ATHP: BuildMethod.ftl
+|  |  +--BuildMethod.ftl
+|  |  |  +--ATHP: ASTCNodeInit.ftl
+|  |  |  +--ASTCNodeInit.ftl
++--Class.ftl
+|  +--ASHP: "package graphqllite._ast;"
+|  +--Imports.ftl
+|  +--ASHP: ""
+|  +--Attribute.ftl
+|  |  +--Value.ftl
+|  +--Attribute.ftl
+|  |  +--Value.ftl
+|  +--Attribute.ftl
+|  |  +--Value.ftl
+|  +--Constructor.ftl
+|  |  +--ASHP: "this.realBuilder = (ASTGQLTypeAttributeBuilder) this;"
+|  +--Method.ftl
+|  |  +--ATHP: BuildMethod.ftl
+|  |  +--BuildMethod.ftl
+|  |  |  +--ATHP: ASTCNodeInit.ftl
+|  |  |  +--ASTCNodeInit.ftl
+|  +--Method.ftl
+|  |  +--ATHP: IsValidMethod.ftl
+|  |  +--IsValidMethod.ftl
+|  +--Method.ftl
+|  |  +--ATHP: Get.ftl
+|  |  +--Get.ftl
+|  +--Method.ftl
+|  |  +--ATHP: Get.ftl
+|  |  +--Get.ftl
+|  +--Method.ftl
+|  |  +--ATHP: Set4ASTBuilder.ftl
+|  |  +--Set4ASTBuilder.ftl
+|  +--Method.ftl
+|  |  +--ATHP: Set4ASTBuilder.ftl
+|  |  +--Set4ASTBuilder.ftl
+|  +--Method.ftl
+|  |  +--ATHP: ASTCNodeMethodDelegate.ftl
+|  |  +--ASTCNodeMethodDelegate.ftl
+|  +--Method.ftl
+|  |  +--ATHP: ASTCNodeMethodDelegate.ftl
+|  |  +--ASTCNodeMethodDelegate.ftl
+|  +--Method.ftl
+|  |  +--ATHP: ASTCNodeMethodDelegate.ftl
+|  |  +--ASTCNodeMethodDelegate.ftl
+|  +--Method.ftl
+|  |  +--ATHP: ASTCNodeMethodDelegate.ftl
+|  |  +--ASTCNodeMethodDelegate.ftl
+|  +--Method.ftl
+|  |  +--ATHP: ASTCNodeMethodDelegate.ftl
+|  |  +--ASTCNodeMethodDelegate.ftl
+|  +--Method.ftl
+|  |  +--ATHP: ASTCNodeMethodDelegate.ftl
+|  |  +--ASTCNodeMethodDelegate.ftl
+|  +--Method.ftl
+|  |  +--ATHP: ASTCNodeMethodDelegate.ftl
+|  |  +--ASTCNodeMethodDelegate.ftl
+|  +--Method.ftl
+|  |  +--ATHP: ASTCNodeMethodDelegate.ftl
+|  |  +--ASTCNodeMethodDelegate.ftl
+|  +--Method.ftl
+|  |  +--ATHP: ASTCNodeMethodDelegate.ftl
+|  |  +--ASTCNodeMethodDelegate.ftl
+|  +--Method.ftl
+|  |  +--ATHP: ASTCNodeMethodDelegate.ftl
+|  |  +--ASTCNodeMethodDelegate.ftl
+|  +--Method.ftl
+|  |  +--ATHP: ASTCNodeMethodDelegate.ftl
+|  |  +--ASTCNodeMethodDelegate.ftl
+|  +--Method.ftl
+|  |  +--ATHP: ASTCNodeMethodDelegate.ftl
+|  |  +--ASTCNodeMethodDelegate.ftl
+|  +--Method.ftl
+|  |  +--ATHP: ASTCNodeMethodDelegate.ftl
+|  |  +--ASTCNodeMethodDelegate.ftl
+|  +--Method.ftl
+|  |  +--ATHP: ASTCNodeMethodDelegate.ftl
+|  |  +--ASTCNodeMethodDelegate.ftl
+|  +--Method.ftl
+|  |  +--ATHP: ASTCNodeMethodDelegate.ftl
+|  |  +--ASTCNodeMethodDelegate.ftl
+|  +--Method.ftl
+|  |  +--ATHP: ASTCNodeMethodDelegate.ftl
+|  |  +--ASTCNodeMethodDelegate.ftl
+|  +--Method.ftl
+|  |  +--ATHP: ASTCNodeMethodDelegate.ftl
+|  |  +--ASTCNodeMethodDelegate.ftl
+|  +--Method.ftl
+|  |  +--ATHP: ASTCNodeMethodDelegate.ftl
+|  |  +--ASTCNodeMethodDelegate.ftl
+|  +--Method.ftl
+|  |  +--ATHP: ASTCNodeMethodDelegate.ftl
+|  |  +--ASTCNodeMethodDelegate.ftl
+|  +--Method.ftl
+|  |  +--ATHP: ASTCNodeMethodDelegate.ftl
+|  |  +--ASTCNodeMethodDelegate.ftl
+|  +--Method.ftl
+|  |  +--ATHP: ASTCNodeMethodDelegate.ftl
+|  |  +--ASTCNodeMethodDelegate.ftl
+|  +--Method.ftl
+|  |  +--ATHP: ASTCNodeMethodDelegate.ftl
+|  |  +--ASTCNodeMethodDelegate.ftl
+|  +--Method.ftl
+|  |  +--ATHP: ASTCNodeMethodDelegate.ftl
+|  |  +--ASTCNodeMethodDelegate.ftl
+|  +--Method.ftl
+|  |  +--ATHP: ASTCNodeMethodDelegate.ftl
+|  |  +--ASTCNodeMethodDelegate.ftl
+|  +--Method.ftl
+|  |  +--ATHP: ASTCNodeMethodDelegate.ftl
+|  |  +--ASTCNodeMethodDelegate.ftl
+|  +--Method.ftl
+|  |  +--ATHP: ASTCNodeMethodDelegate.ftl
+|  |  +--ASTCNodeMethodDelegate.ftl
+|  +--Method.ftl
+|  |  +--ATHP: ASTCNodeMethodDelegate.ftl
+|  |  +--ASTCNodeMethodDelegate.ftl
+|  +--Method.ftl
+|  |  +--ATHP: ASTCNodeMethodDelegate.ftl
+|  |  +--ASTCNodeMethodDelegate.ftl
+|  +--Method.ftl
+|  |  +--ATHP: ASTCNodeMethodDelegate.ftl
+|  |  +--ASTCNodeMethodDelegate.ftl
+|  +--Method.ftl
+|  |  +--ATHP: ASTCNodeMethodDelegate.ftl
+|  |  +--ASTCNodeMethodDelegate.ftl
+|  +--Method.ftl
+|  |  +--ATHP: ASTCNodeMethodDelegate.ftl
+|  |  +--ASTCNodeMethodDelegate.ftl
+|  +--Method.ftl
+|  |  +--ATHP: ASTCNodeMethodDelegate.ftl
+|  |  +--ASTCNodeMethodDelegate.ftl
+|  +--Method.ftl
+|  |  +--ATHP: ASTCNodeMethodDelegate.ftl
+|  |  +--ASTCNodeMethodDelegate.ftl
+|  +--Method.ftl
+|  |  +--ATHP: ASTCNodeMethodDelegate.ftl
+|  |  +--ASTCNodeMethodDelegate.ftl
+|  +--Method.ftl
+|  |  +--ATHP: BuildMethod.ftl
+|  |  +--BuildMethod.ftl
+|  |  |  +--ATHP: ASTCNodeInit.ftl
+|  |  |  +--ASTCNodeInit.ftl
++--Class.ftl
+|  +--ASHP: "package graphqllite._ast;"
+|  +--Imports.ftl
+|  +--ASHP: ""
+|  +--Attribute.ftl
+|  |  +--Value.ftl
+|  +--Attribute.ftl
+|  |  +--ASHP: "= Optional.empty()"
+|  +--Attribute.ftl
+|  |  +--ASHP: "= Optional.empty()"
+|  +--Attribute.ftl
+|  |  +--Value.ftl
+|  +--Constructor.ftl
+|  |  +--ASHP: "this.realBuilder = (ASTSimpleAttributeTypeBuilder) this;"
+|  +--Method.ftl
+|  |  +--ATHP: BuildMethod.ftl
+|  |  +--BuildMethod.ftl
+|  |  |  +--ATHP: ASTCNodeInit.ftl
+|  |  |  +--ASTCNodeInit.ftl
+|  +--Method.ftl
+|  |  +--ATHP: IsValidMethod.ftl
+|  |  +--IsValidMethod.ftl
+|  +--Method.ftl
+|  |  +--ATHP: Get4Opt.ftl
+|  |  +--Get4Opt.ftl
+|  +--Method.ftl
+|  |  +--ATHP: IsPresent4Opt.ftl
+|  |  +--IsPresent4Opt.ftl
+|  +--Method.ftl
+|  |  +--ATHP: Get4Opt.ftl
+|  |  +--Get4Opt.ftl
+|  +--Method.ftl
+|  |  +--ATHP: IsPresent4Opt.ftl
+|  |  +--IsPresent4Opt.ftl
+|  +--Method.ftl
+|  |  +--ATHP: Get.ftl
+|  |  +--Get.ftl
+|  +--Method.ftl
+|  |  +--ATHP: Set4ASTBuilderOpt.ftl
+|  |  +--Set4ASTBuilderOpt.ftl
+|  +--Method.ftl
+|  |  +--ATHP: SetAbsent4ASTBuilderOpt.ftl
+|  |  +--SetAbsent4ASTBuilderOpt.ftl
+|  +--Method.ftl
+|  |  +--ATHP: Set4ASTBuilderOpt.ftl
+|  |  +--Set4ASTBuilderOpt.ftl
+|  +--Method.ftl
+|  |  +--ATHP: SetAbsent4ASTBuilderOpt.ftl
+|  |  +--SetAbsent4ASTBuilderOpt.ftl
+|  +--Method.ftl
+|  |  +--ATHP: Set4ASTBuilder.ftl
+|  |  +--Set4ASTBuilder.ftl
+|  +--Method.ftl
+|  |  +--ATHP: ASTCNodeMethodDelegate.ftl
+|  |  +--ASTCNodeMethodDelegate.ftl
+|  +--Method.ftl
+|  |  +--ATHP: ASTCNodeMethodDelegate.ftl
+|  |  +--ASTCNodeMethodDelegate.ftl
+|  +--Method.ftl
+|  |  +--ATHP: ASTCNodeMethodDelegate.ftl
+|  |  +--ASTCNodeMethodDelegate.ftl
+|  +--Method.ftl
+|  |  +--ATHP: ASTCNodeMethodDelegate.ftl
+|  |  +--ASTCNodeMethodDelegate.ftl
+|  +--Method.ftl
+|  |  +--ATHP: ASTCNodeMethodDelegate.ftl
+|  |  +--ASTCNodeMethodDelegate.ftl
+|  +--Method.ftl
+|  |  +--ATHP: ASTCNodeMethodDelegate.ftl
+|  |  +--ASTCNodeMethodDelegate.ftl
+|  +--Method.ftl
+|  |  +--ATHP: ASTCNodeMethodDelegate.ftl
+|  |  +--ASTCNodeMethodDelegate.ftl
+|  +--Method.ftl
+|  |  +--ATHP: ASTCNodeMethodDelegate.ftl
+|  |  +--ASTCNodeMethodDelegate.ftl
+|  +--Method.ftl
+|  |  +--ATHP: ASTCNodeMethodDelegate.ftl
+|  |  +--ASTCNodeMethodDelegate.ftl
+|  +--Method.ftl
+|  |  +--ATHP: ASTCNodeMethodDelegate.ftl
+|  |  +--ASTCNodeMethodDelegate.ftl
+|  +--Method.ftl
+|  |  +--ATHP: ASTCNodeMethodDelegate.ftl
+|  |  +--ASTCNodeMethodDelegate.ftl
+|  +--Method.ftl
+|  |  +--ATHP: ASTCNodeMethodDelegate.ftl
+|  |  +--ASTCNodeMethodDelegate.ftl
+|  +--Method.ftl
+|  |  +--ATHP: ASTCNodeMethodDelegate.ftl
+|  |  +--ASTCNodeMethodDelegate.ftl
+|  +--Method.ftl
+|  |  +--ATHP: ASTCNodeMethodDelegate.ftl
+|  |  +--ASTCNodeMethodDelegate.ftl
+|  +--Method.ftl
+|  |  +--ATHP: ASTCNodeMethodDelegate.ftl
+|  |  +--ASTCNodeMethodDelegate.ftl
+|  +--Method.ftl
+|  |  +--ATHP: ASTCNodeMethodDelegate.ftl
+|  |  +--ASTCNodeMethodDelegate.ftl
+|  +--Method.ftl
+|  |  +--ATHP: ASTCNodeMethodDelegate.ftl
+|  |  +--ASTCNodeMethodDelegate.ftl
+|  +--Method.ftl
+|  |  +--ATHP: ASTCNodeMethodDelegate.ftl
+|  |  +--ASTCNodeMethodDelegate.ftl
+|  +--Method.ftl
+|  |  +--ATHP: ASTCNodeMethodDelegate.ftl
+|  |  +--ASTCNodeMethodDelegate.ftl
+|  +--Method.ftl
+|  |  +--ATHP: ASTCNodeMethodDelegate.ftl
+|  |  +--ASTCNodeMethodDelegate.ftl
+|  +--Method.ftl
+|  |  +--ATHP: ASTCNodeMethodDelegate.ftl
+|  |  +--ASTCNodeMethodDelegate.ftl
+|  +--Method.ftl
+|  |  +--ATHP: ASTCNodeMethodDelegate.ftl
+|  |  +--ASTCNodeMethodDelegate.ftl
+|  +--Method.ftl
+|  |  +--ATHP: ASTCNodeMethodDelegate.ftl
+|  |  +--ASTCNodeMethodDelegate.ftl
+|  +--Method.ftl
+|  |  +--ATHP: ASTCNodeMethodDelegate.ftl
+|  |  +--ASTCNodeMethodDelegate.ftl
+|  +--Method.ftl
+|  |  +--ATHP: ASTCNodeMethodDelegate.ftl
+|  |  +--ASTCNodeMethodDelegate.ftl
+|  +--Method.ftl
+|  |  +--ATHP: ASTCNodeMethodDelegate.ftl
+|  |  +--ASTCNodeMethodDelegate.ftl
+|  +--Method.ftl
+|  |  +--ATHP: ASTCNodeMethodDelegate.ftl
+|  |  +--ASTCNodeMethodDelegate.ftl
+|  +--Method.ftl
+|  |  +--ATHP: ASTCNodeMethodDelegate.ftl
+|  |  +--ASTCNodeMethodDelegate.ftl
+|  +--Method.ftl
+|  |  +--ATHP: ASTCNodeMethodDelegate.ftl
+|  |  +--ASTCNodeMethodDelegate.ftl
+|  +--Method.ftl
+|  |  +--ATHP: ASTCNodeMethodDelegate.ftl
+|  |  +--ASTCNodeMethodDelegate.ftl
+|  +--Method.ftl
+|  |  +--ATHP: ASTCNodeMethodDelegate.ftl
+|  |  +--ASTCNodeMethodDelegate.ftl
+|  +--Method.ftl
+|  |  +--ATHP: ASTCNodeMethodDelegate.ftl
+|  |  +--ASTCNodeMethodDelegate.ftl
+|  +--Method.ftl
+|  |  +--ATHP: ASTCNodeMethodDelegate.ftl
+|  |  +--ASTCNodeMethodDelegate.ftl
+|  +--Method.ftl
+|  |  +--ATHP: ASTCNodeMethodDelegate.ftl
+|  |  +--ASTCNodeMethodDelegate.ftl
+|  +--Method.ftl
+|  |  +--ATHP: BuildMethod.ftl
+|  |  +--BuildMethod.ftl
+|  |  |  +--ATHP: ASTCNodeInit.ftl
+|  |  |  +--ASTCNodeInit.ftl
++--Class.ftl
+|  +--ASHP: "package graphqllite._ast;"
+|  +--Imports.ftl
+|  +--ASHP: ""
+|  +--Attribute.ftl
+|  |  +--Value.ftl
+|  +--Attribute.ftl
+|  |  +--Value.ftl
+|  +--Attribute.ftl
+|  |  +--Value.ftl
+|  +--Constructor.ftl
+|  |  +--ASHP: "this.realBuilder = (ASTCollectionAttributeTypeBuilder) this;"
+|  +--Method.ftl
+|  |  +--ATHP: BuildMethod.ftl
+|  |  +--BuildMethod.ftl
+|  |  |  +--ATHP: ASTCNodeInit.ftl
+|  |  |  +--ASTCNodeInit.ftl
+|  +--Method.ftl
+|  |  +--ATHP: IsValidMethod.ftl
+|  |  +--IsValidMethod.ftl
+|  +--Method.ftl
+|  |  +--ATHP: Get.ftl
+|  |  +--Get.ftl
+|  +--Method.ftl
+|  |  +--ATHP: Get.ftl
+|  |  +--Get.ftl
+|  +--Method.ftl
+|  |  +--ATHP: Set4ASTBuilder.ftl
+|  |  +--Set4ASTBuilder.ftl
+|  +--Method.ftl
+|  |  +--ATHP: Set4ASTBuilder.ftl
+|  |  +--Set4ASTBuilder.ftl
+|  +--Method.ftl
+|  |  +--ATHP: ASTCNodeMethodDelegate.ftl
+|  |  +--ASTCNodeMethodDelegate.ftl
+|  +--Method.ftl
+|  |  +--ATHP: ASTCNodeMethodDelegate.ftl
+|  |  +--ASTCNodeMethodDelegate.ftl
+|  +--Method.ftl
+|  |  +--ATHP: ASTCNodeMethodDelegate.ftl
+|  |  +--ASTCNodeMethodDelegate.ftl
+|  +--Method.ftl
+|  |  +--ATHP: ASTCNodeMethodDelegate.ftl
+|  |  +--ASTCNodeMethodDelegate.ftl
+|  +--Method.ftl
+|  |  +--ATHP: ASTCNodeMethodDelegate.ftl
+|  |  +--ASTCNodeMethodDelegate.ftl
+|  +--Method.ftl
+|  |  +--ATHP: ASTCNodeMethodDelegate.ftl
+|  |  +--ASTCNodeMethodDelegate.ftl
+|  +--Method.ftl
+|  |  +--ATHP: ASTCNodeMethodDelegate.ftl
+|  |  +--ASTCNodeMethodDelegate.ftl
+|  +--Method.ftl
+|  |  +--ATHP: ASTCNodeMethodDelegate.ftl
+|  |  +--ASTCNodeMethodDelegate.ftl
+|  +--Method.ftl
+|  |  +--ATHP: ASTCNodeMethodDelegate.ftl
+|  |  +--ASTCNodeMethodDelegate.ftl
+|  +--Method.ftl
+|  |  +--ATHP: ASTCNodeMethodDelegate.ftl
+|  |  +--ASTCNodeMethodDelegate.ftl
+|  +--Method.ftl
+|  |  +--ATHP: ASTCNodeMethodDelegate.ftl
+|  |  +--ASTCNodeMethodDelegate.ftl
+|  +--Method.ftl
+|  |  +--ATHP: ASTCNodeMethodDelegate.ftl
+|  |  +--ASTCNodeMethodDelegate.ftl
+|  +--Method.ftl
+|  |  +--ATHP: ASTCNodeMethodDelegate.ftl
+|  |  +--ASTCNodeMethodDelegate.ftl
+|  +--Method.ftl
+|  |  +--ATHP: ASTCNodeMethodDelegate.ftl
+|  |  +--ASTCNodeMethodDelegate.ftl
+|  +--Method.ftl
+|  |  +--ATHP: ASTCNodeMethodDelegate.ftl
+|  |  +--ASTCNodeMethodDelegate.ftl
+|  +--Method.ftl
+|  |  +--ATHP: ASTCNodeMethodDelegate.ftl
+|  |  +--ASTCNodeMethodDelegate.ftl
+|  +--Method.ftl
+|  |  +--ATHP: ASTCNodeMethodDelegate.ftl
+|  |  +--ASTCNodeMethodDelegate.ftl
+|  +--Method.ftl
+|  |  +--ATHP: ASTCNodeMethodDelegate.ftl
+|  |  +--ASTCNodeMethodDelegate.ftl
+|  +--Method.ftl
+|  |  +--ATHP: ASTCNodeMethodDelegate.ftl
+|  |  +--ASTCNodeMethodDelegate.ftl
+|  +--Method.ftl
+|  |  +--ATHP: ASTCNodeMethodDelegate.ftl
+|  |  +--ASTCNodeMethodDelegate.ftl
+|  +--Method.ftl
+|  |  +--ATHP: ASTCNodeMethodDelegate.ftl
+|  |  +--ASTCNodeMethodDelegate.ftl
+|  +--Method.ftl
+|  |  +--ATHP: ASTCNodeMethodDelegate.ftl
+|  |  +--ASTCNodeMethodDelegate.ftl
+|  +--Method.ftl
+|  |  +--ATHP: ASTCNodeMethodDelegate.ftl
+|  |  +--ASTCNodeMethodDelegate.ftl
+|  +--Method.ftl
+|  |  +--ATHP: ASTCNodeMethodDelegate.ftl
+|  |  +--ASTCNodeMethodDelegate.ftl
+|  +--Method.ftl
+|  |  +--ATHP: ASTCNodeMethodDelegate.ftl
+|  |  +--ASTCNodeMethodDelegate.ftl
+|  +--Method.ftl
+|  |  +--ATHP: ASTCNodeMethodDelegate.ftl
+|  |  +--ASTCNodeMethodDelegate.ftl
+|  +--Method.ftl
+|  |  +--ATHP: ASTCNodeMethodDelegate.ftl
+|  |  +--ASTCNodeMethodDelegate.ftl
+|  +--Method.ftl
+|  |  +--ATHP: ASTCNodeMethodDelegate.ftl
+|  |  +--ASTCNodeMethodDelegate.ftl
+|  +--Method.ftl
+|  |  +--ATHP: ASTCNodeMethodDelegate.ftl
+|  |  +--ASTCNodeMethodDelegate.ftl
+|  +--Method.ftl
+|  |  +--ATHP: ASTCNodeMethodDelegate.ftl
+|  |  +--ASTCNodeMethodDelegate.ftl
+|  +--Method.ftl
+|  |  +--ATHP: ASTCNodeMethodDelegate.ftl
+|  |  +--ASTCNodeMethodDelegate.ftl
+|  +--Method.ftl
+|  |  +--ATHP: ASTCNodeMethodDelegate.ftl
+|  |  +--ASTCNodeMethodDelegate.ftl
+|  +--Method.ftl
+|  |  +--ATHP: ASTCNodeMethodDelegate.ftl
+|  |  +--ASTCNodeMethodDelegate.ftl
+|  +--Method.ftl
+|  |  +--ATHP: ASTCNodeMethodDelegate.ftl
+|  |  +--ASTCNodeMethodDelegate.ftl
+|  +--Method.ftl
+|  |  +--ATHP: BuildMethod.ftl
+|  |  +--BuildMethod.ftl
+|  |  |  +--ATHP: ASTCNodeInit.ftl
+|  |  |  +--ASTCNodeInit.ftl
++--Class.ftl
+|  +--ASHP: "package graphqllite._ast;"
+|  +--Imports.ftl
+|  +--ASHP: ""
+|  +--Attribute.ftl
+|  |  +--ASHP: "= "GraphQLLite""
+|  +--Attribute.ftl
+|  |  +--ASHP: "= 0"
+|  +--Attribute.ftl
+|  |  +--ASHP: "= 1"
+|  +--Attribute.ftl
+|  |  +--ASHP: "= 2"
+|  +--Attribute.ftl
+|  |  +--ASHP: "= 3"
+|  +--Attribute.ftl
+|  |  +--ASHP: "= 4"
+|  +--Attribute.ftl
+|  |  +--ASHP: "= 5"
+|  +--Attribute.ftl
+|  |  +--ASHP: "= 6"
+|  +--Attribute.ftl
+|  |  +--ASHP: "= {"de.monticore.literals.MCCommonLiterals", "de.monticore.MCBas[...]"
+|  +--Constructor.ftl
+|  |  +--EmptyBody.ftl
+|  +--Method.ftl
+|  |  +--ATHP: GetAllLanguages.ftl
+|  |  +--GetAllLanguages.ftl
++--Interface.ftl
+|  +--ASHP: "package graphqllite._ast;"
+|  +--Imports.ftl
+|  +--ASHP: ""
+|  +--Method.ftl
+|  +--Method.ftl
+|  +--Method.ftl
+|  +--Method.ftl
+|  +--Method.ftl
+|  +--Method.ftl
+|  +--Method.ftl
+|  +--Method.ftl
+|  +--Method.ftl
+|  +--Method.ftl
+|  +--Method.ftl
+|  +--Method.ftl
+|  +--Method.ftl
+|  +--Method.ftl
+|  +--Method.ftl
+|  +--Method.ftl
++--Interface.ftl
+|  +--ASHP: "package graphqllite._ast;"
+|  +--Imports.ftl
+|  +--ASHP: ""
+|  +--Method.ftl
+|  +--Method.ftl
+|  +--Method.ftl
+|  +--Method.ftl
+|  +--Method.ftl
+|  +--Method.ftl
+|  +--Method.ftl
+|  +--Method.ftl
+|  +--Method.ftl
+|  +--Method.ftl
+|  +--Method.ftl
+|  +--Method.ftl
++--Interface.ftl
+|  +--ASHP: "package graphqllite._ast;"
+|  +--Imports.ftl
+|  +--ASHP: ""
+|  +--Method.ftl
++--Enum.ftl
+|  +--ASHP: "package graphqllite._ast;"
+|  +--ASHP: ""
+|  +--EmptyConstants.ftl
+|  |  +--ATHP: Constants.ftl
+|  |  +--Constants.ftl
+|  +--EmptyConstants.ftl
+|  |  +--ATHP: Constants.ftl
+|  |  +--Constants.ftl
+|  +--EmptyConstants.ftl
+|  |  +--ATHP: Constants.ftl
+|  |  +--Constants.ftl
+|  +--EmptyConstants.ftl
+|  |  +--ATHP: Constants.ftl
+|  |  +--Constants.ftl
+|  +--EmptyConstants.ftl
+|  |  +--ATHP: Constants.ftl
+|  |  +--Constants.ftl
+|  +--Attribute.ftl
+|  |  +--Value.ftl
+|  +--Constructor.ftl
+|  |  +--ASHP: "this.intValue = intValue;"
+|  +--Method.ftl
+|  |  +--ATHP: Get.ftl
+|  |  +--Get.ftl
++--Enum.ftl
+|  +--ASHP: "package graphqllite._ast;"
+|  +--ASHP: "@Deprecated"
+|  +--EmptyConstants.ftl
+|  |  +--ATHP: Constants.ftl
+|  |  +--Constants.ftl
+|  +--EmptyConstants.ftl
+|  |  +--ATHP: Constants.ftl
+|  |  +--Constants.ftl
+|  +--EmptyConstants.ftl
+|  |  +--ATHP: Constants.ftl
+|  |  +--Constants.ftl
+|  +--EmptyConstants.ftl
+|  |  +--ATHP: Constants.ftl
+|  |  +--Constants.ftl
+|  +--EmptyConstants.ftl
+|  |  +--ATHP: Constants.ftl
+|  |  +--Constants.ftl
+|  +--EmptyConstants.ftl
+|  |  +--ATHP: Constants.ftl
+|  |  +--Constants.ftl
+|  +--Attribute.ftl
+|  |  +--Value.ftl
+|  +--Constructor.ftl
+|  |  +--ASHP: "this.intValue = intValue;"
+|  +--Method.ftl
+|  |  +--ATHP: Get.ftl
+|  |  +--Get.ftl
+OP set value (key, value): 
+OP set value (key, value): 
+OP set value (key, value): 
++--Class.ftl
+|  +--ASHP: "package graphqllite._symboltable;"
+|  +--Imports.ftl
+|  +--ASHP: ""
+|  +--Attribute.ftl
+|  |  +--Value.ftl
+|  +--Attribute.ftl
+|  |  +--Value.ftl
+|  +--Attribute.ftl
+|  |  +--ASHP: "= Optional.empty()"
+|  +--Attribute.ftl
+|  |  +--ASHP: "= de.monticore.symboltable.modifiers.AccessModifier.ALL_INCLUSION"
+|  +--Attribute.ftl
+|  |  +--Value.ftl
+|  +--Attribute.ftl
+|  |  +--Value.ftl
+|  +--Attribute.ftl
+|  |  +--Value.ftl
+|  +--Constructor.ftl
+|  |  +--ASHP: "this.name = name;"
+|  +--Method.ftl
+|  |  +--ATHP: Get.ftl
+|  |  +--Get.ftl
+|  +--Method.ftl
+|  |  +--ATHP: Set.ftl
+|  |  +--Set.ftl
+|  +--Method.ftl
+|  |  +--ATHP: Get.ftl
+|  |  +--Get.ftl
+|  +--Method.ftl
+|  |  +--ATHP: Set.ftl
+|  |  +--Set.ftl
+|  +--Method.ftl
+|  |  +--ATHP: Get4Opt.ftl
+|  |  +--Get4Opt.ftl
+|  +--Method.ftl
+|  |  +--ATHP: IsPresent4Opt.ftl
+|  |  +--IsPresent4Opt.ftl
+|  +--Method.ftl
+|  |  +--ATHP: Set4Opt.ftl
+|  |  +--Set4Opt.ftl
+|  +--Method.ftl
+|  |  +--ATHP: SetAbsent.ftl
+|  |  +--SetAbsent.ftl
+|  +--Method.ftl
+|  |  +--ATHP: Get.ftl
+|  |  +--Get.ftl
+|  +--Method.ftl
+|  |  +--ATHP: Set.ftl
+|  |  +--Set.ftl
+|  +--Method.ftl
+|  |  +--ATHP: Set.ftl
+|  |  +--Set.ftl
+|  +--Method.ftl
+|  |  +--ATHP: NameSetter.ftl
+|  |  +--NameSetter.ftl
+|  +--Method.ftl
+|  |  +--ATHP: Set.ftl
+|  |  +--Set.ftl
+|  +--Method.ftl
+|  |  +--ATHP: NameSetter.ftl
+|  |  +--NameSetter.ftl
+|  +--Method.ftl
+|  |  +--ASHP: "visitor.handle(this);"
+|  +--Method.ftl
+|  |  +--ATHP: DeterminePackageName.ftl
+|  |  +--DeterminePackageName.ftl
+|  +--Method.ftl
+|  |  +--ATHP: DetermineFullName.ftl
+|  |  +--DetermineFullName.ftl
+|  +--Method.ftl
+|  |  +--ATHP: GetScope.ftl
+|  |  +--GetScope.ftl
+|  +--Method.ftl
+|  |  +--ATHP: SetSpannedScope.ftl
+|  |  +--SetSpannedScope.ftl
++--Class.ftl
+|  +--ASHP: "package graphqllite._symboltable;"
+|  +--Imports.ftl
+|  +--ASHP: ""
+|  +--Attribute.ftl
+|  |  +--Value.ftl
+|  +--Constructor.ftl
+|  |  +--ASHP: "super(name);"
+|  +--Method.ftl
+|  |  +--ATHP: GetScope.ftl
+|  |  +--GetScope.ftl
+|  +--Method.ftl
+|  |  +--ASHP: "enclosingScope = scope;"
+|  +--Method.ftl
+|  |  +--ASHP: "return (graphqllite._ast.ASTType) super.getAstNode();"
+|  +--Method.ftl
+|  |  +--ASHP: "visitor.handle(this);"
+|  +--Method.ftl
+|  |  +--ATHP: DeterminePackageName.ftl
+|  |  +--DeterminePackageName.ftl
+|  +--Method.ftl
+|  |  +--ATHP: DetermineFullName.ftl
+|  |  +--DetermineFullName.ftl
+|  +--Method.ftl
+|  |  +--ATHP: GetScope.ftl
+|  |  +--GetScope.ftl
+|  +--Method.ftl
+|  |  +--ATHP: SetSpannedScope.ftl
+|  |  +--SetSpannedScope.ftl
++--Class.ftl
+|  +--ASHP: "package graphqllite._symboltable;"
+|  +--Imports.ftl
+|  +--ASHP: ""
+|  +--Attribute.ftl
+|  |  +--Value.ftl
+|  +--Attribute.ftl
+|  |  +--Value.ftl
+|  +--Attribute.ftl
+|  |  +--ASHP: "= Optional.empty()"
+|  +--Attribute.ftl
+|  |  +--ASHP: "= de.monticore.symboltable.modifiers.AccessModifier.ALL_INCLUSION"
+|  +--Attribute.ftl
+|  |  +--Value.ftl
+|  +--Attribute.ftl
+|  |  +--Value.ftl
+|  +--Constructor.ftl
+|  |  +--ASHP: "this.name = name;"
+|  +--Method.ftl
+|  |  +--ATHP: Get.ftl
+|  |  +--Get.ftl
+|  +--Method.ftl
+|  |  +--ATHP: Set.ftl
+|  |  +--Set.ftl
+|  +--Method.ftl
+|  |  +--ATHP: Get.ftl
+|  |  +--Get.ftl
+|  +--Method.ftl
+|  |  +--ATHP: Set.ftl
+|  |  +--Set.ftl
+|  +--Method.ftl
+|  |  +--ATHP: Get4Opt.ftl
+|  |  +--Get4Opt.ftl
+|  +--Method.ftl
+|  |  +--ATHP: IsPresent4Opt.ftl
+|  |  +--IsPresent4Opt.ftl
+|  +--Method.ftl
+|  |  +--ATHP: Set4Opt.ftl
+|  |  +--Set4Opt.ftl
+|  +--Method.ftl
+|  |  +--ATHP: SetAbsent.ftl
+|  |  +--SetAbsent.ftl
+|  +--Method.ftl
+|  |  +--ATHP: Get.ftl
+|  |  +--Get.ftl
+|  +--Method.ftl
+|  |  +--ATHP: Set.ftl
+|  |  +--Set.ftl
+|  +--Method.ftl
+|  |  +--ATHP: Set.ftl
+|  |  +--Set.ftl
+|  +--Method.ftl
+|  |  +--ATHP: NameSetter.ftl
+|  |  +--NameSetter.ftl
+|  +--Method.ftl
+|  |  +--ATHP: Set.ftl
+|  |  +--Set.ftl
+|  +--Method.ftl
+|  |  +--ATHP: NameSetter.ftl
+|  |  +--NameSetter.ftl
+|  +--Method.ftl
+|  |  +--ASHP: "visitor.handle(this);"
+|  +--Method.ftl
+|  |  +--ATHP: DeterminePackageName.ftl
+|  |  +--DeterminePackageName.ftl
+|  +--Method.ftl
+|  |  +--ATHP: DetermineFullName.ftl
+|  |  +--DetermineFullName.ftl
++--Class.ftl
+|  +--ASHP: "package graphqllite._symboltable;"
+|  +--Imports.ftl
+|  +--ASHP: ""
+|  +--Attribute.ftl
+|  |  +--Value.ftl
+|  +--Attribute.ftl
+|  |  +--Value.ftl
+|  +--Attribute.ftl
+|  |  +--Value.ftl
+|  +--Attribute.ftl
+|  |  +--Value.ftl
+|  +--Attribute.ftl
+|  |  +--ASHP: "= Optional.empty()"
+|  +--Attribute.ftl
+|  |  +--Value.ftl
+|  +--Attribute.ftl
+|  |  +--Value.ftl
+|  +--Attribute.ftl
+|  |  +--Value.ftl
+|  +--Constructor.ftl
+|  |  +--ASHP: "this.realBuilder = (SchemaSymbolBuilder) this;"
+|  +--Method.ftl
+|  |  +--ATHP: BuildSymbol.ftl
+|  |  +--BuildSymbol.ftl
+|  +--Method.ftl
+|  |  +--ATHP: IsValidMethod.ftl
+|  |  +--IsValidMethod.ftl
+|  +--Method.ftl
+|  |  +--ATHP: Get.ftl
+|  |  +--Get.ftl
+|  +--Method.ftl
+|  |  +--ATHP: Get.ftl
+|  |  +--Get.ftl
+|  +--Method.ftl
+|  |  +--ATHP: Get.ftl
+|  |  +--Get.ftl
+|  +--Method.ftl
+|  |  +--ATHP: Get4Opt.ftl
+|  |  +--Get4Opt.ftl
+|  +--Method.ftl
+|  |  +--ATHP: IsPresent4Opt.ftl
+|  |  +--IsPresent4Opt.ftl
+|  +--Method.ftl
+|  |  +--ATHP: Get.ftl
+|  |  +--Get.ftl
+|  +--Method.ftl
+|  |  +--ATHP: Get.ftl
+|  |  +--Get.ftl
+|  +--Method.ftl
+|  |  +--ATHP: Get.ftl
+|  |  +--Get.ftl
+|  +--Method.ftl
+|  |  +--ATHP: Set4ASTBuilder.ftl
+|  |  +--Set4ASTBuilder.ftl
+|  +--Method.ftl
+|  |  +--ATHP: Set4ASTBuilder.ftl
+|  |  +--Set4ASTBuilder.ftl
+|  +--Method.ftl
+|  |  +--ATHP: Set4ASTBuilder.ftl
+|  |  +--Set4ASTBuilder.ftl
+|  +--Method.ftl
+|  |  +--ATHP: Set4ASTBuilderOpt.ftl
+|  |  +--Set4ASTBuilderOpt.ftl
+|  +--Method.ftl
+|  |  +--ATHP: SetAbsent4ASTBuilderOpt.ftl
+|  |  +--SetAbsent4ASTBuilderOpt.ftl
+|  +--Method.ftl
+|  |  +--ATHP: Set4ASTBuilder.ftl
+|  |  +--Set4ASTBuilder.ftl
+|  +--Method.ftl
+|  |  +--ATHP: Set4ASTBuilder.ftl
+|  |  +--Set4ASTBuilder.ftl
+|  +--Method.ftl
+|  |  +--ATHP: Set4ASTBuilder.ftl
+|  |  +--Set4ASTBuilder.ftl
++--Class.ftl
+|  +--ASHP: "package graphqllite._symboltable;"
+|  +--Imports.ftl
+|  +--ASHP: ""
+|  +--Attribute.ftl
+|  |  +--Value.ftl
+|  +--Attribute.ftl
+|  |  +--Value.ftl
+|  +--Constructor.ftl
+|  |  +--ASHP: "this.realBuilder = (TypeSymbolBuilder) this;"
+|  +--Method.ftl
+|  |  +--ATHP: BuildSymbol.ftl
+|  |  +--BuildSymbol.ftl
+|  +--Method.ftl
+|  |  +--ATHP: IsValidMethod.ftl
+|  |  +--IsValidMethod.ftl
+|  +--Method.ftl
+|  |  +--ATHP: Get.ftl
+|  |  +--Get.ftl
+|  +--Method.ftl
+|  |  +--ATHP: Set4ASTBuilder.ftl
+|  |  +--Set4ASTBuilder.ftl
+|  +--Method.ftl
+|  |  +--ATHP: Set4ASTBuilder.ftl
+|  |  +--Set4ASTBuilder.ftl
+|  +--Method.ftl
+|  |  +--ATHP: Set4ASTBuilder.ftl
+|  |  +--Set4ASTBuilder.ftl
+|  +--Method.ftl
+|  |  +--ATHP: Set4ASTBuilder.ftl
+|  |  +--Set4ASTBuilder.ftl
+|  +--Method.ftl
+|  |  +--ATHP: Set4ASTBuilderOpt.ftl
+|  |  +--Set4ASTBuilderOpt.ftl
+|  +--Method.ftl
+|  |  +--ATHP: SetAbsent4ASTBuilderOpt.ftl
+|  |  +--SetAbsent4ASTBuilderOpt.ftl
+|  +--Method.ftl
+|  |  +--ATHP: Set4ASTBuilder.ftl
+|  |  +--Set4ASTBuilder.ftl
+|  +--Method.ftl
+|  |  +--ATHP: Set4ASTBuilder.ftl
+|  |  +--Set4ASTBuilder.ftl
+|  +--Method.ftl
+|  |  +--ATHP: GetScope.ftl
+|  |  +--GetScope.ftl
++--Class.ftl
+|  +--ASHP: "package graphqllite._symboltable;"
+|  +--Imports.ftl
+|  +--ASHP: ""
+|  +--Attribute.ftl
+|  |  +--Value.ftl
+|  +--Attribute.ftl
+|  |  +--Value.ftl
+|  +--Attribute.ftl
+|  |  +--Value.ftl
+|  +--Attribute.ftl
+|  |  +--Value.ftl
+|  +--Attribute.ftl
+|  |  +--ASHP: "= Optional.empty()"
+|  +--Attribute.ftl
+|  |  +--Value.ftl
+|  +--Attribute.ftl
+|  |  +--Value.ftl
+|  +--Constructor.ftl
+|  |  +--ASHP: "this.realBuilder = (GQLTypeSymbolBuilder) this;"
+|  +--Method.ftl
+|  |  +--ATHP: BuildSymbol.ftl
+|  |  +--BuildSymbol.ftl
+|  +--Method.ftl
+|  |  +--ATHP: IsValidMethod.ftl
+|  |  +--IsValidMethod.ftl
+|  +--Method.ftl
+|  |  +--ATHP: Get.ftl
+|  |  +--Get.ftl
+|  +--Method.ftl
+|  |  +--ATHP: Get.ftl
+|  |  +--Get.ftl
+|  +--Method.ftl
+|  |  +--ATHP: Get.ftl
+|  |  +--Get.ftl
+|  +--Method.ftl
+|  |  +--ATHP: Get4Opt.ftl
+|  |  +--Get4Opt.ftl
+|  +--Method.ftl
+|  |  +--ATHP: IsPresent4Opt.ftl
+|  |  +--IsPresent4Opt.ftl
+|  +--Method.ftl
+|  |  +--ATHP: Get.ftl
+|  |  +--Get.ftl
+|  +--Method.ftl
+|  |  +--ATHP: Get.ftl
+|  |  +--Get.ftl
+|  +--Method.ftl
+|  |  +--ATHP: Set4ASTBuilder.ftl
+|  |  +--Set4ASTBuilder.ftl
+|  +--Method.ftl
+|  |  +--ATHP: Set4ASTBuilder.ftl
+|  |  +--Set4ASTBuilder.ftl
+|  +--Method.ftl
+|  |  +--ATHP: Set4ASTBuilder.ftl
+|  |  +--Set4ASTBuilder.ftl
+|  +--Method.ftl
+|  |  +--ATHP: Set4ASTBuilderOpt.ftl
+|  |  +--Set4ASTBuilderOpt.ftl
+|  +--Method.ftl
+|  |  +--ATHP: SetAbsent4ASTBuilderOpt.ftl
+|  |  +--SetAbsent4ASTBuilderOpt.ftl
+|  +--Method.ftl
+|  |  +--ATHP: Set4ASTBuilder.ftl
+|  |  +--Set4ASTBuilder.ftl
+|  +--Method.ftl
+|  |  +--ATHP: Set4ASTBuilder.ftl
+|  |  +--Set4ASTBuilder.ftl
++--Class.ftl
+|  +--ASHP: "package graphqllite._symboltable;"
+|  +--Imports.ftl
+|  +--ASHP: ""
+|  +--Attribute.ftl
+|  |  +--ASHP: "= com.google.common.collect.LinkedListMultimap.create()"
+|  +--Attribute.ftl
+|  |  +--ASHP: "= com.google.common.collect.LinkedListMultimap.create()"
+|  +--Attribute.ftl
+|  |  +--ASHP: "= com.google.common.collect.LinkedListMultimap.create()"
+|  +--Attribute.ftl
+|  |  +--ASHP: "= false"
+|  +--Attribute.ftl
+|  |  +--ASHP: "= false"
+|  +--Attribute.ftl
+|  |  +--ASHP: "= false"
+|  +--Attribute.ftl
+|  |  +--Value.ftl
+|  +--Attribute.ftl
+|  |  +--ASHP: "= Optional.empty()"
+|  +--Attribute.ftl
+|  |  +--Value.ftl
+|  +--Attribute.ftl
+|  |  +--ASHP: "= true"
+|  +--Attribute.ftl
+|  |  +--Value.ftl
+|  +--Attribute.ftl
+|  |  +--ASHP: "= Optional.empty()"
+|  +--Attribute.ftl
+|  |  +--ASHP: "= Optional.empty()"
+|  +--Attribute.ftl
+|  |  +--ASHP: "= new java.util.ArrayList<>()"
+|  +--Constructor.ftl
+|  |  +--ASHP: "super(); this.name = Optional.empty();"
+|  +--Constructor.ftl
+|  |  +--ASHP: "this.shadowing = shadowing; this.name = Optional.empty();"
+|  +--Constructor.ftl
+|  |  +--ASHP: "this(enclosingScope, false);"
+|  +--Constructor.ftl
+|  |  +--ASHP: "this.setEnclosingScope(enclosingScope); this.shadowing = shadowi[...]"
+|  +--Method.ftl
+|  |  +--ASHP: "this.gQLTypeSymbols.put(symbol.getName(), symbol); symbol.setEnc[...]"
+|  +--Method.ftl
+|  |  +--ASHP: "this.gQLTypeSymbols.remove(symbol.getName(), symbol);"
+|  +--Method.ftl
+|  |  +--ASHP: "return this.gQLTypeSymbols;"
+|  +--Method.ftl
+|  |  +--ASHP: "this.typeSymbols.put(symbol.getName(), symbol); symbol.setEnclos[...]"
+|  +--Method.ftl
+|  |  +--ASHP: "this.typeSymbols.remove(symbol.getName(), symbol);"
+|  +--Method.ftl
+|  |  +--ASHP: "return this.typeSymbols;"
+|  +--Method.ftl
+|  |  +--ASHP: "this.schemaSymbols.put(symbol.getName(), symbol); symbol.setEncl[...]"
+|  +--Method.ftl
+|  |  +--ASHP: "this.schemaSymbols.remove(symbol.getName(), symbol);"
+|  +--Method.ftl
+|  |  +--ASHP: "return this.schemaSymbols;"
+|  +--Method.ftl
+|  |  +--ATHP: Get.ftl
+|  |  +--Get.ftl
+|  +--Method.ftl
+|  |  +--ATHP: Set.ftl
+|  |  +--Set.ftl
+|  +--Method.ftl
+|  |  +--ATHP: Get.ftl
+|  |  +--Get.ftl
+|  +--Method.ftl
+|  |  +--ATHP: Set.ftl
+|  |  +--Set.ftl
+|  +--Method.ftl
+|  |  +--ATHP: Get.ftl
+|  |  +--Get.ftl
+|  +--Method.ftl
+|  |  +--ATHP: Set.ftl
+|  |  +--Set.ftl
+|  +--Method.ftl
+|  |  +--ATHP: Get.ftl
+|  |  +--Get.ftl
+|  +--Method.ftl
+|  |  +--ATHP: SetEnclosingScope.ftl
+|  |  +--SetEnclosingScope.ftl
+|  +--Method.ftl
+|  |  +--ATHP: Get4Opt.ftl
+|  |  +--Get4Opt.ftl
+|  +--Method.ftl
+|  |  +--ATHP: IsPresent4Opt.ftl
+|  |  +--IsPresent4Opt.ftl
+|  +--Method.ftl
+|  |  +--ATHP: SetSpanningSymbol.ftl
+|  |  +--SetSpanningSymbol.ftl
+|  |  |  +--Set4Opt.ftl
+|  +--Method.ftl
+|  |  +--ATHP: SetSpanningSymbolAbsent.ftl
+|  |  +--SetSpanningSymbolAbsent.ftl
+|  |  |  +--SetAbsent.ftl
+|  +--Method.ftl
+|  |  +--ATHP: Get.ftl
+|  |  +--Get.ftl
+|  +--Method.ftl
+|  |  +--ATHP: Set.ftl
+|  |  +--Set.ftl
+|  +--Method.ftl
+|  |  +--ATHP: Get.ftl
+|  |  +--Get.ftl
+|  +--Method.ftl
+|  |  +--ATHP: Set.ftl
+|  |  +--Set.ftl
+|  +--Method.ftl
+|  |  +--ATHP: Get.ftl
+|  |  +--Get.ftl
+|  +--Method.ftl
+|  |  +--ATHP: Set.ftl
+|  |  +--Set.ftl
+|  +--Method.ftl
+|  |  +--ATHP: Get4Opt.ftl
+|  |  +--Get4Opt.ftl
+|  +--Method.ftl
+|  |  +--ATHP: IsPresent4Opt.ftl
+|  |  +--IsPresent4Opt.ftl
+|  +--Method.ftl
+|  |  +--ATHP: Set4Opt.ftl
+|  |  +--Set4Opt.ftl
+|  +--Method.ftl
+|  |  +--ATHP: SetAbsent.ftl
+|  |  +--SetAbsent.ftl
+|  +--Method.ftl
+|  |  +--ATHP: Get4Opt.ftl
+|  |  +--Get4Opt.ftl
+|  +--Method.ftl
+|  |  +--ATHP: IsPresent4Opt.ftl
+|  |  +--IsPresent4Opt.ftl
+|  +--Method.ftl
+|  |  +--ATHP: Set4Opt.ftl
+|  |  +--Set4Opt.ftl
+|  +--Method.ftl
+|  |  +--ATHP: SetAbsent.ftl
+|  |  +--SetAbsent.ftl
+|  +--Method.ftl
+|  |  +--ATHP: AddSubScope.ftl
+|  |  +--AddSubScope.ftl
+|  +--Method.ftl
+|  |  +--ATHP: RemoveSubScope.ftl
+|  |  +--RemoveSubScope.ftl
+|  +--Method.ftl
+|  |  +--ATHP: GetSubScopes.ftl
+|  |  +--GetSubScopes.ftl
+|  +--Method.ftl
+|  |  +--ATHP: SetSubScopes.ftl
+|  |  +--SetSubScopes.ftl
+|  +--Method.ftl
+|  |  +--ASHP: "visitor.handle(this);"
+|  +--Method.ftl
+|  |  +--ATHP: AcceptScope.ftl
+|  |  +--AcceptScope.ftl
+|  +--Method.ftl
+|  |  +--ATHP: AcceptScope.ftl
+|  |  +--AcceptScope.ftl
+|  +--Method.ftl
+|  |  +--ATHP: AcceptScope.ftl
+|  |  +--AcceptScope.ftl
+|  +--Method.ftl
+|  |  +--ASHP: "this.addSubScope((graphqllite._symboltable.IGraphQLLiteScope) su[...]"
+|  +--Method.ftl
+|  |  +--ASHP: "this.removeSubScope((graphqllite._symboltable.IGraphQLLiteScope)[...]"
+|  +--Method.ftl
+|  |  +--ASHP: "this.setEnclosingScope((graphqllite._symboltable.IGraphQLLiteSco[...]"
+|  +--Method.ftl
+|  |  +--ASHP: "this.addSubScope((graphqllite._symboltable.IGraphQLLiteScope) su[...]"
+|  +--Method.ftl
+|  |  +--ASHP: "this.removeSubScope((graphqllite._symboltable.IGraphQLLiteScope)[...]"
+|  +--Method.ftl
+|  |  +--ASHP: "this.setEnclosingScope((graphqllite._symboltable.IGraphQLLiteSco[...]"
+|  +--Method.ftl
+|  |  +--ASHP: "this.addSubScope((graphqllite._symboltable.IGraphQLLiteScope) su[...]"
+|  +--Method.ftl
+|  |  +--ASHP: "this.removeSubScope((graphqllite._symboltable.IGraphQLLiteScope)[...]"
+|  +--Method.ftl
+|  |  +--ASHP: "this.setEnclosingScope((graphqllite._symboltable.IGraphQLLiteSco[...]"
+|  +--Method.ftl
+|  |  +--ATHP: ResolveSubKinds.ftl
+|  |  +--ResolveSubKinds.ftl
+|  +--Method.ftl
+|  |  +--ATHP: ResolveSubKinds.ftl
+|  |  +--ResolveSubKinds.ftl
+|  +--Method.ftl
+|  |  +--ATHP: ResolveSubKinds.ftl
+|  |  +--ResolveSubKinds.ftl
++--Class.ftl
+|  +--ASHP: "package graphqllite._symboltable;"
+|  +--Imports.ftl
+|  +--ASHP: ""
+|  +--Attribute.ftl
+|  |  +--ASHP: "= Optional.empty()"
+|  +--Constructor.ftl
+|  |  +--ATHP: ConstructorSymbolSurrogate.ftl
+|  |  +--ConstructorSymbolSurrogate.ftl
+|  +--Method.ftl
+|  |  +--ATHP: Get.ftl
+|  |  +--Get.ftl
+|  +--Method.ftl
+|  |  +--ATHP: Set4SymbolSurrogate.ftl
+|  |  +--Set4SymbolSurrogate.ftl
+|  |  |  +--Set.ftl
+|  +--Method.ftl
+|  |  +--ATHP: GetFullName.ftl
+|  |  +--GetFullName.ftl
+|  +--Method.ftl
+|  |  +--ATHP: SetEnclosingScope4SymbolSurrogate.ftl
+|  |  +--SetEnclosingScope4SymbolSurrogate.ftl
+|  |  |  +--Set.ftl
+|  +--Method.ftl
+|  |  +--ATHP: GetEnclosingScopeSymbolSurrogate.ftl
+|  |  +--GetEnclosingScopeSymbolSurrogate.ftl
+|  +--Method.ftl
+|  |  +--ATHP: CheckLazyLoadDelegate.ftl
+|  |  +--CheckLazyLoadDelegate.ftl
+|  +--Method.ftl
+|  |  +--ATHP: LazyLoadDelegate.ftl
+|  |  +--LazyLoadDelegate.ftl
++--Class.ftl
+|  +--ASHP: "package graphqllite._symboltable;"
+|  +--Imports.ftl
+|  +--ASHP: ""
+|  +--Attribute.ftl
+|  |  +--ASHP: "= Optional.empty()"
+|  +--Constructor.ftl
+|  |  +--ATHP: ConstructorSymbolSurrogate.ftl
+|  |  +--ConstructorSymbolSurrogate.ftl
+|  +--Method.ftl
+|  |  +--ATHP: Get.ftl
+|  |  +--Get.ftl
+|  +--Method.ftl
+|  |  +--ATHP: Set4SymbolSurrogate.ftl
+|  |  +--Set4SymbolSurrogate.ftl
+|  |  |  +--Set.ftl
+|  +--Method.ftl
+|  |  +--ATHP: GetFullName.ftl
+|  |  +--GetFullName.ftl
+|  +--Method.ftl
+|  |  +--ATHP: SetEnclosingScope4SymbolSurrogate.ftl
+|  |  +--SetEnclosingScope4SymbolSurrogate.ftl
+|  |  |  +--Set.ftl
+|  +--Method.ftl
+|  |  +--ATHP: GetEnclosingScopeSymbolSurrogate.ftl
+|  |  +--GetEnclosingScopeSymbolSurrogate.ftl
+|  +--Method.ftl
+|  |  +--ATHP: CheckLazyLoadDelegate.ftl
+|  |  +--CheckLazyLoadDelegate.ftl
+|  +--Method.ftl
+|  |  +--ATHP: LazyLoadDelegate.ftl
+|  |  +--LazyLoadDelegate.ftl
++--Class.ftl
+|  +--ASHP: "package graphqllite._symboltable;"
+|  +--Imports.ftl
+|  +--ASHP: ""
+|  +--Attribute.ftl
+|  |  +--ASHP: "= Optional.empty()"
+|  +--Constructor.ftl
+|  |  +--ATHP: ConstructorSymbolSurrogate.ftl
+|  |  +--ConstructorSymbolSurrogate.ftl
+|  +--Method.ftl
+|  |  +--ATHP: Get.ftl
+|  |  +--Get.ftl
+|  +--Method.ftl
+|  |  +--ATHP: Set4SymbolSurrogate.ftl
+|  |  +--Set4SymbolSurrogate.ftl
+|  |  |  +--Set.ftl
+|  +--Method.ftl
+|  |  +--ATHP: GetFullName.ftl
+|  |  +--GetFullName.ftl
+|  +--Method.ftl
+|  |  +--ATHP: SetEnclosingScope4SymbolSurrogate.ftl
+|  |  +--SetEnclosingScope4SymbolSurrogate.ftl
+|  |  |  +--Set.ftl
+|  +--Method.ftl
+|  |  +--ATHP: GetEnclosingScopeSymbolSurrogate.ftl
+|  |  +--GetEnclosingScopeSymbolSurrogate.ftl
+|  +--Method.ftl
+|  |  +--ATHP: CheckLazyLoadDelegate.ftl
+|  |  +--CheckLazyLoadDelegate.ftl
+|  +--Method.ftl
+|  |  +--ATHP: LazyLoadDelegate.ftl
+|  |  +--LazyLoadDelegate.ftl
++--Class.ftl
+|  +--ASHP: "package graphqllite._symboltable;"
+|  +--Imports.ftl
+|  +--ASHP: ""
+|  +--Attribute.ftl
+|  |  +--Value.ftl
+|  +--Attribute.ftl
+|  |  +--Value.ftl
+|  +--Attribute.ftl
+|  |  +--Value.ftl
+|  +--Constructor.ftl
+|  |  +--ASHP: "this.realBuilder = (SchemaSymbolSurrogateBuilder) this;"
+|  +--Method.ftl
+|  |  +--ATHP: Set4ASTBuilder.ftl
+|  |  +--Set4ASTBuilder.ftl
+|  +--Method.ftl
+|  |  +--ATHP: Get.ftl
+|  |  +--Get.ftl
+|  +--Method.ftl
+|  |  +--ATHP: Get.ftl
+|  |  +--Get.ftl
+|  +--Method.ftl
+|  |  +--ATHP: Set4ASTBuilder.ftl
+|  |  +--Set4ASTBuilder.ftl
+|  +--Method.ftl
+|  |  +--ATHP: BuildSymbolSurrogate.ftl
+|  |  +--BuildSymbolSurrogate.ftl
++--Class.ftl
+|  +--ASHP: "package graphqllite._symboltable;"
+|  +--Imports.ftl
+|  +--ASHP: ""
+|  +--Attribute.ftl
+|  |  +--Value.ftl
+|  +--Attribute.ftl
+|  |  +--Value.ftl
+|  +--Attribute.ftl
+|  |  +--Value.ftl
+|  +--Constructor.ftl
+|  |  +--ASHP: "this.realBuilder = (TypeSymbolSurrogateBuilder) this;"
+|  +--Method.ftl
+|  |  +--ATHP: Set4ASTBuilder.ftl
+|  |  +--Set4ASTBuilder.ftl
+|  +--Method.ftl
+|  |  +--ATHP: Get.ftl
+|  |  +--Get.ftl
+|  +--Method.ftl
+|  |  +--ATHP: Get.ftl
+|  |  +--Get.ftl
+|  +--Method.ftl
+|  |  +--ATHP: Set4ASTBuilder.ftl
+|  |  +--Set4ASTBuilder.ftl
+|  +--Method.ftl
+|  |  +--ATHP: BuildSymbolSurrogate.ftl
+|  |  +--BuildSymbolSurrogate.ftl
++--Class.ftl
+|  +--ASHP: "package graphqllite._symboltable;"
+|  +--Imports.ftl
+|  +--ASHP: ""
+|  +--Attribute.ftl
+|  |  +--Value.ftl
+|  +--Attribute.ftl
+|  |  +--Value.ftl
+|  +--Attribute.ftl
+|  |  +--Value.ftl
+|  +--Constructor.ftl
+|  |  +--ASHP: "this.realBuilder = (GQLTypeSymbolSurrogateBuilder) this;"
+|  +--Method.ftl
+|  |  +--ATHP: Set4ASTBuilder.ftl
+|  |  +--Set4ASTBuilder.ftl
+|  +--Method.ftl
+|  |  +--ATHP: Get.ftl
+|  |  +--Get.ftl
+|  +--Method.ftl
+|  |  +--ATHP: Get.ftl
+|  |  +--Get.ftl
+|  +--Method.ftl
+|  |  +--ATHP: Set4ASTBuilder.ftl
+|  |  +--Set4ASTBuilder.ftl
+|  +--Method.ftl
+|  |  +--ATHP: BuildSymbolSurrogate.ftl
+|  |  +--BuildSymbolSurrogate.ftl
++--Class.ftl
+|  +--ASHP: "package graphqllite._symboltable;"
+|  +--Imports.ftl
+|  +--ASHP: ""
+|  +--Method.ftl
+|  |  +--ASHP: "return "graphqllite._symboltable.SchemaSymbol";"
+|  +--Method.ftl
+|  |  +--ATHP: Serialize4SymbolDeSer.ftl
+|  |  +--Serialize4SymbolDeSer.ftl
+|  +--Method.ftl
+|  |  +--EmptyBody.ftl
+|  +--Method.ftl
+|  |  +--ATHP: Deserialize4SymbolDeSer.ftl
+|  |  +--Deserialize4SymbolDeSer.ftl
+|  +--Method.ftl
+|  |  +--EmptyBody.ftl
++--Class.ftl
+|  +--ASHP: "package graphqllite._symboltable;"
+|  +--Imports.ftl
+|  +--ASHP: ""
+|  +--Method.ftl
+|  |  +--ASHP: "return "graphqllite._symboltable.TypeSymbol";"
+|  +--Method.ftl
+|  |  +--ATHP: Serialize4SymbolDeSer.ftl
+|  |  +--Serialize4SymbolDeSer.ftl
+|  +--Method.ftl
+|  |  +--EmptyBody.ftl
+|  +--Method.ftl
+|  |  +--ATHP: Deserialize4SymbolDeSer.ftl
+|  |  +--Deserialize4SymbolDeSer.ftl
+|  +--Method.ftl
+|  |  +--EmptyBody.ftl
++--Class.ftl
+|  +--ASHP: "package graphqllite._symboltable;"
+|  +--Imports.ftl
+|  +--ASHP: ""
+|  +--Method.ftl
+|  |  +--ASHP: "return "graphqllite._symboltable.GQLTypeSymbol";"
+|  +--Method.ftl
+|  |  +--ATHP: Serialize4SymbolDeSer.ftl
+|  |  +--Serialize4SymbolDeSer.ftl
+|  +--Method.ftl
+|  |  +--EmptyBody.ftl
+|  +--Method.ftl
+|  |  +--ATHP: Deserialize4SymbolDeSer.ftl
+|  |  +--Deserialize4SymbolDeSer.ftl
+|  +--Method.ftl
+|  |  +--EmptyBody.ftl
++--Class.ftl
+|  +--ASHP: "package graphqllite._symboltable;"
+|  +--Imports.ftl
+|  +--ASHP: ""
+|  +--Attribute.ftl
+|  |  +--Value.ftl
+|  +--Attribute.ftl
+|  |  +--Value.ftl
+|  +--Attribute.ftl
+|  |  +--Value.ftl
+|  +--Attribute.ftl
+|  |  +--Value.ftl
+|  +--Attribute.ftl
+|  |  +--Value.ftl
+|  +--Attribute.ftl
+|  |  +--Value.ftl
+|  +--Constructor.ftl
+|  |  +--ASHP: "this(graphqllite.GraphQLLiteMill.traverser(), new de.monticore.s[...]"
+|  +--Constructor.ftl
+|  |  +--ASHP: "this.printer = printer; this.traverser = traverser; init();"
+|  +--Method.ftl
+|  |  +--ASHP: "return this.printer;"
+|  +--Method.ftl
+|  |  +--ASHP: "this.printer=printer;"
+|  +--Method.ftl
+|  |  +--ATHP: Serialize4Symbols2Json.ftl
+|  |  +--Serialize4Symbols2Json.ftl
+|  +--Method.ftl
+|  |  +--ATHP: Serialize4Symbols2Json.ftl
+|  |  +--Serialize4Symbols2Json.ftl
+|  +--Method.ftl
+|  |  +--ATHP: Deserialize.ftl
+|  |  +--Deserialize.ftl
+|  +--Method.ftl
+|  |  +--ATHP: Get.ftl
+|  |  +--Get.ftl
+|  +--Method.ftl
+|  |  +--ATHP: Set.ftl
+|  |  +--Set.ftl
+|  +--Method.ftl
+|  |  +--ATHP: Init.ftl
+|  |  +--Init.ftl
+|  +--Method.ftl
+|  |  +--ASHP: "return getJsonPrinter().getContent();"
+|  +--Method.ftl
+|  |  +--ATHP: Load2.ftl
+|  |  +--Load2.ftl
+|  +--Method.ftl
+|  |  +--ATHP: Load2.ftl
+|  |  +--Load2.ftl
+|  +--Method.ftl
+|  |  +--ATHP: Load2.ftl
+|  |  +--Load2.ftl
+|  +--Method.ftl
+|  |  +--ATHP: Store.ftl
+|  |  +--Store.ftl
+|  +--Method.ftl
+|  |  +--ATHP: VisitScope4STP.ftl
+|  |  +--VisitScope4STP.ftl
+|  +--Method.ftl
+|  |  +--ATHP: EndVisit4Scope.ftl
+|  |  +--EndVisit4Scope.ftl
+|  +--Method.ftl
+|  |  +--ATHP: VisitSymbol.ftl
+|  |  +--VisitSymbol.ftl
+|  +--Method.ftl
+|  |  +--ATHP: VisitSymbol.ftl
+|  |  +--VisitSymbol.ftl
+|  +--Method.ftl
+|  |  +--ATHP: VisitSymbol.ftl
+|  |  +--VisitSymbol.ftl
+|  +--Method.ftl
+|  |  +--ATHP: VisitArtifactScope.ftl
+|  |  +--VisitArtifactScope.ftl
+|  +--Method.ftl
+|  |  +--ATHP: EndVisit4Scope.ftl
+|  |  +--EndVisit4Scope.ftl
++--Class.ftl
+|  +--ASHP: "package graphqllite._symboltable;"
+|  +--Imports.ftl
+|  +--ASHP: ""
+|  +--Attribute.ftl
+|  |  +--ASHP: "= new java.util.ArrayDeque<>()"
+|  +--Attribute.ftl
+|  |  +--Value.ftl
+|  +--Attribute.ftl
+|  |  +--Value.ftl
+|  +--Attribute.ftl
+|  |  +--Value.ftl
+|  +--Constructor.ftl
+|  |  +--ATHP: ConstructorScopesGenitorDelegator.ftl
+|  |  +--ConstructorScopesGenitorDelegator.ftl
+|  +--Method.ftl
+|  |  +--ATHP: CreateFromASTDelegator.ftl
+|  |  +--CreateFromASTDelegator.ftl
++--Class.ftl
+|  +--ASHP: "package graphqllite._symboltable;"
+|  +--Imports.ftl
+|  +--ASHP: ""
+|  +--Attribute.ftl
+|  |  +--Value.ftl
+|  +--Attribute.ftl
+|  |  +--Value.ftl
+|  +--Constructor.ftl
+|  |  +--ASHP: "this(Optional.empty(), packageName, imports);"
+|  +--Constructor.ftl
+|  |  +--ATHP: ConstructorArtifactScope.ftl
+|  |  +--ConstructorArtifactScope.ftl
+|  +--Constructor.ftl
+|  |  +--ASHP: "this("", new java.util.ArrayList<>());"
+|  +--Method.ftl
+|  |  +--ATHP: Get.ftl
+|  |  +--Get.ftl
+|  +--Method.ftl
+|  |  +--ATHP: Set.ftl
+|  |  +--Set.ftl
+|  +--Method.ftl
+|  |  +--ATHP: Get.ftl
+|  |  +--Get.ftl
+|  +--Method.ftl
+|  |  +--ATHP: Set.ftl
+|  |  +--Set.ftl
+|  +--Method.ftl
+|  |  +--ATHP: IsPresentName.ftl
+|  |  +--IsPresentName.ftl
+|  +--Method.ftl
+|  |  +--ATHP: GetName.ftl
+|  |  +--GetName.ftl
+|  +--Method.ftl
+|  |  +--ATHP: SetEnclosingScope.ftl
+|  |  +--SetEnclosingScope.ftl
+|  +--Method.ftl
+|  |  +--ASHP: "visitor.handle(this);"
++--Class.ftl
+|  +--ASHP: "package graphqllite._symboltable;"
+|  +--Imports.ftl
+|  +--ASHP: ""
+|  +--Method.ftl
+|  |  +--ATHP: SerializeS2J4ScopeDeSer.ftl
+|  |  +--SerializeS2J4ScopeDeSer.ftl
+|  +--Method.ftl
+|  |  +--ATHP: SerializeAS4ScopeDeSer.ftl
+|  |  +--SerializeAS4ScopeDeSer.ftl
+|  +--Method.ftl
+|  |  +--EmptyBody.ftl
+|  +--Method.ftl
+|  |  +--EmptyBody.ftl
+|  +--Method.ftl
+|  |  +--ATHP: DeserializeScope.ftl
+|  |  +--DeserializeScope.ftl
+|  +--Method.ftl
+|  |  +--ATHP: DeserializeArtifactScope.ftl
+|  |  +--DeserializeArtifactScope.ftl
+|  +--Method.ftl
+|  |  +--ATHP: DeserializeSymbols.ftl
+|  |  +--DeserializeSymbols.ftl
+|  +--Method.ftl
+|  |  +--EmptyBody.ftl
+|  +--Method.ftl
+|  |  +--EmptyBody.ftl
++--Class.ftl
+|  +--ASHP: "package graphqllite._symboltable;"
+|  +--Imports.ftl
+|  +--ASHP: ""
+|  +--Attribute.ftl
+|  |  +--Value.ftl
+|  +--Attribute.ftl
+|  |  +--Value.ftl
+|  +--Attribute.ftl
+|  |  +--Value.ftl
+|  +--Attribute.ftl
+|  |  +--ASHP: " = com.google.common.collect.Maps.newHashMap()"
+|  +--Attribute.ftl
+|  |  +--Value.ftl
+|  +--Attribute.ftl
+|  |  +--ASHP: "= new java.util.HashSet<>()"
+|  +--Attribute.ftl
+|  |  +--ASHP: " = new ArrayList<graphqllite._symboltable.IGQLTypeSymbolResolver>()"
+|  +--Attribute.ftl
+|  |  +--ASHP: " = new ArrayList<graphqllite._symboltable.ISchemaSymbolResolver>()"
+|  +--Attribute.ftl
+|  |  +--ASHP: " = new ArrayList<graphqllite._symboltable.ITypeSymbolResolver>()"
+|  +--Constructor.ftl
+|  |  +--ATHP: ConstructorGlobalScope.ftl
+|  |  +--ConstructorGlobalScope.ftl
+|  +--Constructor.ftl
+|  |  +--ATHP: ZeroArgsConstructorGlobalScope.ftl
+|  |  +--ZeroArgsConstructorGlobalScope.ftl
+|  +--Method.ftl
+|  |  +--ATHP: Get.ftl
+|  |  +--Get.ftl
+|  +--Method.ftl
+|  |  +--ATHP: Set.ftl
+|  |  +--Set.ftl
+|  +--Method.ftl
+|  |  +--ATHP: Get.ftl
+|  |  +--Get.ftl
+|  +--Method.ftl
+|  |  +--ATHP: Set.ftl
+|  |  +--Set.ftl
+|  +--Method.ftl
+|  |  +--ATHP: Get.ftl
+|  |  +--Get.ftl
+|  +--Method.ftl
+|  |  +--ATHP: Set.ftl
+|  |  +--Set.ftl
+|  +--Method.ftl
+|  |  +--ATHP: Get.ftl
+|  |  +--Get.ftl
+|  +--Method.ftl
+|  |  +--ATHP: Set.ftl
+|  |  +--Set.ftl
+|  +--Method.ftl
+|  |  +--ATHP: Set.ftl
+|  |  +--Set.ftl
+|  +--Method.ftl
+|  |  +--ATHP: GetSymbols2Json.ftl
+|  |  +--GetSymbols2Json.ftl
+|  +--Method.ftl
+|  |  +--ASHP: "cache.add(name);"
+|  +--Method.ftl
+|  |  +--ASHP: "cache.clear();"
+|  +--Method.ftl
+|  |  +--ASHP: "return cache.contains(name);"
+|  +--Method.ftl
+|  |  +--ATHP: Init.ftl
+|  |  +--Init.ftl
+|  +--Method.ftl
+|  |  +--ASHP: "return this.adaptedGQLTypeSymbolResolver;"
+|  +--Method.ftl
+|  |  +--ASHP: "this.adaptedGQLTypeSymbolResolver = adaptedGQLTypeSymbolResolver;"
+|  +--Method.ftl
+|  |  +--ASHP: "return this.adaptedSchemaSymbolResolver;"
+|  +--Method.ftl
+|  |  +--ASHP: "this.adaptedSchemaSymbolResolver = adaptedSchemaSymbolResolver;"
+|  +--Method.ftl
+|  |  +--ASHP: "return this.adaptedTypeSymbolResolver;"
+|  +--Method.ftl
+|  |  +--ASHP: "this.adaptedTypeSymbolResolver = adaptedTypeSymbolResolver;"
+|  +--Method.ftl
+|  |  +--ATHP: Load.ftl
+|  |  +--Load.ftl
+|  +--Method.ftl
+|  |  +--ATHP: Load.ftl
+|  |  +--Load.ftl
+|  +--Method.ftl
+|  |  +--ATHP: Load.ftl
+|  |  +--Load.ftl
+|  +--Method.ftl
+|  |  +--ATHP: LoadFileForModelName.ftl
+|  |  +--LoadFileForModelName.ftl
+|  +--Method.ftl
+|  |  +--ASHP: "return this;"
+|  +--Method.ftl
+|  |  +--ATHP: Clear.ftl
+|  |  +--Clear.ftl
+|  +--Method.ftl
+|  |  +--ASHP: "putSymbolDeSer(kind, new graphqllite._symboltable.SchemaSymbolDe[...]"
+|  +--Method.ftl
+|  |  +--ASHP: "putSymbolDeSer(kind, new graphqllite._symboltable.TypeSymbolDeSe[...]"
+|  +--Method.ftl
+|  |  +--ASHP: "putSymbolDeSer(kind, new graphqllite._symboltable.GQLTypeSymbolD[...]"
++--Class.ftl
+|  +--ASHP: "package graphqllite._symboltable;"
+|  +--Imports.ftl
+|  +--ASHP: ""
+|  +--Attribute.ftl
+|  |  +--ASHP: "= new java.util.ArrayDeque<>()"
+|  +--Attribute.ftl
+|  |  +--Value.ftl
+|  +--Attribute.ftl
+|  |  +--Value.ftl
+|  +--Constructor.ftl
+|  |  +--ASHP: "this.scopeStack = new ArrayDeque<>();"
+|  +--Method.ftl
+|  |  +--ATHP: Get.ftl
+|  |  +--Get.ftl
+|  +--Method.ftl
+|  |  +--ATHP: Set.ftl
+|  |  +--Set.ftl
+|  +--Method.ftl
+|  |  +--ATHP: Get.ftl
+|  |  +--Get.ftl
+|  +--Method.ftl
+|  |  +--ATHP: CreateFromAST.ftl
+|  |  +--CreateFromAST.ftl
+|  +--Method.ftl
+|  |  +--ATHP: PutOnStack.ftl
+|  |  +--PutOnStack.ftl
+|  +--Method.ftl
+|  |  +--ASHP: "return Optional.ofNullable(scopeStack.peekLast());"
+|  +--Method.ftl
+|  |  +--ASHP: "return Optional.ofNullable(scopeStack.pollLast());"
+|  +--Method.ftl
+|  |  +--ASHP: "this.scopeStack = Log.errorIfNull((Deque<graphqllite._symboltabl[...]"
+|  +--Method.ftl
+|  |  +--ATHP: CreateScope.ftl
+|  |  +--CreateScope.ftl
+|  +--Method.ftl
+|  |  +--ATHP: Visit4SSC.ftl
+|  |  +--Visit4SSC.ftl
+|  +--Method.ftl
+|  |  +--ATHP: EndVisitSymbol.ftl
+|  |  +--EndVisitSymbol.ftl
+|  +--Method.ftl
+|  |  +--ATHP: Visit4SSC.ftl
+|  |  +--Visit4SSC.ftl
+|  +--Method.ftl
+|  |  +--ATHP: EndVisitSymbol.ftl
+|  |  +--EndVisitSymbol.ftl
+|  +--Method.ftl
+|  |  +--ATHP: Visit4SSC.ftl
+|  |  +--Visit4SSC.ftl
+|  +--Method.ftl
+|  |  +--ATHP: EndVisitSymbol.ftl
+|  |  +--EndVisitSymbol.ftl
+|  +--Method.ftl
+|  |  +--EmptyBody.ftl
+|  +--Method.ftl
+|  |  +--EmptyBody.ftl
+|  +--Method.ftl
+|  |  +--EmptyBody.ftl
+|  +--Method.ftl
+|  |  +--EmptyBody.ftl
+|  +--Method.ftl
+|  |  +--EmptyBody.ftl
+|  +--Method.ftl
+|  |  +--EmptyBody.ftl
+|  +--Method.ftl
+|  |  +--ATHP: VisitNoSymbol.ftl
+|  |  +--VisitNoSymbol.ftl
+|  +--Method.ftl
+|  |  +--ATHP: VisitNoSymbol.ftl
+|  |  +--VisitNoSymbol.ftl
+|  +--Method.ftl
+|  |  +--ATHP: VisitNoSymbol.ftl
+|  |  +--VisitNoSymbol.ftl
+|  +--Method.ftl
+|  |  +--EmptyBody.ftl
+|  +--Method.ftl
+|  |  +--EmptyBody.ftl
+|  +--Method.ftl
+|  |  +--EmptyBody.ftl
+|  +--Method.ftl
+|  |  +--EmptyBody.ftl
+|  +--Method.ftl
+|  |  +--ASHP: "scopeStack.addLast(scope);"
++--Interface.ftl
+|  +--ASHP: "package graphqllite._symboltable;"
+|  +--Imports.ftl
+|  +--ASHP: ""
+|  +--Method.ftl
+|  +--Method.ftl
+|  +--Method.ftl
+|  +--Method.ftl
+|  +--Method.ftl
+|  +--Method.ftl
+|  +--Method.ftl
+|  |  +--ATHP: ResolveDelegate.ftl
+|  |  +--ResolveDelegate.ftl
+|  +--Method.ftl
+|  |  +--ATHP: ResolveDelegate.ftl
+|  |  +--ResolveDelegate.ftl
+|  +--Method.ftl
+|  |  +--ATHP: ResolveDelegate.ftl
+|  |  +--ResolveDelegate.ftl
+|  +--Method.ftl
+|  |  +--ATHP: ResolveDelegate.ftl
+|  |  +--ResolveDelegate.ftl
+|  +--Method.ftl
+|  |  +--ATHP: ResolveDelegate.ftl
+|  |  +--ResolveDelegate.ftl
+|  +--Method.ftl
+|  |  +--ATHP: ResolveDelegate.ftl
+|  |  +--ResolveDelegate.ftl
+|  +--Method.ftl
+|  |  +--ATHP: ResolveDelegate.ftl
+|  |  +--ResolveDelegate.ftl
+|  +--Method.ftl
+|  |  +--ASHP: "return this.resolveSchemaDownMany(false,name,de.monticore.symbol[...]"
+|  +--Method.ftl
+|  |  +--ASHP: "return this.resolveSchemaDownMany(false,name,modifier,x -> true);"
+|  +--Method.ftl
+|  |  +--ASHP: "return this.resolveSchemaDownMany(false,name,modifier,predicate);"
+|  +--Method.ftl
+|  |  +--ATHP: ResolveDownMany.ftl
+|  |  +--ResolveDownMany.ftl
+|  +--Method.ftl
+|  |  +--ASHP: " return getResolvedOrThrowException(this.resolveSchemaLocallyMan[...]"
+|  +--Method.ftl
+|  |  +--ATHP: ResolveManyLocally.ftl
+|  |  +--ResolveManyLocally.ftl
+|  +--Method.ftl
+|  +--Method.ftl
+|  |  +--ASHP: "return this.resolveSchemaMany(name,de.monticore.symboltable.modi[...]"
+|  +--Method.ftl
+|  |  +--ASHP: "return this.resolveSchemaMany(name,modifier,x -> true);"
+|  +--Method.ftl
+|  |  +--ASHP: "return this.resolveSchemaMany(false,name,modifier,predicate);"
+|  +--Method.ftl
+|  |  +--ASHP: "return this.resolveSchemaMany(false,name,de.monticore.symboltabl[...]"
+|  +--Method.ftl
+|  |  +--ASHP: "return this.resolveSchemaMany(foundSymbols,name,modifier,x -> true);"
+|  +--Method.ftl
+|  |  +--ATHP: ResolveMany4IScope.ftl
+|  |  +--ResolveMany4IScope.ftl
+|  +--Method.ftl
+|  |  +--ASHP: "return new java.util.ArrayList<>();"
+|  +--Method.ftl
+|  |  +--ATHP: Filter.ftl
+|  |  +--Filter.ftl
+|  +--Method.ftl
+|  |  +--ATHP: ContinueWithEnclosingScope4IScope.ftl
+|  |  +--ContinueWithEnclosingScope4IScope.ftl
+|  +--Method.ftl
+|  |  +--ATHP: ContinueAsSubScope.ftl
+|  |  +--ContinueAsSubScope.ftl
+|  +--Method.ftl
+|  +--Method.ftl
+|  |  +--ASHP: "return getSchemaSymbols().values();"
+|  +--Method.ftl
+|  +--Method.ftl
+|  +--Method.ftl
+|  |  +--ATHP: ResolveDelegate.ftl
+|  |  +--ResolveDelegate.ftl
+|  +--Method.ftl
+|  |  +--ATHP: ResolveDelegate.ftl
+|  |  +--ResolveDelegate.ftl
+|  +--Method.ftl
+|  |  +--ATHP: ResolveDelegate.ftl
+|  |  +--ResolveDelegate.ftl
+|  +--Method.ftl
+|  |  +--ATHP: ResolveDelegate.ftl
+|  |  +--ResolveDelegate.ftl
+|  +--Method.ftl
+|  |  +--ATHP: ResolveDelegate.ftl
+|  |  +--ResolveDelegate.ftl
+|  +--Method.ftl
+|  |  +--ATHP: ResolveDelegate.ftl
+|  |  +--ResolveDelegate.ftl
+|  +--Method.ftl
+|  |  +--ATHP: ResolveDelegate.ftl
+|  |  +--ResolveDelegate.ftl
+|  +--Method.ftl
+|  |  +--ASHP: "return this.resolveTypeDownMany(false,name,de.monticore.symbolta[...]"
+|  +--Method.ftl
+|  |  +--ASHP: "return this.resolveTypeDownMany(false,name,modifier,x -> true);"
+|  +--Method.ftl
+|  |  +--ASHP: "return this.resolveTypeDownMany(false,name,modifier,predicate);"
+|  +--Method.ftl
+|  |  +--ATHP: ResolveDownMany.ftl
+|  |  +--ResolveDownMany.ftl
+|  +--Method.ftl
+|  |  +--ASHP: " return getResolvedOrThrowException(this.resolveTypeLocallyMany([...]"
+|  +--Method.ftl
+|  |  +--ATHP: ResolveManyLocally.ftl
+|  |  +--ResolveManyLocally.ftl
+|  +--Method.ftl
+|  +--Method.ftl
+|  |  +--ASHP: "return this.resolveTypeMany(name,de.monticore.symboltable.modifi[...]"
+|  +--Method.ftl
+|  |  +--ASHP: "return this.resolveTypeMany(name,modifier,x -> true);"
+|  +--Method.ftl
+|  |  +--ASHP: "return this.resolveTypeMany(false,name,modifier,predicate);"
+|  +--Method.ftl
+|  |  +--ASHP: "return this.resolveTypeMany(false,name,de.monticore.symboltable.[...]"
+|  +--Method.ftl
+|  |  +--ASHP: "return this.resolveTypeMany(foundSymbols,name,modifier,x -> true);"
+|  +--Method.ftl
+|  |  +--ATHP: ResolveMany4IScope.ftl
+|  |  +--ResolveMany4IScope.ftl
+|  +--Method.ftl
+|  |  +--ASHP: "return new java.util.ArrayList<>();"
+|  +--Method.ftl
+|  |  +--ATHP: Filter.ftl
+|  |  +--Filter.ftl
+|  +--Method.ftl
+|  |  +--ATHP: ContinueWithEnclosingScope4IScope.ftl
+|  |  +--ContinueWithEnclosingScope4IScope.ftl
+|  +--Method.ftl
+|  |  +--ATHP: ContinueAsSubScope.ftl
+|  |  +--ContinueAsSubScope.ftl
+|  +--Method.ftl
+|  +--Method.ftl
+|  |  +--ASHP: "return getTypeSymbols().values();"
+|  +--Method.ftl
+|  +--Method.ftl
+|  +--Method.ftl
+|  |  +--ATHP: ResolveDelegate.ftl
+|  |  +--ResolveDelegate.ftl
+|  +--Method.ftl
+|  |  +--ATHP: ResolveDelegate.ftl
+|  |  +--ResolveDelegate.ftl
+|  +--Method.ftl
+|  |  +--ATHP: ResolveDelegate.ftl
+|  |  +--ResolveDelegate.ftl
+|  +--Method.ftl
+|  |  +--ATHP: ResolveDelegate.ftl
+|  |  +--ResolveDelegate.ftl
+|  +--Method.ftl
+|  |  +--ATHP: ResolveDelegate.ftl
+|  |  +--ResolveDelegate.ftl
+|  +--Method.ftl
+|  |  +--ATHP: ResolveDelegate.ftl
+|  |  +--ResolveDelegate.ftl
+|  +--Method.ftl
+|  |  +--ATHP: ResolveDelegate.ftl
+|  |  +--ResolveDelegate.ftl
+|  +--Method.ftl
+|  |  +--ASHP: "return this.resolveGQLTypeDownMany(false,name,de.monticore.symbo[...]"
+|  +--Method.ftl
+|  |  +--ASHP: "return this.resolveGQLTypeDownMany(false,name,modifier,x -> true);"
+|  +--Method.ftl
+|  |  +--ASHP: "return this.resolveGQLTypeDownMany(false,name,modifier,predicate);"
+|  +--Method.ftl
+|  |  +--ATHP: ResolveDownMany.ftl
+|  |  +--ResolveDownMany.ftl
+|  +--Method.ftl
+|  |  +--ASHP: " return getResolvedOrThrowException(this.resolveGQLTypeLocallyMa[...]"
+|  +--Method.ftl
+|  |  +--ATHP: ResolveManyLocally.ftl
+|  |  +--ResolveManyLocally.ftl
+|  +--Method.ftl
+|  +--Method.ftl
+|  |  +--ASHP: "return this.resolveGQLTypeMany(name,de.monticore.symboltable.mod[...]"
+|  +--Method.ftl
+|  |  +--ASHP: "return this.resolveGQLTypeMany(name,modifier,x -> true);"
+|  +--Method.ftl
+|  |  +--ASHP: "return this.resolveGQLTypeMany(false,name,modifier,predicate);"
+|  +--Method.ftl
+|  |  +--ASHP: "return this.resolveGQLTypeMany(false,name,de.monticore.symboltab[...]"
+|  +--Method.ftl
+|  |  +--ASHP: "return this.resolveGQLTypeMany(foundSymbols,name,modifier,x -> t[...]"
+|  +--Method.ftl
+|  |  +--ATHP: ResolveMany4IScope.ftl
+|  |  +--ResolveMany4IScope.ftl
+|  +--Method.ftl
+|  |  +--ASHP: "return new java.util.ArrayList<>();"
+|  +--Method.ftl
+|  |  +--ATHP: Filter.ftl
+|  |  +--Filter.ftl
+|  +--Method.ftl
+|  |  +--ATHP: ContinueWithEnclosingScope4IScope.ftl
+|  |  +--ContinueWithEnclosingScope4IScope.ftl
+|  +--Method.ftl
+|  |  +--ATHP: ContinueAsSubScope.ftl
+|  |  +--ContinueAsSubScope.ftl
+|  +--Method.ftl
+|  +--Method.ftl
+|  |  +--ASHP: "return getGQLTypeSymbols().values();"
+|  +--Method.ftl
+|  +--Method.ftl
+|  +--Method.ftl
+|  +--Method.ftl
+|  |  +--ASHP: "Log.error("0xA7014x90469 The method \"addSubScope\" of interface[...]"
+|  +--Method.ftl
+|  |  +--ASHP: "Log.error("0xA7013x63417 The method \"removeSubScope\" of interf[...]"
+|  +--Method.ftl
+|  +--Method.ftl
+|  +--Method.ftl
+|  +--Method.ftl
+|  |  +--ATHP: GetSymbolSize.ftl
+|  |  +--GetSymbolSize.ftl
++--Interface.ftl
+|  +--ASHP: "package graphqllite._symboltable;"
+|  +--Imports.ftl
+|  +--ASHP: ""
+|  +--Method.ftl
+|  +--Method.ftl
+|  +--Method.ftl
++--Interface.ftl
+|  +--ASHP: "package graphqllite._symboltable;"
+|  +--Imports.ftl
+|  +--ASHP: ""
+|  +--Method.ftl
++--Interface.ftl
+|  +--ASHP: "package graphqllite._symboltable;"
+|  +--Imports.ftl
+|  +--ASHP: ""
+|  +--Method.ftl
++--Interface.ftl
+|  +--ASHP: "package graphqllite._symboltable;"
+|  +--Imports.ftl
+|  +--ASHP: ""
+|  +--Method.ftl
++--Interface.ftl
+|  +--ASHP: "package graphqllite._symboltable;"
+|  +--Imports.ftl
+|  +--ASHP: ""
+|  +--Method.ftl
+|  |  +--ATHP: CalculateModelNamesFor.ftl
+|  |  +--CalculateModelNamesFor.ftl
+|  +--Method.ftl
+|  |  +--ATHP: CalculateModelNamesFor.ftl
+|  |  +--CalculateModelNamesFor.ftl
+|  +--Method.ftl
+|  |  +--ATHP: CalculateModelNamesFor.ftl
+|  |  +--CalculateModelNamesFor.ftl
+|  +--Method.ftl
+|  |  +--ATHP: MethodDelegate.ftl
+|  |  +--MethodDelegate.ftl
+|  +--Method.ftl
+|  |  +--ATHP: MethodDelegate.ftl
+|  |  +--MethodDelegate.ftl
+|  +--Method.ftl
+|  |  +--ATHP: MethodDelegate.ftl
+|  |  +--MethodDelegate.ftl
+|  +--Method.ftl
+|  |  +--ATHP: MethodDelegate.ftl
+|  |  +--MethodDelegate.ftl
+|  +--Method.ftl
+|  |  +--ATHP: MethodDelegate.ftl
+|  |  +--MethodDelegate.ftl
+|  +--Method.ftl
+|  |  +--ATHP: MethodDelegate.ftl
+|  |  +--MethodDelegate.ftl
+|  +--Method.ftl
+|  |  +--ATHP: MethodDelegate.ftl
+|  |  +--MethodDelegate.ftl
+|  +--Method.ftl
+|  |  +--ATHP: MethodDelegate.ftl
+|  |  +--MethodDelegate.ftl
+|  +--Method.ftl
+|  |  +--ATHP: MethodDelegate.ftl
+|  |  +--MethodDelegate.ftl
+|  +--Method.ftl
+|  |  +--ATHP: MethodDelegate.ftl
+|  |  +--MethodDelegate.ftl
+|  +--Method.ftl
+|  |  +--ATHP: MethodDelegate.ftl
+|  |  +--MethodDelegate.ftl
+|  +--Method.ftl
+|  |  +--ATHP: MethodDelegate.ftl
+|  |  +--MethodDelegate.ftl
+|  +--Method.ftl
+|  |  +--ATHP: MethodDelegate.ftl
+|  |  +--MethodDelegate.ftl
+|  +--Method.ftl
+|  |  +--ATHP: MethodDelegate.ftl
+|  |  +--MethodDelegate.ftl
+|  +--Method.ftl
+|  |  +--ATHP: MethodDelegate.ftl
+|  |  +--MethodDelegate.ftl
+|  +--Method.ftl
+|  |  +--ATHP: MethodDelegate.ftl
+|  |  +--MethodDelegate.ftl
+|  +--Method.ftl
+|  |  +--ATHP: MethodDelegate.ftl
+|  |  +--MethodDelegate.ftl
+|  +--Method.ftl
+|  |  +--ATHP: MethodDelegate.ftl
+|  |  +--MethodDelegate.ftl
+|  +--Method.ftl
+|  +--Method.ftl
+|  |  +--ATHP: MethodDelegate.ftl
+|  |  +--MethodDelegate.ftl
+|  +--Method.ftl
+|  |  +--ATHP: MethodDelegate.ftl
+|  |  +--MethodDelegate.ftl
+|  +--Method.ftl
+|  |  +--ATHP: MethodDelegate.ftl
+|  |  +--MethodDelegate.ftl
+|  +--Method.ftl
+|  |  +--ATHP: MethodDelegate.ftl
+|  |  +--MethodDelegate.ftl
+|  +--Method.ftl
+|  |  +--ATHP: MethodDelegate.ftl
+|  |  +--MethodDelegate.ftl
+|  +--Method.ftl
+|  |  +--ATHP: MethodDelegate.ftl
+|  |  +--MethodDelegate.ftl
+|  +--Method.ftl
+|  |  +--ATHP: MethodDelegate.ftl
+|  |  +--MethodDelegate.ftl
+|  +--Method.ftl
+|  |  +--ATHP: MethodDelegate.ftl
+|  |  +--MethodDelegate.ftl
+|  +--Method.ftl
+|  |  +--ATHP: MethodDelegate.ftl
+|  |  +--MethodDelegate.ftl
+|  +--Method.ftl
+|  |  +--ATHP: MethodDelegate.ftl
+|  |  +--MethodDelegate.ftl
+|  +--Method.ftl
+|  |  +--ATHP: MethodDelegate.ftl
+|  |  +--MethodDelegate.ftl
+|  +--Method.ftl
+|  |  +--ATHP: MethodDelegate.ftl
+|  |  +--MethodDelegate.ftl
+|  +--Method.ftl
+|  |  +--ATHP: MethodDelegate.ftl
+|  |  +--MethodDelegate.ftl
+|  +--Method.ftl
+|  |  +--ATHP: MethodDelegate.ftl
+|  |  +--MethodDelegate.ftl
+|  +--Method.ftl
+|  +--Method.ftl
+|  |  +--ATHP: MethodDelegate.ftl
+|  |  +--MethodDelegate.ftl
+|  +--Method.ftl
+|  |  +--ATHP: MethodDelegate.ftl
+|  |  +--MethodDelegate.ftl
+|  +--Method.ftl
+|  |  +--ATHP: MethodDelegate.ftl
+|  |  +--MethodDelegate.ftl
+|  +--Method.ftl
+|  |  +--ATHP: MethodDelegate.ftl
+|  |  +--MethodDelegate.ftl
+|  +--Method.ftl
+|  |  +--ATHP: MethodDelegate.ftl
+|  |  +--MethodDelegate.ftl
+|  +--Method.ftl
+|  |  +--ATHP: MethodDelegate.ftl
+|  |  +--MethodDelegate.ftl
+|  +--Method.ftl
+|  |  +--ATHP: MethodDelegate.ftl
+|  |  +--MethodDelegate.ftl
+|  +--Method.ftl
+|  |  +--ATHP: MethodDelegate.ftl
+|  |  +--MethodDelegate.ftl
+|  +--Method.ftl
+|  |  +--ATHP: MethodDelegate.ftl
+|  |  +--MethodDelegate.ftl
+|  +--Method.ftl
+|  |  +--ATHP: MethodDelegate.ftl
+|  |  +--MethodDelegate.ftl
+|  +--Method.ftl
+|  |  +--ATHP: MethodDelegate.ftl
+|  |  +--MethodDelegate.ftl
+|  +--Method.ftl
+|  |  +--ATHP: MethodDelegate.ftl
+|  |  +--MethodDelegate.ftl
+|  +--Method.ftl
+|  |  +--ATHP: MethodDelegate.ftl
+|  |  +--MethodDelegate.ftl
+|  +--Method.ftl
+|  |  +--ATHP: MethodDelegate.ftl
+|  |  +--MethodDelegate.ftl
+|  +--Method.ftl
+|  |  +--ATHP: MethodDelegate.ftl
+|  |  +--MethodDelegate.ftl
+|  +--Method.ftl
+|  |  +--ATHP: MethodDelegate.ftl
+|  |  +--MethodDelegate.ftl
+|  +--Method.ftl
+|  |  +--ATHP: MethodDelegate.ftl
+|  |  +--MethodDelegate.ftl
+|  +--Method.ftl
+|  |  +--ATHP: MethodDelegate.ftl
+|  |  +--MethodDelegate.ftl
+|  +--Method.ftl
+|  +--Method.ftl
+|  |  +--ATHP: MethodDelegate.ftl
+|  |  +--MethodDelegate.ftl
+|  +--Method.ftl
+|  |  +--ATHP: MethodDelegate.ftl
+|  |  +--MethodDelegate.ftl
+|  +--Method.ftl
+|  |  +--ATHP: MethodDelegate.ftl
+|  |  +--MethodDelegate.ftl
+|  +--Method.ftl
+|  |  +--ATHP: MethodDelegate.ftl
+|  |  +--MethodDelegate.ftl
+|  +--Method.ftl
+|  |  +--ATHP: MethodDelegate.ftl
+|  |  +--MethodDelegate.ftl
+|  +--Method.ftl
+|  |  +--ATHP: MethodDelegate.ftl
+|  |  +--MethodDelegate.ftl
+|  +--Method.ftl
+|  |  +--ATHP: MethodDelegate.ftl
+|  |  +--MethodDelegate.ftl
+|  +--Method.ftl
+|  |  +--ATHP: MethodDelegate.ftl
+|  |  +--MethodDelegate.ftl
+|  +--Method.ftl
+|  |  +--ATHP: MethodDelegate.ftl
+|  |  +--MethodDelegate.ftl
+|  +--Method.ftl
+|  |  +--ATHP: MethodDelegate.ftl
+|  |  +--MethodDelegate.ftl
+|  +--Method.ftl
+|  |  +--ATHP: MethodDelegate.ftl
+|  |  +--MethodDelegate.ftl
+|  +--Method.ftl
+|  |  +--ATHP: MethodDelegate.ftl
+|  |  +--MethodDelegate.ftl
+|  +--Method.ftl
+|  |  +--ATHP: MethodDelegate.ftl
+|  |  +--MethodDelegate.ftl
+|  +--Method.ftl
+|  |  +--ATHP: MethodDelegate.ftl
+|  |  +--MethodDelegate.ftl
+|  +--Method.ftl
+|  +--Method.ftl
+|  |  +--ATHP: MethodDelegate.ftl
+|  |  +--MethodDelegate.ftl
+|  +--Method.ftl
+|  |  +--ATHP: MethodDelegate.ftl
+|  |  +--MethodDelegate.ftl
+|  +--Method.ftl
+|  |  +--ATHP: MethodDelegate.ftl
+|  |  +--MethodDelegate.ftl
+|  +--Method.ftl
+|  |  +--ATHP: MethodDelegate.ftl
+|  |  +--MethodDelegate.ftl
+|  +--Method.ftl
+|  |  +--ATHP: MethodDelegate.ftl
+|  |  +--MethodDelegate.ftl
+|  +--Method.ftl
+|  |  +--ATHP: MethodDelegate.ftl
+|  |  +--MethodDelegate.ftl
+|  +--Method.ftl
+|  |  +--ATHP: MethodDelegate.ftl
+|  |  +--MethodDelegate.ftl
+|  +--Method.ftl
+|  |  +--ATHP: MethodDelegate.ftl
+|  |  +--MethodDelegate.ftl
+|  +--Method.ftl
+|  |  +--ATHP: MethodDelegate.ftl
+|  |  +--MethodDelegate.ftl
+|  +--Method.ftl
+|  |  +--ATHP: MethodDelegate.ftl
+|  |  +--MethodDelegate.ftl
+|  +--Method.ftl
+|  |  +--ATHP: MethodDelegate.ftl
+|  |  +--MethodDelegate.ftl
+|  +--Method.ftl
+|  |  +--ATHP: MethodDelegate.ftl
+|  |  +--MethodDelegate.ftl
+|  +--Method.ftl
+|  |  +--ATHP: MethodDelegate.ftl
+|  |  +--MethodDelegate.ftl
+|  +--Method.ftl
+|  |  +--ATHP: MethodDelegate.ftl
+|  |  +--MethodDelegate.ftl
+|  +--Method.ftl
+|  |  +--ATHP: MethodDelegate.ftl
+|  |  +--MethodDelegate.ftl
+|  +--Method.ftl
+|  |  +--ATHP: MethodDelegate.ftl
+|  |  +--MethodDelegate.ftl
+|  +--Method.ftl
+|  |  +--ATHP: MethodDelegate.ftl
+|  |  +--MethodDelegate.ftl
+|  +--Method.ftl
+|  |  +--ATHP: MethodDelegate.ftl
+|  |  +--MethodDelegate.ftl
+|  +--Method.ftl
+|  +--Method.ftl
+|  |  +--ATHP: MethodDelegate.ftl
+|  |  +--MethodDelegate.ftl
+|  +--Method.ftl
+|  |  +--ATHP: MethodDelegate.ftl
+|  |  +--MethodDelegate.ftl
+|  +--Method.ftl
+|  |  +--ATHP: MethodDelegate.ftl
+|  |  +--MethodDelegate.ftl
+|  +--Method.ftl
+|  |  +--ATHP: MethodDelegate.ftl
+|  |  +--MethodDelegate.ftl
+|  +--Method.ftl
+|  |  +--ATHP: MethodDelegate.ftl
+|  |  +--MethodDelegate.ftl
+|  +--Method.ftl
+|  |  +--ATHP: MethodDelegate.ftl
+|  |  +--MethodDelegate.ftl
+|  +--Method.ftl
+|  |  +--ATHP: MethodDelegate.ftl
+|  |  +--MethodDelegate.ftl
+|  +--Method.ftl
+|  |  +--ATHP: MethodDelegate.ftl
+|  |  +--MethodDelegate.ftl
+|  +--Method.ftl
+|  |  +--ATHP: MethodDelegate.ftl
+|  |  +--MethodDelegate.ftl
+|  +--Method.ftl
+|  |  +--ATHP: MethodDelegate.ftl
+|  |  +--MethodDelegate.ftl
+|  +--Method.ftl
+|  |  +--ATHP: MethodDelegate.ftl
+|  |  +--MethodDelegate.ftl
+|  +--Method.ftl
+|  |  +--ATHP: MethodDelegate.ftl
+|  |  +--MethodDelegate.ftl
+|  +--Method.ftl
+|  |  +--ATHP: MethodDelegate.ftl
+|  |  +--MethodDelegate.ftl
+|  +--Method.ftl
+|  |  +--ATHP: MethodDelegate.ftl
+|  |  +--MethodDelegate.ftl
+|  +--Method.ftl
+|  +--Method.ftl
+|  |  +--ATHP: ResolveAdapted.ftl
+|  |  +--ResolveAdapted.ftl
+|  +--Method.ftl
+|  |  +--ATHP: ResolveAdapted.ftl
+|  |  +--ResolveAdapted.ftl
+|  +--Method.ftl
+|  |  +--ATHP: ResolveAdapted.ftl
+|  |  +--ResolveAdapted.ftl
+|  +--Method.ftl
+|  |  +--ATHP: ResolveMany4GlobalScope.ftl
+|  |  +--ResolveMany4GlobalScope.ftl
+|  +--Method.ftl
+|  +--Method.ftl
+|  |  +--ATHP: ResolveMany4GlobalScope.ftl
+|  |  +--ResolveMany4GlobalScope.ftl
+|  +--Method.ftl
+|  +--Method.ftl
+|  |  +--ATHP: ResolveMany4GlobalScope.ftl
+|  |  +--ResolveMany4GlobalScope.ftl
+|  +--Method.ftl
+|  +--Method.ftl
+|  +--Method.ftl
+|  |  +--ASHP: "Log.error("0xA6100x60876 GlobalScope GraphQLLiteGlobalScope has [...]"
+|  +--Method.ftl
+|  |  +--ASHP: "Log.error("0xA6100x60877 GlobalScope GraphQLLiteGlobalScope has [...]"
+|  +--Method.ftl
+|  |  +--ASHP: "Log.error("0xA6101x90744 Global scopes do not have names."); ret[...]"
+|  +--Method.ftl
+|  |  +--ASHP: "return false;"
+|  +--Method.ftl
+|  |  +--ASHP: "return false;"
+|  +--Method.ftl
+|  +--Method.ftl
+|  |  +--ASHP: "getSymbolDeSers().put(key, value);"
+|  +--Method.ftl
+|  |  +--ASHP: "return getSymbolDeSers().get(key);"
+|  +--Method.ftl
+|  |  +--ASHP: "putSymbolDeSer(kind, new graphqllite._symboltable.SchemaSymbolDe[...]"
+|  +--Method.ftl
+|  |  +--ASHP: "putSymbolDeSer(kind, new graphqllite._symboltable.TypeSymbolDeSe[...]"
+|  +--Method.ftl
+|  |  +--ASHP: "putSymbolDeSer(kind, new graphqllite._symboltable.GQLTypeSymbolD[...]"
+|  +--Method.ftl
+|  |  +--ASHP: "return getSymbolDeSer("graphqllite._symboltable.GraphQLLiteScope");"
+|  +--Method.ftl
+|  |  +--ASHP: "return getSymbolDeSer("graphqllite._symboltable.GraphQLLiteScope");"
+|  +--Method.ftl
+|  |  +--ASHP: "return getSymbolDeSer("graphqllite._symboltable.GraphQLLiteScope");"
+|  +--Method.ftl
++--Interface.ftl
+|  +--ASHP: "package graphqllite._symboltable;"
+|  +--Imports.ftl
+|  +--ASHP: ""
+|  +--Method.ftl
+|  |  +--ATHP: MethodDelegate.ftl
+|  |  +--MethodDelegate.ftl
+|  +--Method.ftl
+|  |  +--ATHP: MethodDelegate.ftl
+|  |  +--MethodDelegate.ftl
+|  +--Method.ftl
+|  |  +--ATHP: MethodDelegate.ftl
+|  |  +--MethodDelegate.ftl
+|  +--Method.ftl
+|  |  +--ATHP: MethodDelegate.ftl
+|  |  +--MethodDelegate.ftl
+|  +--Method.ftl
+|  |  +--ATHP: MethodDelegate.ftl
+|  |  +--MethodDelegate.ftl
+|  +--Method.ftl
+|  |  +--ATHP: MethodDelegate.ftl
+|  |  +--MethodDelegate.ftl
+|  +--Method.ftl
+|  |  +--ATHP: MethodDelegate.ftl
+|  |  +--MethodDelegate.ftl
+|  +--Method.ftl
+|  |  +--ATHP: MethodDelegate.ftl
+|  |  +--MethodDelegate.ftl
+|  +--Method.ftl
+|  |  +--ATHP: MethodDelegate.ftl
+|  |  +--MethodDelegate.ftl
+|  +--Method.ftl
+|  |  +--ATHP: MethodDelegate.ftl
+|  |  +--MethodDelegate.ftl
+|  +--Method.ftl
+|  |  +--ATHP: MethodDelegate.ftl
+|  |  +--MethodDelegate.ftl
+|  +--Method.ftl
+|  |  +--ATHP: MethodDelegate.ftl
+|  |  +--MethodDelegate.ftl
+|  +--Method.ftl
+|  |  +--ATHP: MethodDelegate.ftl
+|  |  +--MethodDelegate.ftl
+|  +--Method.ftl
+|  |  +--ATHP: MethodDelegate.ftl
+|  |  +--MethodDelegate.ftl
+|  +--Method.ftl
+|  |  +--ATHP: MethodDelegate.ftl
+|  |  +--MethodDelegate.ftl
+|  +--Method.ftl
+|  |  +--ATHP: MethodDelegate.ftl
+|  |  +--MethodDelegate.ftl
+|  +--Method.ftl
+|  |  +--ATHP: MethodDelegate.ftl
+|  |  +--MethodDelegate.ftl
+|  +--Method.ftl
+|  |  +--ATHP: MethodDelegate.ftl
+|  |  +--MethodDelegate.ftl
+|  +--Method.ftl
+|  |  +--ATHP: MethodDelegate.ftl
+|  |  +--MethodDelegate.ftl
+|  +--Method.ftl
+|  |  +--ATHP: MethodDelegate.ftl
+|  |  +--MethodDelegate.ftl
+|  +--Method.ftl
+|  |  +--ATHP: MethodDelegate.ftl
+|  |  +--MethodDelegate.ftl
+|  +--Method.ftl
+|  |  +--ATHP: MethodDelegate.ftl
+|  |  +--MethodDelegate.ftl
+|  +--Method.ftl
+|  |  +--ATHP: MethodDelegate.ftl
+|  |  +--MethodDelegate.ftl
+|  +--Method.ftl
+|  |  +--ATHP: MethodDelegate.ftl
+|  |  +--MethodDelegate.ftl
+|  +--Method.ftl
+|  |  +--ATHP: MethodDelegate.ftl
+|  |  +--MethodDelegate.ftl
+|  +--Method.ftl
+|  |  +--ATHP: MethodDelegate.ftl
+|  |  +--MethodDelegate.ftl
+|  +--Method.ftl
+|  |  +--ATHP: MethodDelegate.ftl
+|  |  +--MethodDelegate.ftl
+|  +--Method.ftl
+|  |  +--ATHP: MethodDelegate.ftl
+|  |  +--MethodDelegate.ftl
+|  +--Method.ftl
+|  |  +--ATHP: MethodDelegate.ftl
+|  |  +--MethodDelegate.ftl
+|  +--Method.ftl
+|  |  +--ATHP: MethodDelegate.ftl
+|  |  +--MethodDelegate.ftl
+|  +--Method.ftl
+|  |  +--ATHP: MethodDelegate.ftl
+|  |  +--MethodDelegate.ftl
+|  +--Method.ftl
+|  |  +--ATHP: MethodDelegate.ftl
+|  |  +--MethodDelegate.ftl
+|  +--Method.ftl
+|  +--Method.ftl
+|  +--Method.ftl
+|  |  +--ATHP: GetTopLevelSymbol.ftl
+|  |  +--GetTopLevelSymbol.ftl
+|  +--Method.ftl
+|  |  +--ATHP: CheckIfContinueAsSubScope.ftl
+|  |  +--CheckIfContinueAsSubScope.ftl
+|  +--Method.ftl
+|  |  +--ATHP: GetRemainingNameForResolveDown.ftl
+|  |  +--GetRemainingNameForResolveDown.ftl
+|  +--Method.ftl
+|  |  +--ATHP: GetFullName.ftl
+|  |  +--GetFullName.ftl
+|  +--Method.ftl
+|  |  +--ATHP: ContinueWithEnclosingScope4ArtifactScope.ftl
+|  |  +--ContinueWithEnclosingScope4ArtifactScope.ftl
+|  +--Method.ftl
+|  |  +--ATHP: ContinueWithEnclosingScope4ArtifactScope.ftl
+|  |  +--ContinueWithEnclosingScope4ArtifactScope.ftl
+|  +--Method.ftl
+|  |  +--ATHP: ContinueWithEnclosingScope4ArtifactScope.ftl
+|  |  +--ContinueWithEnclosingScope4ArtifactScope.ftl
+OP set value (key, value): 
+OP set value (key, value): 
+OP set value (key, value): 
++--Class.ftl
+|  +--ASHP: "package graphqllite._visitor;"
+|  +--Imports.ftl
+|  +--Annotations.ftl
+|  +--Attribute.ftl
+|  |  +--ASHP: "= (GraphQLLiteTraverserImplementation) this"
+|  +--Attribute.ftl
+|  |  +--ASHP: "= new ArrayList<>()"
+|  +--Attribute.ftl
+|  |  +--ASHP: "= new ArrayList<>();"
+|  +--Attribute.ftl
+|  |  +--ASHP: "= new ArrayList<>();"
+|  +--Attribute.ftl
+|  |  +--ASHP: "= new ArrayList<>();"
+|  +--Attribute.ftl
+|  |  +--ASHP: "= new ArrayList<>();"
+|  +--Attribute.ftl
+|  |  +--ASHP: "= Optional.empty()"
+|  +--Attribute.ftl
+|  |  +--ASHP: "= Optional.empty()"
+|  +--Attribute.ftl
+|  |  +--ASHP: "= Optional.empty()"
+|  +--Attribute.ftl
+|  |  +--ASHP: "= Optional.empty()"
+|  +--Method.ftl
+|  |  +--ATHP: AddVisitor.ftl
+|  |  +--AddVisitor.ftl
+|  +--Method.ftl
+|  |  +--ASHP: "return mCCommonLiteralsVisitorList;"
+|  +--Method.ftl
+|  |  +--ATHP: AddVisitor.ftl
+|  |  +--AddVisitor.ftl
+|  +--Method.ftl
+|  |  +--ASHP: "return mCBasicsVisitorList;"
+|  +--Method.ftl
+|  |  +--ATHP: AddVisitor.ftl
+|  |  +--AddVisitor.ftl
+|  +--Method.ftl
+|  |  +--ASHP: "return mCLiteralsBasisVisitorList;"
+|  +--Method.ftl
+|  |  +--ATHP: AddVisitor.ftl
+|  |  +--AddVisitor.ftl
+|  +--Method.ftl
+|  |  +--ASHP: "return graphQLLiteVisitorList;"
+|  +--Method.ftl
+|  |  +--ATHP: SetHandler.ftl
+|  |  +--SetHandler.ftl
+|  +--Method.ftl
+|  |  +--ASHP: "return mCCommonLiteralsHandler;"
+|  +--Method.ftl
+|  |  +--ATHP: SetHandler.ftl
+|  |  +--SetHandler.ftl
+|  +--Method.ftl
+|  |  +--ASHP: "return mCBasicsHandler;"
+|  +--Method.ftl
+|  |  +--ATHP: SetHandler.ftl
+|  |  +--SetHandler.ftl
+|  +--Method.ftl
+|  |  +--ASHP: "return mCLiteralsBasisHandler;"
+|  +--Method.ftl
+|  |  +--ATHP: SetHandler.ftl
+|  |  +--SetHandler.ftl
+|  +--Method.ftl
+|  |  +--ASHP: "return graphQLLiteHandler;"
+|  +--Method.ftl
+|  |  +--ATHP: AddVisitor.ftl
+|  |  +--AddVisitor.ftl
+|  +--Method.ftl
+|  |  +--ASHP: "return iVisitorList;"
++--Class.ftl
+|  +--ASHP: "package graphqllite._visitor;"
+|  +--Imports.ftl
+|  +--ASHP: ""
+|  +--Attribute.ftl
+|  |  +--Value.ftl
+|  +--Method.ftl
+|  |  +--ATHP: Get.ftl
+|  |  +--Get.ftl
+|  +--Method.ftl
+|  |  +--ATHP: Set.ftl
+|  |  +--Set.ftl
+|  +--Method.ftl
+|  |  +--ATHP: HandleASTInheritance.ftl
+|  |  +--HandleASTInheritance.ftl
+|  +--Method.ftl
+|  |  +--ATHP: HandleASTInheritance.ftl
+|  |  +--HandleASTInheritance.ftl
+|  +--Method.ftl
+|  |  +--ATHP: HandleASTInheritance.ftl
+|  |  +--HandleASTInheritance.ftl
+|  +--Method.ftl
+|  |  +--ATHP: HandleASTInheritance.ftl
+|  |  +--HandleASTInheritance.ftl
+|  +--Method.ftl
+|  |  +--ATHP: HandleASTInheritance.ftl
+|  |  +--HandleASTInheritance.ftl
+|  +--Method.ftl
+|  |  +--ATHP: HandleASTInheritance.ftl
+|  |  +--HandleASTInheritance.ftl
+|  +--Method.ftl
+|  |  +--ATHP: HandleASTInheritance.ftl
+|  |  +--HandleASTInheritance.ftl
+|  +--Method.ftl
+|  |  +--ATHP: HandleASTInheritance.ftl
+|  |  +--HandleASTInheritance.ftl
+|  +--Method.ftl
+|  |  +--ATHP: HandleASTInheritance.ftl
+|  |  +--HandleASTInheritance.ftl
+|  +--Method.ftl
+|  |  +--ATHP: HandleSymTabInheritance.ftl
+|  |  +--HandleSymTabInheritance.ftl
+|  +--Method.ftl
+|  |  +--ATHP: HandleSymTabInheritance.ftl
+|  |  +--HandleSymTabInheritance.ftl
+|  +--Method.ftl
+|  |  +--ATHP: HandleSymTabInheritance.ftl
+|  |  +--HandleSymTabInheritance.ftl
+|  +--Method.ftl
+|  |  +--ATHP: HandleSymTabInheritance.ftl
+|  |  +--HandleSymTabInheritance.ftl
+|  +--Method.ftl
+|  |  +--ATHP: HandleSymTabInheritance.ftl
+|  |  +--HandleSymTabInheritance.ftl
++--Interface.ftl
+|  +--ASHP: "package graphqllite._visitor;"
+|  +--Imports.ftl
+|  +--Annotations.ftl
+|  +--Method.ftl
+|  |  +--EmptyBody.ftl
+|  +--Method.ftl
+|  |  +--ASHP: "return new ArrayList<>();"
+|  +--Method.ftl
+|  |  +--EmptyBody.ftl
+|  +--Method.ftl
+|  |  +--ASHP: "return new ArrayList<>();"
+|  +--Method.ftl
+|  |  +--EmptyBody.ftl
+|  +--Method.ftl
+|  |  +--ASHP: "return new ArrayList<>();"
+|  +--Method.ftl
+|  |  +--EmptyBody.ftl
+|  +--Method.ftl
+|  |  +--ASHP: "return new ArrayList<>();"
+|  +--Method.ftl
+|  |  +--EmptyBody.ftl
+|  +--Method.ftl
+|  |  +--ASHP: "return Optional.empty();"
+|  +--Method.ftl
+|  |  +--EmptyBody.ftl
+|  +--Method.ftl
+|  |  +--ASHP: "return Optional.empty();"
+|  +--Method.ftl
+|  |  +--EmptyBody.ftl
+|  +--Method.ftl
+|  |  +--ASHP: "return Optional.empty();"
+|  +--Method.ftl
+|  |  +--EmptyBody.ftl
+|  +--Method.ftl
+|  |  +--ASHP: "return Optional.empty();"
+|  +--Method.ftl
+|  |  +--ATHP: DelegatingMethods.ftl
+|  |  +--DelegatingMethods.ftl
+|  +--Method.ftl
+|  |  +--ATHP: DelegatingMethods.ftl
+|  |  +--DelegatingMethods.ftl
+|  +--Method.ftl
+|  |  +--ATHP: Handle.ftl
+|  |  +--Handle.ftl
+|  +--Method.ftl
+|  |  +--ATHP: Traverse.ftl
+|  |  +--Traverse.ftl
+|  +--Method.ftl
+|  |  +--ATHP: DelegatingMethods.ftl
+|  |  +--DelegatingMethods.ftl
+|  +--Method.ftl
+|  |  +--ATHP: DelegatingMethods.ftl
+|  |  +--DelegatingMethods.ftl
+|  +--Method.ftl
+|  |  +--ATHP: Handle.ftl
+|  |  +--Handle.ftl
+|  +--Method.ftl
+|  |  +--ATHP: Traverse.ftl
+|  |  +--Traverse.ftl
+|  +--Method.ftl
+|  |  +--ATHP: DelegatingMethods.ftl
+|  |  +--DelegatingMethods.ftl
+|  +--Method.ftl
+|  |  +--ATHP: DelegatingMethods.ftl
+|  |  +--DelegatingMethods.ftl
+|  +--Method.ftl
+|  |  +--ATHP: Handle.ftl
+|  |  +--Handle.ftl
+|  +--Method.ftl
+|  |  +--ATHP: Traverse.ftl
+|  |  +--Traverse.ftl
+|  +--Method.ftl
+|  |  +--ATHP: DelegatingMethods.ftl
+|  |  +--DelegatingMethods.ftl
+|  +--Method.ftl
+|  |  +--ATHP: DelegatingMethods.ftl
+|  |  +--DelegatingMethods.ftl
+|  +--Method.ftl
+|  |  +--ATHP: Handle.ftl
+|  |  +--Handle.ftl
+|  +--Method.ftl
+|  |  +--ATHP: Traverse.ftl
+|  |  +--Traverse.ftl
+|  +--Method.ftl
+|  |  +--ATHP: DelegatingMethods.ftl
+|  |  +--DelegatingMethods.ftl
+|  +--Method.ftl
+|  |  +--ATHP: DelegatingMethods.ftl
+|  |  +--DelegatingMethods.ftl
+|  +--Method.ftl
+|  |  +--ATHP: Handle.ftl
+|  |  +--Handle.ftl
+|  +--Method.ftl
+|  |  +--ATHP: Traverse.ftl
+|  |  +--Traverse.ftl
+|  +--Method.ftl
+|  |  +--ATHP: DelegatingMethods.ftl
+|  |  +--DelegatingMethods.ftl
+|  +--Method.ftl
+|  |  +--ATHP: DelegatingMethods.ftl
+|  |  +--DelegatingMethods.ftl
+|  +--Method.ftl
+|  |  +--ATHP: Handle.ftl
+|  |  +--Handle.ftl
+|  +--Method.ftl
+|  |  +--ATHP: Traverse.ftl
+|  |  +--Traverse.ftl
+|  +--Method.ftl
+|  |  +--ATHP: DelegatingMethods.ftl
+|  |  +--DelegatingMethods.ftl
+|  +--Method.ftl
+|  |  +--ATHP: DelegatingMethods.ftl
+|  |  +--DelegatingMethods.ftl
+|  +--Method.ftl
+|  |  +--ATHP: Handle.ftl
+|  |  +--Handle.ftl
+|  +--Method.ftl
+|  |  +--ATHP: DelegatingMethods.ftl
+|  |  +--DelegatingMethods.ftl
+|  +--Method.ftl
+|  |  +--ATHP: DelegatingMethods.ftl
+|  |  +--DelegatingMethods.ftl
+|  +--Method.ftl
+|  |  +--ATHP: Handle.ftl
+|  |  +--Handle.ftl
+|  +--Method.ftl
+|  |  +--ATHP: DelegatingMethods.ftl
+|  |  +--DelegatingMethods.ftl
+|  +--Method.ftl
+|  |  +--ATHP: DelegatingMethods.ftl
+|  |  +--DelegatingMethods.ftl
+|  +--Method.ftl
+|  |  +--ATHP: Handle.ftl
+|  |  +--Handle.ftl
+|  +--Method.ftl
+|  |  +--ATHP: DelegatingMethods.ftl
+|  |  +--DelegatingMethods.ftl
+|  +--Method.ftl
+|  |  +--ATHP: DelegatingMethods.ftl
+|  |  +--DelegatingMethods.ftl
+|  +--Method.ftl
+|  |  +--ATHP: Handle.ftl
+|  |  +--Handle.ftl
+|  +--Method.ftl
+|  |  +--ATHP: DelegatingMethods.ftl
+|  |  +--DelegatingMethods.ftl
+|  +--Method.ftl
+|  |  +--ATHP: DelegatingMethods.ftl
+|  |  +--DelegatingMethods.ftl
+|  +--Method.ftl
+|  |  +--ATHP: Handle.ftl
+|  |  +--Handle.ftl
+|  +--Method.ftl
+|  |  +--EmptyBody.ftl
+|  +--Method.ftl
+|  |  +--ATHP: DelegatingMethods.ftl
+|  |  +--DelegatingMethods.ftl
+|  +--Method.ftl
+|  |  +--ATHP: DelegatingMethods.ftl
+|  |  +--DelegatingMethods.ftl
+|  +--Method.ftl
+|  |  +--ATHP: Handle.ftl
+|  |  +--Handle.ftl
+|  +--Method.ftl
+|  |  +--EmptyBody.ftl
+|  +--Method.ftl
+|  |  +--ATHP: DelegatingMethods.ftl
+|  |  +--DelegatingMethods.ftl
+|  +--Method.ftl
+|  |  +--ATHP: DelegatingMethods.ftl
+|  |  +--DelegatingMethods.ftl
+|  +--Method.ftl
+|  |  +--ATHP: Handle.ftl
+|  |  +--Handle.ftl
+|  +--Method.ftl
+|  |  +--EmptyBody.ftl
+|  +--Method.ftl
+|  |  +--ATHP: DelegatingMethods.ftl
+|  |  +--DelegatingMethods.ftl
+|  +--Method.ftl
+|  |  +--ATHP: DelegatingMethods.ftl
+|  |  +--DelegatingMethods.ftl
+|  +--Method.ftl
+|  |  +--ATHP: Handle.ftl
+|  |  +--Handle.ftl
+|  +--Method.ftl
+|  |  +--EmptyBody.ftl
+|  +--Method.ftl
+|  |  +--ATHP: DelegatingMethods.ftl
+|  |  +--DelegatingMethods.ftl
+|  +--Method.ftl
+|  |  +--ATHP: DelegatingMethods.ftl
+|  |  +--DelegatingMethods.ftl
+|  +--Method.ftl
+|  |  +--ATHP: Handle.ftl
+|  |  +--Handle.ftl
+|  +--Method.ftl
+|  |  +--ATHP: TraverseScope.ftl
+|  |  +--TraverseScope.ftl
+|  +--Method.ftl
+|  |  +--ATHP: DelegatingMethods.ftl
+|  |  +--DelegatingMethods.ftl
+|  +--Method.ftl
+|  |  +--ATHP: DelegatingMethods.ftl
+|  |  +--DelegatingMethods.ftl
+|  +--Method.ftl
+|  |  +--ATHP: Handle.ftl
+|  |  +--Handle.ftl
+|  +--Method.ftl
+|  |  +--ASHP: "traverse((graphqllite._symboltable.IGraphQLLiteScope) node);"
++--Interface.ftl
+|  +--ASHP: "package graphqllite._visitor;"
+|  +--Imports.ftl
+|  +--Annotations.ftl
+|  +--Method.ftl
+|  |  +--EmptyBody.ftl
+|  +--Method.ftl
+|  |  +--EmptyBody.ftl
+|  +--Method.ftl
+|  |  +--EmptyBody.ftl
+|  +--Method.ftl
+|  |  +--EmptyBody.ftl
+|  +--Method.ftl
+|  |  +--EmptyBody.ftl
+|  +--Method.ftl
+|  |  +--EmptyBody.ftl
+|  +--Method.ftl
+|  |  +--EmptyBody.ftl
+|  +--Method.ftl
+|  |  +--EmptyBody.ftl
+|  +--Method.ftl
+|  |  +--EmptyBody.ftl
+|  +--Method.ftl
+|  |  +--EmptyBody.ftl
+|  +--Method.ftl
+|  |  +--EmptyBody.ftl
+|  +--Method.ftl
+|  |  +--EmptyBody.ftl
+|  +--Method.ftl
+|  |  +--EmptyBody.ftl
+|  +--Method.ftl
+|  |  +--EmptyBody.ftl
+|  +--Method.ftl
+|  |  +--EmptyBody.ftl
+|  +--Method.ftl
+|  |  +--EmptyBody.ftl
+|  +--Method.ftl
+|  |  +--EmptyBody.ftl
+|  +--Method.ftl
+|  |  +--EmptyBody.ftl
+|  +--Method.ftl
+|  |  +--EmptyBody.ftl
+|  +--Method.ftl
+|  |  +--EmptyBody.ftl
+|  +--Method.ftl
+|  |  +--EmptyBody.ftl
+|  +--Method.ftl
+|  |  +--EmptyBody.ftl
+|  +--Method.ftl
+|  |  +--EmptyBody.ftl
+|  +--Method.ftl
+|  |  +--EmptyBody.ftl
+|  +--Method.ftl
+|  |  +--EmptyBody.ftl
+|  +--Method.ftl
+|  |  +--EmptyBody.ftl
+|  +--Method.ftl
+|  |  +--EmptyBody.ftl
+|  +--Method.ftl
+|  |  +--EmptyBody.ftl
+|  +--Method.ftl
+|  |  +--EmptyBody.ftl
+|  +--Method.ftl
+|  |  +--EmptyBody.ftl
++--Interface.ftl
+|  +--ASHP: "package graphqllite._visitor;"
+|  +--Imports.ftl
+|  +--Annotations.ftl
+|  +--Method.ftl
+|  |  +--ASHP: " throw new UnsupportedOperationException("0xA7015x08166 The gett[...]"
+|  +--Method.ftl
+|  |  +--ASHP: " throw new UnsupportedOperationException("0xA7016x39379 The sett[...]"
+|  +--Method.ftl
+|  |  +--ATHP: Handle.ftl
+|  |  +--Handle.ftl
+|  +--Method.ftl
+|  |  +--ATHP: Traverse.ftl
+|  |  +--Traverse.ftl
+|  +--Method.ftl
+|  |  +--ATHP: Handle.ftl
+|  |  +--Handle.ftl
+|  +--Method.ftl
+|  |  +--ATHP: Traverse.ftl
+|  |  +--Traverse.ftl
+|  +--Method.ftl
+|  |  +--ATHP: Handle.ftl
+|  |  +--Handle.ftl
+|  +--Method.ftl
+|  |  +--ATHP: Traverse.ftl
+|  |  +--Traverse.ftl
+|  +--Method.ftl
+|  |  +--ATHP: Handle.ftl
+|  |  +--Handle.ftl
+|  +--Method.ftl
+|  |  +--ATHP: Traverse.ftl
+|  |  +--Traverse.ftl
+|  +--Method.ftl
+|  |  +--ATHP: Handle.ftl
+|  |  +--Handle.ftl
+|  +--Method.ftl
+|  |  +--ATHP: Traverse.ftl
+|  |  +--Traverse.ftl
+|  +--Method.ftl
+|  |  +--ATHP: Handle.ftl
+|  |  +--Handle.ftl
+|  +--Method.ftl
+|  |  +--ATHP: Traverse.ftl
+|  |  +--Traverse.ftl
+|  +--Method.ftl
+|  |  +--ATHP: Handle.ftl
+|  |  +--Handle.ftl
+|  +--Method.ftl
+|  |  +--ATHP: Handle.ftl
+|  |  +--Handle.ftl
+|  +--Method.ftl
+|  |  +--ATHP: Handle.ftl
+|  |  +--Handle.ftl
+|  +--Method.ftl
+|  |  +--ATHP: Handle.ftl
+|  |  +--Handle.ftl
+|  +--Method.ftl
+|  |  +--ATHP: Handle.ftl
+|  |  +--Handle.ftl
+|  +--Method.ftl
+|  |  +--EmptyBody.ftl
+|  +--Method.ftl
+|  |  +--ATHP: Handle.ftl
+|  |  +--Handle.ftl
+|  +--Method.ftl
+|  |  +--EmptyBody.ftl
+|  +--Method.ftl
+|  |  +--ATHP: Handle.ftl
+|  |  +--Handle.ftl
+|  +--Method.ftl
+|  |  +--EmptyBody.ftl
+|  +--Method.ftl
+|  |  +--ATHP: Handle.ftl
+|  |  +--Handle.ftl
+|  +--Method.ftl
+|  |  +--EmptyBody.ftl
+|  +--Method.ftl
+|  |  +--ATHP: Handle.ftl
+|  |  +--Handle.ftl
+|  +--Method.ftl
+|  |  +--ATHP: TraverseScope.ftl
+|  |  +--TraverseScope.ftl
+|  +--Method.ftl
+|  |  +--ATHP: Handle.ftl
+|  |  +--Handle.ftl
+|  +--Method.ftl
+|  |  +--ASHP: "traverse((graphqllite._symboltable.IGraphQLLiteScope) node);"
+OP set value (key, value): 
+OP set value (key, value): 
+OP set value (key, value): 
++--Class.ftl
+|  +--ASHP: "package graphqllite._cocos;"
+|  +--Imports.ftl
+|  +--ASHP: ""
+|  +--Attribute.ftl
+|  |  +--Value.ftl
+|  +--Constructor.ftl
+|  |  +--ATHP: CoCoCheckerConstructor.ftl
+|  |  +--CoCoCheckerConstructor.ftl
+|  +--Method.ftl
+|  |  +--ATHP: Get.ftl
+|  |  +--Get.ftl
+|  +--Method.ftl
+|  |  +--ATHP: Set.ftl
+|  |  +--Set.ftl
+|  +--Method.ftl
+|  |  +--ATHP: AddChecker.ftl
+|  |  +--AddChecker.ftl
+|  +--Method.ftl
+|  |  +--ASHP: "node.accept(getTraverser());"
+|  +--Method.ftl
+|  |  +--ASHP: "traverser.add4GraphQLLite(coco);"
+|  +--Method.ftl
+|  |  +--ASHP: "traverser.add4GraphQLLite(coco);"
+|  +--Method.ftl
+|  |  +--ASHP: "traverser.add4GraphQLLite(coco);"
+|  +--Method.ftl
+|  |  +--ASHP: "traverser.add4GraphQLLite(coco);"
+|  +--Method.ftl
+|  |  +--ASHP: "traverser.add4GraphQLLite(coco);"
+|  +--Method.ftl
+|  |  +--ASHP: "traverser.add4GraphQLLite(coco);"
+|  +--Method.ftl
+|  |  +--ASHP: "traverser.add4GraphQLLite(coco);"
+|  +--Method.ftl
+|  |  +--ASHP: "traverser.add4GraphQLLite(coco);"
+|  +--Method.ftl
+|  |  +--ASHP: "traverser.add4GraphQLLite(coco);"
+|  +--Method.ftl
+|  |  +--ATHP: AddChecker.ftl
+|  |  +--AddChecker.ftl
+|  +--Method.ftl
+|  |  +--ASHP: "node.accept(getTraverser());"
+|  +--Method.ftl
+|  |  +--ASHP: "traverser.add4MCCommonLiterals(coco);"
+|  +--Method.ftl
+|  |  +--ASHP: "traverser.add4MCCommonLiterals(coco);"
+|  +--Method.ftl
+|  |  +--ASHP: "traverser.add4MCCommonLiterals(coco);"
+|  +--Method.ftl
+|  |  +--ASHP: "traverser.add4MCCommonLiterals(coco);"
+|  +--Method.ftl
+|  |  +--ASHP: "traverser.add4MCCommonLiterals(coco);"
+|  +--Method.ftl
+|  |  +--ASHP: "traverser.add4MCCommonLiterals(coco);"
+|  +--Method.ftl
+|  |  +--ASHP: "traverser.add4MCCommonLiterals(coco);"
+|  +--Method.ftl
+|  |  +--ASHP: "traverser.add4MCCommonLiterals(coco);"
+|  +--Method.ftl
+|  |  +--ASHP: "traverser.add4MCCommonLiterals(coco);"
+|  +--Method.ftl
+|  |  +--ASHP: "traverser.add4MCCommonLiterals(coco);"
+|  +--Method.ftl
+|  |  +--ASHP: "traverser.add4MCCommonLiterals(coco);"
+|  +--Method.ftl
+|  |  +--ASHP: "traverser.add4MCCommonLiterals(coco);"
+|  +--Method.ftl
+|  |  +--ASHP: "traverser.add4MCCommonLiterals(coco);"
+|  +--Method.ftl
+|  |  +--ASHP: "traverser.add4MCCommonLiterals(coco);"
+|  +--Method.ftl
+|  |  +--ASHP: "traverser.add4MCCommonLiterals(coco);"
+|  +--Method.ftl
+|  |  +--ASHP: "traverser.add4MCCommonLiterals(coco);"
+|  +--Method.ftl
+|  |  +--ATHP: AddChecker.ftl
+|  |  +--AddChecker.ftl
+|  +--Method.ftl
+|  |  +--ASHP: "node.accept(getTraverser());"
+|  +--Method.ftl
+|  |  +--ASHP: "traverser.add4MCBasics(coco);"
+|  +--Method.ftl
+|  |  +--ATHP: AddChecker.ftl
+|  |  +--AddChecker.ftl
+|  +--Method.ftl
+|  |  +--ASHP: "node.accept(getTraverser());"
+|  +--Method.ftl
+|  |  +--ASHP: "traverser.add4MCLiteralsBasis(coco);"
+|  +--Method.ftl
+|  |  +--ASHP: "traverser.add4MCLiteralsBasis(coco);"
++--Interface.ftl
+|  +--ASHP: "package graphqllite._cocos;"
+|  +--Imports.ftl
+|  +--ASHP: ""
+|  +--Method.ftl
+|  +--Method.ftl
+|  |  +--ASHP: "check(node);"
++--Interface.ftl
+|  +--ASHP: "package graphqllite._cocos;"
+|  +--Imports.ftl
+|  +--ASHP: ""
+|  +--Method.ftl
+|  +--Method.ftl
+|  |  +--ASHP: "check(node);"
++--Interface.ftl
+|  +--ASHP: "package graphqllite._cocos;"
+|  +--Imports.ftl
+|  +--ASHP: ""
+|  +--Method.ftl
+|  +--Method.ftl
+|  |  +--ASHP: "check(node);"
++--Interface.ftl
+|  +--ASHP: "package graphqllite._cocos;"
+|  +--Imports.ftl
+|  +--ASHP: ""
+|  +--Method.ftl
+|  +--Method.ftl
+|  |  +--ASHP: "check(node);"
++--Interface.ftl
+|  +--ASHP: "package graphqllite._cocos;"
+|  +--Imports.ftl
+|  +--ASHP: ""
+|  +--Method.ftl
+|  +--Method.ftl
+|  |  +--ASHP: "check(node);"
++--Interface.ftl
+|  +--ASHP: "package graphqllite._cocos;"
+|  +--Imports.ftl
+|  +--ASHP: ""
+|  +--Method.ftl
+|  +--Method.ftl
+|  |  +--ASHP: "check(node);"
++--Interface.ftl
+|  +--ASHP: "package graphqllite._cocos;"
+|  +--Imports.ftl
+|  +--ASHP: ""
+|  +--Method.ftl
+|  +--Method.ftl
+|  |  +--ASHP: "check(node);"
++--Interface.ftl
+|  +--ASHP: "package graphqllite._cocos;"
+|  +--Imports.ftl
+|  +--ASHP: ""
+|  +--Method.ftl
+|  +--Method.ftl
+|  |  +--ASHP: "check(node);"
++--Interface.ftl
+|  +--ASHP: "package graphqllite._cocos;"
+|  +--Imports.ftl
+|  +--ASHP: ""
+|  +--Method.ftl
+|  +--Method.ftl
+|  |  +--ASHP: "check(node);"
+OP set value (key, value): 
+OP set value (key, value): 
+OP set value (key, value): 
++--Class.ftl
+|  +--ASHP: "package graphqllite._od;"
+|  +--Imports.ftl
+|  +--Annotations.ftl
+|  +--Attribute.ftl
+|  |  +--Value.ftl
+|  +--Attribute.ftl
+|  |  +--Value.ftl
+|  +--Attribute.ftl
+|  |  +--Value.ftl
+|  +--Attribute.ftl
+|  |  +--ASHP: "= false;"
+|  +--Attribute.ftl
+|  |  +--ASHP: "= false;"
+|  +--Constructor.ftl
+|  |  +--ATHP: ConstructorOD.ftl
+|  |  +--ConstructorOD.ftl
+|  +--Method.ftl
+|  |  +--ATHP: HandleOD.ftl
+|  |  +--HandleOD.ftl
+|  +--Method.ftl
+|  |  +--ATHP: HandleOD.ftl
+|  |  +--HandleOD.ftl
+|  +--Method.ftl
+|  |  +--ATHP: HandleOD.ftl
+|  |  +--HandleOD.ftl
+|  +--Method.ftl
+|  |  +--ATHP: HandleOD.ftl
+|  |  +--HandleOD.ftl
+|  +--Method.ftl
+|  |  +--ATHP: HandleOD.ftl
+|  |  +--HandleOD.ftl
+|  +--Method.ftl
+|  |  +--ATHP: HandleOD.ftl
+|  |  +--HandleOD.ftl
+|  +--Method.ftl
+|  |  +--ATHP: Get.ftl
+|  |  +--Get.ftl
+|  +--Method.ftl
+|  |  +--ATHP: Set.ftl
+|  |  +--Set.ftl
+|  +--Method.ftl
+|  |  +--ATHP: PrintAttribute.ftl
+|  |  +--PrintAttribute.ftl
+|  +--Method.ftl
+|  |  +--ATHP: PrintObject.ftl
+|  |  +--PrintObject.ftl
+|  +--Method.ftl
+|  |  +--ATHP: PrintObjectDiagram.ftl
+|  |  +--PrintObjectDiagram.ftl
+|  +--Method.ftl
+|  |  +--ATHP: Get.ftl
+|  |  +--Get.ftl
+|  +--Method.ftl
+|  |  +--ATHP: Set.ftl
+|  |  +--Set.ftl
+|  +--Method.ftl
+|  |  +--ATHP: Get.ftl
+|  |  +--Get.ftl
+|  +--Method.ftl
+|  |  +--ATHP: Set.ftl
+|  |  +--Set.ftl
+OP set value (key, value): 
+OP set value (key, value): 
+OP set value (key, value): 
++--Class.ftl
+|  +--ASHP: "package graphqllite;"
+|  +--Imports.ftl
+|  +--ASHP: ""
+|  +--Attribute.ftl
+|  |  +--Value.ftl
+|  +--Attribute.ftl
+|  |  +--Value.ftl
+|  +--Attribute.ftl
+|  |  +--Value.ftl
+|  +--Attribute.ftl
+|  |  +--Value.ftl
+|  +--Attribute.ftl
+|  |  +--Value.ftl
+|  +--Attribute.ftl
+|  |  +--Value.ftl
+|  +--Attribute.ftl
+|  |  +--Value.ftl
+|  +--Attribute.ftl
+|  |  +--Value.ftl
+|  +--Attribute.ftl
+|  |  +--Value.ftl
+|  +--Attribute.ftl
+|  |  +--Value.ftl
+|  +--Attribute.ftl
+|  |  +--Value.ftl
+|  +--Attribute.ftl
+|  |  +--Value.ftl
+|  +--Attribute.ftl
+|  |  +--Value.ftl
+|  +--Attribute.ftl
+|  |  +--Value.ftl
+|  +--Attribute.ftl
+|  |  +--Value.ftl
+|  +--Attribute.ftl
+|  |  +--Value.ftl
+|  +--Attribute.ftl
+|  |  +--Value.ftl
+|  +--Attribute.ftl
+|  |  +--Value.ftl
+|  +--Attribute.ftl
+|  |  +--Value.ftl
+|  +--Attribute.ftl
+|  |  +--Value.ftl
+|  +--Attribute.ftl
+|  |  +--Value.ftl
+|  +--Attribute.ftl
+|  |  +--Value.ftl
+|  +--Constructor.ftl
+|  |  +--EmptyBody.ftl
+|  +--Method.ftl
+|  |  +--ATHP: GetMillMethod.ftl
+|  |  +--GetMillMethod.ftl
+|  +--Method.ftl
+|  |  +--ATHP: InitMethod.ftl
+|  |  +--InitMethod.ftl
+|  +--Method.ftl
+|  |  +--ATHP: BuilderMethod.ftl
+|  |  +--BuilderMethod.ftl
+|  +--Method.ftl
+|  |  +--ATHP: ProtectedBuilderMethod.ftl
+|  |  +--ProtectedBuilderMethod.ftl
+|  +--Method.ftl
+|  |  +--ATHP: BuilderMethod.ftl
+|  |  +--BuilderMethod.ftl
+|  +--Method.ftl
+|  |  +--ATHP: ProtectedBuilderMethod.ftl
+|  |  +--ProtectedBuilderMethod.ftl
+|  +--Method.ftl
+|  |  +--ATHP: BuilderMethod.ftl
+|  |  +--BuilderMethod.ftl
+|  +--Method.ftl
+|  |  +--ATHP: ProtectedBuilderMethod.ftl
+|  |  +--ProtectedBuilderMethod.ftl
+|  +--Method.ftl
+|  |  +--ATHP: BuilderMethod.ftl
+|  |  +--BuilderMethod.ftl
+|  +--Method.ftl
+|  |  +--ATHP: ProtectedBuilderMethod.ftl
+|  |  +--ProtectedBuilderMethod.ftl
+|  +--Method.ftl
+|  |  +--ATHP: BuilderMethod.ftl
+|  |  +--BuilderMethod.ftl
+|  +--Method.ftl
+|  |  +--ATHP: ProtectedBuilderMethod.ftl
+|  |  +--ProtectedBuilderMethod.ftl
+|  +--Method.ftl
+|  |  +--ATHP: BuilderMethod.ftl
+|  |  +--BuilderMethod.ftl
+|  +--Method.ftl
+|  |  +--ATHP: ProtectedBuilderMethod.ftl
+|  |  +--ProtectedBuilderMethod.ftl
+|  +--Method.ftl
+|  |  +--ATHP: BuilderMethod.ftl
+|  |  +--BuilderMethod.ftl
+|  +--Method.ftl
+|  |  +--ATHP: ProtectedBuilderMethod.ftl
+|  |  +--ProtectedBuilderMethod.ftl
+|  +--Method.ftl
+|  |  +--ATHP: BuilderMethod.ftl
+|  |  +--BuilderMethod.ftl
+|  +--Method.ftl
+|  |  +--ATHP: ProtectedBuilderMethod.ftl
+|  |  +--ProtectedBuilderMethod.ftl
+|  +--Method.ftl
+|  |  +--ATHP: BuilderMethod.ftl
+|  |  +--BuilderMethod.ftl
+|  +--Method.ftl
+|  |  +--ATHP: ProtectedBuilderMethod.ftl
+|  |  +--ProtectedBuilderMethod.ftl
+|  +--Method.ftl
+|  |  +--ATHP: BuilderMethod.ftl
+|  |  +--BuilderMethod.ftl
+|  +--Method.ftl
+|  |  +--ATHP: ProtectedBuilderMethod.ftl
+|  |  +--ProtectedBuilderMethod.ftl
+|  +--Method.ftl
+|  |  +--ATHP: BuilderMethod.ftl
+|  |  +--BuilderMethod.ftl
+|  +--Method.ftl
+|  |  +--ATHP: ProtectedBuilderMethod.ftl
+|  |  +--ProtectedBuilderMethod.ftl
+|  +--Method.ftl
+|  |  +--ATHP: BuilderMethod.ftl
+|  |  +--BuilderMethod.ftl
+|  +--Method.ftl
+|  |  +--ATHP: ProtectedBuilderMethod.ftl
+|  |  +--ProtectedBuilderMethod.ftl
+|  +--Method.ftl
+|  |  +--ATHP: BuilderMethod.ftl
+|  |  +--BuilderMethod.ftl
+|  +--Method.ftl
+|  |  +--ASHP: "return new graphqllite._visitor.GraphQLLiteTraverserImplementati[...]"
+|  +--Method.ftl
+|  |  +--ATHP: BuilderMethod.ftl
+|  |  +--BuilderMethod.ftl
+|  +--Method.ftl
+|  |  +--ATHP: InheritanceHandlerMethod.ftl
+|  |  +--InheritanceHandlerMethod.ftl
+|  +--Method.ftl
+|  |  +--ATHP: BuilderMethod.ftl
+|  |  +--BuilderMethod.ftl
+|  +--Method.ftl
+|  |  +--ATHP: ProtectedGlobalScopeMethod.ftl
+|  |  +--ProtectedGlobalScopeMethod.ftl
+|  +--Method.ftl
+|  |  +--ATHP: BuilderMethod.ftl
+|  |  +--BuilderMethod.ftl
+|  +--Method.ftl
+|  |  +--ATHP: ProtectedBuilderMethod.ftl
+|  |  +--ProtectedBuilderMethod.ftl
+|  +--Method.ftl
+|  |  +--ATHP: BuilderMethod.ftl
+|  |  +--BuilderMethod.ftl
+|  +--Method.ftl
+|  |  +--ATHP: ProtectedParserMethod.ftl
+|  |  +--ProtectedParserMethod.ftl
+|  +--Method.ftl
+|  |  +--ATHP: BuilderMethod.ftl
+|  |  +--BuilderMethod.ftl
+|  +--Method.ftl
+|  |  +--ATHP: ProtectedBuilderMethod.ftl
+|  |  +--ProtectedBuilderMethod.ftl
+|  +--Method.ftl
+|  |  +--ATHP: BuilderMethod.ftl
+|  |  +--BuilderMethod.ftl
+|  +--Method.ftl
+|  |  +--ATHP: ProtectedBuilderMethod.ftl
+|  |  +--ProtectedBuilderMethod.ftl
+|  +--Method.ftl
+|  |  +--ATHP: BuilderMethod.ftl
+|  |  +--BuilderMethod.ftl
+|  +--Method.ftl
+|  |  +--ATHP: ProtectedBuilderMethod.ftl
+|  |  +--ProtectedBuilderMethod.ftl
+|  +--Method.ftl
+|  |  +--ATHP: BuilderDelegatorMethod.ftl
+|  |  +--BuilderDelegatorMethod.ftl
+|  +--Method.ftl
+|  |  +--ATHP: BuilderDelegatorMethod.ftl
+|  |  +--BuilderDelegatorMethod.ftl
+|  +--Method.ftl
+|  |  +--ATHP: BuilderDelegatorMethod.ftl
+|  |  +--BuilderDelegatorMethod.ftl
+|  +--Method.ftl
+|  |  +--ATHP: BuilderDelegatorMethod.ftl
+|  |  +--BuilderDelegatorMethod.ftl
+|  +--Method.ftl
+|  |  +--ATHP: BuilderDelegatorMethod.ftl
+|  |  +--BuilderDelegatorMethod.ftl
+|  +--Method.ftl
+|  |  +--ATHP: BuilderDelegatorMethod.ftl
+|  |  +--BuilderDelegatorMethod.ftl
+|  +--Method.ftl
+|  |  +--ATHP: BuilderDelegatorMethod.ftl
+|  |  +--BuilderDelegatorMethod.ftl
+|  +--Method.ftl
+|  |  +--ATHP: BuilderDelegatorMethod.ftl
+|  |  +--BuilderDelegatorMethod.ftl
+|  +--Method.ftl
+|  |  +--ATHP: BuilderDelegatorMethod.ftl
+|  |  +--BuilderDelegatorMethod.ftl
+|  +--Method.ftl
+|  |  +--ATHP: BuilderDelegatorMethod.ftl
+|  |  +--BuilderDelegatorMethod.ftl
+|  +--Method.ftl
+|  |  +--ATHP: BuilderDelegatorMethod.ftl
+|  |  +--BuilderDelegatorMethod.ftl
+|  +--Method.ftl
+|  |  +--ATHP: BuilderDelegatorMethod.ftl
+|  |  +--BuilderDelegatorMethod.ftl
+|  +--Method.ftl
+|  |  +--ATHP: InitMeMethod.ftl
+|  |  +--InitMeMethod.ftl
+|  +--Method.ftl
+|  |  +--ATHP: ResetMethod.ftl
+|  |  +--ResetMethod.ftl
+OP set value (key, value): 
+OP set value (key, value): 
+OP set value (key, value): 
++--Class.ftl
+|  +--ASHP: "package graphqllite;"
+|  +--Imports.ftl
+|  +--ASHP: ""
+|  +--Method.ftl
+|  |  +--ATHP: Main.ftl
+|  |  +--Main.ftl
+|  +--Method.ftl
+|  |  +--ATHP: Run.ftl
+|  |  +--Run.ftl
+|  +--Method.ftl
+|  |  +--ATHP: Parser.ftl
+|  |  +--Parser.ftl
+|  +--Method.ftl
+|  |  +--ATHP: Init.ftl
+|  |  +--Init.ftl
+|  +--Method.ftl
+|  |  +--ASHP: "Log.warn("0xA1052x23690 PrettyPrinting is not implemented yet.");"
+|  +--Method.ftl
+|  |  +--ATHP: Print.ftl
+|  |  +--Print.ftl
+|  +--Method.ftl
+|  |  +--ATHP: PrintHelp.ftl
+|  |  +--PrintHelp.ftl
+|  +--Method.ftl
+|  |  +--ATHP: PrintVersion.ftl
+|  |  +--PrintVersion.ftl
+|  +--Method.ftl
+|  |  +--ASHP: "Log.warn("0xA1058x98611 Reports are not implemented yet.");"
+|  +--Method.ftl
+|  |  +--ASHP: "Log.warn("0xA1053x99039 default CoCos are not implemented yet.");"
+|  +--Method.ftl
+|  |  +--ASHP: "Log.warn("0xA1062x55584 additional CoCos are not implemented yet.");"
+|  +--Method.ftl
+|  |  +--ATHP: StoreSymbols.ftl
+|  |  +--StoreSymbols.ftl
+|  +--Method.ftl
+|  |  +--ATHP: InitOptions.ftl
+|  |  +--InitOptions.ftl
+|  +--Method.ftl
+|  |  +--ATHP: AddStandardOptions.ftl
+|  |  +--AddStandardOptions.ftl
+|  +--Method.ftl
+|  |  +--ATHP: AddAdditionalOptions.ftl
+|  |  +--AddAdditionalOptions.ftl
+|  +--Method.ftl
+|  |  +--ATHP: SymbolTable.ftl
+|  |  +--SymbolTable.ftl
+|  +--Method.ftl
+|  |  +--ASHP: "Log.warn("0xA1158x77577 This symbol table phase is not implement[...]"
+OP set value (key, value): 
+OP set value (key, value): 
+OP set value (key, value): 
++--Class.ftl
+|  +--ASHP: "package graphqllite._auxiliary;"
+|  +--Imports.ftl
+|  +--ASHP: ""
+|  +--Method.ftl
+|  |  +--ATHP: ProtectedMethodForSuper.ftl
+|  |  +--ProtectedMethodForSuper.ftl
+|  +--Method.ftl
+|  |  +--ATHP: ProtectedMethodForSuper.ftl
+|  |  +--ProtectedMethodForSuper.ftl
+|  +--Method.ftl
+|  |  +--ATHP: ProtectedMethodForSuper.ftl
+|  |  +--ProtectedMethodForSuper.ftl
+|  +--Method.ftl
+|  |  +--ATHP: ProtectedMethodForSuper.ftl
+|  |  +--ProtectedMethodForSuper.ftl
+|  +--Method.ftl
+|  |  +--ATHP: ProtectedMethodForSuper.ftl
+|  |  +--ProtectedMethodForSuper.ftl
++--Class.ftl
+|  +--ASHP: "package graphqllite._auxiliary;"
+|  +--Imports.ftl
+|  +--ASHP: ""
+|  +--Method.ftl
+|  |  +--ATHP: ProtectedMethodForSuper.ftl
+|  |  +--ProtectedMethodForSuper.ftl
+|  +--Method.ftl
+|  |  +--ATHP: ProtectedMethodForSuper.ftl
+|  |  +--ProtectedMethodForSuper.ftl
+|  +--Method.ftl
+|  |  +--ATHP: ProtectedMethodForSuper.ftl
+|  |  +--ProtectedMethodForSuper.ftl
+|  +--Method.ftl
+|  |  +--ATHP: ProtectedMethodForSuper.ftl
+|  |  +--ProtectedMethodForSuper.ftl
+|  +--Method.ftl
+|  |  +--ATHP: ProtectedMethodForSuper.ftl
+|  |  +--ProtectedMethodForSuper.ftl
++--Class.ftl
+|  +--ASHP: "package graphqllite._auxiliary;"
+|  +--Imports.ftl
+|  +--ASHP: ""
+|  +--Method.ftl
+|  |  +--ATHP: ProtectedMethodForSuper.ftl
+|  |  +--ProtectedMethodForSuper.ftl
+|  +--Method.ftl
+|  |  +--ATHP: ProtectedMethodForSuper.ftl
+|  |  +--ProtectedMethodForSuper.ftl
+|  +--Method.ftl
+|  |  +--ATHP: ProtectedMethodForSuper.ftl
+|  |  +--ProtectedMethodForSuper.ftl
+|  +--Method.ftl
+|  |  +--ATHP: ProtectedMethodForSuper.ftl
+|  |  +--ProtectedMethodForSuper.ftl
+|  +--Method.ftl
+|  |  +--ATHP: ProtectedMethodForSuper.ftl
+|  |  +--ProtectedMethodForSuper.ftl
+========================================================== Explanation
+Tree structure for template calls.
+Short forms:
+  +--      template call
+  +--SHP   StringHookPoint call
+  +--CHP   CodeHookPoint call
+  +--ASHP  AST StringHookPoint call
+  +--ATHP  AST TemplateHookPoint call
+  +--ACHP  AST CodeHookPoint call
+  +inst    instantiation of java class
+(EOF)

@@ -1,0 +1,16 @@
+schema Schema4 {
+     scalar S1
+     scalar S2
+
+     type A {
+        field0: ID!
+     }
+
+     // type can reference other type or scalar
+     type B {
+        field0: A
+        field1: S2!
+        field2: [S1]
+        field3: [S2!]!
+     }
+}

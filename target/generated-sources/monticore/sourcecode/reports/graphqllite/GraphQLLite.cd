@@ -1,0 +1,52 @@
+package ;
+import de.monticore.literals.MCCommonLiterals;
+
+<<startProd="GraphQLLite.Schema">> classdiagram GraphQLLite {
+  package  {
+    <<symbol, scope, startProd>> public class ASTSchema {
+      <<derived_attribute_name="">> protected String name;
+      <<derived_attribute_name="", astType="">> protected java.util.List<GraphQLLite.ASTGQLType> gQLType;
+    }
+    <<inheritedSymbol="graphqllite._symboltable.GQLTypeSymbol">> public class ASTScalar implements GraphQLLite.ASTGQLType {
+      <<derived_attribute_name="">> protected String name;
+    }
+    <<symbol, scope, inheritedSymbol="graphqllite._symboltable.GQLTypeSymbol">> public class ASTType implements GraphQLLite.ASTGQLType {
+      <<astType="">> protected java.util.List<GraphQLLite.ASTGQLTypeAttribute> attributes;
+      <<derived_attribute_name="">> protected String name;
+    }
+    public class ASTGQLTypeAttribute {
+      protected String attributeName;
+      <<astType="">> protected GraphQLLite.ASTAttributeType type;
+    }
+    public class ASTSimpleAttributeType implements GraphQLLite.ASTAttributeType {
+      <<referencedSymbol="graphqllite._symboltable.GQLTypeSymbol">> protected Optional<String> type;
+      protected Optional<GraphQLLite.ASTBUILDINSCALAR> buildInScalar;
+      <<derived_attribute_name="">> protected boolean required;
+    }
+    public class ASTCollectionAttributeType implements GraphQLLite.ASTAttributeType {
+      <<derived_attribute_name="", astType="">> protected GraphQLLite.ASTSimpleAttributeType simpleAttributeType;
+      <<derived_attribute_name="">> protected boolean required;
+    }
+    <<symbol>> public interface ASTGQLType {
+      <<derived_attribute_name="">> protected String name;
+    }
+    public interface ASTAttributeType;
+    enum ASTBUILDINSCALAR {
+      ID,
+      STRING,
+      BOOLEAN,
+      INT,
+      FLOAT;
+    }
+    <<deprecated>> enum GraphQLLiteLiterals {
+      BOOLEAN,
+      FLOAT,
+      ID,
+      INT,
+      REQUIRED,
+      STRING;
+    }
+    public interface ASTGraphQLLiteNode;
+  }
+
+}

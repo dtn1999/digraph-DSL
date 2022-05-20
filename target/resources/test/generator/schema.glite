@@ -1,0 +1,23 @@
+schema Domain {
+ scalar Date
+ scalar Upload
+ scalar File
+
+ type User {
+    id: ID!
+    firstName: String
+    lastName: String!
+    age: Int
+    height: Float
+    favorites: [Song!]!
+ }
+
+ type Song {
+    id: ID!
+    publishedDate: Date!
+    blob: File!
+    title: String!
+    description: String
+    upToDate: Boolean
+ }
+}

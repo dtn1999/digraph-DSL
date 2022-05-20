@@ -1,0 +1,8 @@
+schema InvalidSchema1 {
+    scalar A
+    scalar A
+
+    type B {
+       field: A
+    }
+}

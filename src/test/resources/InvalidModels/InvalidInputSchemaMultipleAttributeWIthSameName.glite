@@ -1,0 +1,10 @@
+schema InvalidSchema1 {
+    type B {
+       field: String
+       field: Boolean
+    }
+
+    type A {
+       field: String
+    }
+}
